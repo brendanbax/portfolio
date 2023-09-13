@@ -7,6 +7,39 @@ body {
 /* Colors (see Tailwind config) */
 
 /* Typography */
+.page-hero {
+    @apply text-6xl leading-loose font-bold;
+}
+.page-heading {
+    @apply text-4xl leading-relaxed font-bold;
+}
+.section-heading {
+    @apply text-2xl font-semibold mb-2;
+}
+.subsection-heading {
+    @apply text-lg font-semibold mb-1;
+}
+.body-copy {
+    @apply text-base font-normal leading-8;
+}
+.micro-copy {
+    @apply text-xs leading-4 font-light;
+}
+.overline-copy {
+    @apply text-xs leading-4 font-medium;
+}
+.navigation-link {
+    @apply text-sm font-medium;
+}
+.inline-copy-link {
+    @apply text-base font-semibold leading-6;
+}
+.card-title {
+    @apply text-xl font-semibold;
+}
+.card-body {
+    @apply text-sm font-normal;
+}
 
 /* Containers */
 
