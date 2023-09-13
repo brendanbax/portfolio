@@ -1,0 +1,15 @@
+---
+import type { AstroBuiltinProps } from 'astro';
+
+type Props = AstroBuiltinProps & {
+	case: CaseStudy;
+	index: number;
+}
+
+const { case: { title, description, slug, cover } } = Astro.props;
+---
+
+<a href={`/case-studies/${slug}`}>
+	<h2>{title}</h2>
+	<p>{description}</p>
+</a>

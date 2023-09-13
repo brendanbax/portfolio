@@ -1,0 +1,45 @@
+---
+import CaseStudyCard from '../../components/CaseStudyCard.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const caseStudies: CaseStudy[] = [
+    {
+        title: 'AtHome Lite',
+        description: 'foo',
+        slug: '/at-home-lite',
+        cover: '',
+    },{
+        title: 'Continuum',
+        description: 'bar',
+        slug: '/continuum',
+        cover: '',
+    },{
+        title: 'Roadside Assistance',
+        description: 'baz',
+        slug: '/roadside-assistance',
+        cover: '',
+    },{
+        title: 'Coolfire',
+        description: 'zip',
+        slug: '/coolfire',
+        cover: '',
+    },{
+        title: 'Mortgage',
+        description: 'zap',
+        slug: '/mortgage',
+        cover: '',
+    },
+]
+---
+
+<Layout title="Brendan Bax | Case Studies">
+    <main class="text-white">
+        <ul>
+            {caseStudies.map((c, i) => (
+                <li>
+                    <CaseStudyCard case={c} index={i} />
+                </li>
+            ))}
+          </ul>
+    </main>
+</Layout>
