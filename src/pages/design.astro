@@ -1,67 +1,170 @@
 ---
-import '../styles/main.css';
+import Layout from "../layouts/Layout.astro"
+
 const darkColors = [['', '', ''],['', '', ''],['', '', '']] // TODO: create a 2D array of colors
 const lightColors = [['', '', ''],['', '', ''],['', '', '']] // TODO: create a 2D array of colors
 ---
-<main class="text-black dark:text-white">
+
+<Layout title="Design System">
     <section>
-        <h1>Design System Preview</h1>
-        <p>Below you will find an overview of various styles for this project including colors, type, containers, and basic components.</p>
+        <div class="prose centered">
+            <h1 class="page-heading">Design System Preview</h1>
+            <p class="body-copy">Below you will find an overview of various styles for this project including colors, type, containers, and basic components.</p>
+            <p class="body-copy">This project uses Tailwind CSS to simplify design token management. Styles are applied to semantic class names for easier translation of design to code.</p>
+            <p class="body-copy">For example, typography style rules are rolled up to classes like <code>.body-copy</code> and <code>.page-heading</code> which apply the Tailwind tokens.</p>
+            <pre>
+<code>
+{`.body-copy {
+    @apply text-base font-normal leading-7 mb-4 last:mb-0 opacity-90;
+}`}</code>
+            </pre>
+        </div>
     </section>
     <section>
-        <h2>Font Family</h2>
-        <p>The font family in use is Poppins, available via Google Fonts.</p>
-        <section>
-            <div>
-                A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-            </div>
-            <div>
-                a b c d e f g h i j k l m n o p q r s t u v w x y z
-            </div>
-            <div>
-                0 1 2 3 4 5 6 7 8 9 . , ? ! $ % & ( ) @ #
-            </div>
-        </section>
+        <div class="prose centered">
+            <h2 class="section-heading">Font Family</h2>
+            <p class="body-copy">The font family in use is Poppins, available via <a href="https://fonts.google.com/specimen/Poppins" target="_blank" class="inline-copy-link">Google Fonts</a>.</p>
+            <section class="body-copy">
+                <div>
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+                </div>
+                <div>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z
+                </div>
+                <div>
+                    0 1 2 3 4 5 6 7 8 9 . , ? ! $ % & ( ) @ #
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="bg-slate">
+        <div class="prose centered">
+            <h2 class="section-heading">Typography</h2>
+            <p class="body-copy">A collection of type styles for various applications in this project. The goal of these type styles is to create a strong content hierarchy that blends personality with readability.</p>
+            <section>
+                <div class="grid grid-cols-3 bg-slate-dark p-4 text-center mb-4">
+                    <a href="" class="navigation-link active">Navigation link</a>
+                    <a href="" class="navigation-link">Navigation link</a>
+                    <a href="" class="navigation-link">Navigation link</a>
+                </div>
+                <div class="py-8 mb-6 dark:bg-slate-dark bg-pearl text-center">
+                    <p class="page-hero">Page Hero</p>
+                </div>
+                <p class="page-heading">Page heading</p>
+                <div class="mb-6 grid grid-cols-2">
+                    <div>
+                        <p class="section-heading">Section heading</p>
+                    </div>
+                    <div>
+                        <p class="section-heading">Adventures in JavaScript</p>
+                        <p class="body-copy">A story of trials, ternaries, and self discovery.</p>
+                    </div>
+                </div>
+                <div class="mb-6 grid grid-cols-2">
+                    <div>
+                        <p class="subsection-heading">Subsection heading</p>
+                    </div>
+                    <div>
+                        <p class="subsection-heading">The importance of tests</p>
+                        <p class="body-copy">It's no coincidence that test and trust are a few letters apart.</p>
+                    </div>
+                </div>
+                <div class="mb-6 grid grid-cols-2">
+                    <div>
+                        <p class="body-copy">Body copy</p>
+                    </div>
+                    <div>
+                        <p class="body-copy">Semicolons are optional.</p>
+                    </div>
+                </div>
+                <div class="mb-6 grid grid-cols-2">
+                    <div>
+                        <p class="inline-copy-link">Inline copy link</p>
+                    </div>
+                    <div>
+                        <p class="body-copy">Don't take these strings <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" class="inline-copy-link">literally</a>.</p>
+                    </div>
+                </div>
+                <div class="mb-6 grid grid-cols-2">
+                    <div>
+                        <p class="overline-copy">Overline</p>
+                    </div>
+                    <div>
+                        <p class="overline-copy">Coming Soon</p>
+                        <p class="section-heading">What's your type?</p>
+                        <p class="body-copy">Find out more about types and how to tame them.</p>
+                    </div>
+                </div>
+                <div class="mb-6 grid grid-cols-2">
+                    <div class="card">
+                        <p class="card-title">Card title</p>
+                        <p class="card-body">Card body</p>
+                    </div>
+                    <div class="card">
+                        <p class="card-title">Widgets</p>
+                        <p class="card-body">A small gadget or mechanical device, especially one whose name is unknown or unspecified.</p>
+                    </div>
+                </div>
+                <div class="mb-6 grid grid-cols-2">
+                    <div class="mr-4">
+                        <p class="block-quote">Block quote</p>
+                        <p>Attribution</p>
+                    </div>
+                    <div>
+                        <p class="block-quote">All is vanity and striving after wind.</p>
+                        <p>Ecclesiastes 1:14</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between bg-slate-dark p-4 mb-4">
+                    <p class="micro-copy">Micro copy</p>
+                    <p class="micro-copy">&copy; 2023</p>
+                </div>
+            </section>
+        </div>
     </section>
     <section>
-        <h2>Typography</h2>
-        <p>A collection of type styles for various applications in this project. The goal of these type styles is to create a strong content hierarchy that blends personality with readability.</p>
-        <section>
-            <p class="page-hero">Page Hero</p>
-            <p class="page-heading">Page heading</p>
-            <p class="section-heading">Section heading</p>
-            <p class="subsection-heading">Subsection heading</p>
-            <p class="body-copy">Body copy</p>
-            <p class="micro-copy">Micro copy</p>
-            <p class="overline-copy">Overline</p>
-            <p class="navigation-link">Navigation link</p>
-            <p class="inline-copy-link">Inline copy link</p>
-            <p class="card-title">Card title</p>
-            <p class="card-body">Card body</p>
-        </section>
+        <div class="prose centered">
+            <h2 class="section-heading">Colors</h2>
+            <p>Colors are used to emphasize and create visual interest on the page. Colors are bucketed into dark and light theme collections to account for user preferences.</p>
+            <section class="grid grid-cols-3 grid-rows-3 gap-x-4">
+                <!-- TODO: Color swatch chip with click to copy hex... use a const for colors up top -->
+                <div class="w-full h-12 bg-brand-light rounded-t"></div>
+                <div class="w-full h-12 bg-slate-light rounded-t"></div>
+                <div class="w-full h-12 bg-pearl-light rounded-t"></div>
+                <div class="w-full h-12 bg-brand"></div>
+                <div class="w-full h-12 bg-slate"></div>
+                <div class="w-full h-12 bg-pearl"></div>
+                <div class="w-full h-12 bg-brand-dark rounded-b"></div>
+                <div class="w-full h-12 bg-slate-dark rounded-b"></div>
+                <div class="w-full h-12 bg-pearl-dark rounded-b"></div>
+            </section>
+            <section class="grid grid-cols-3 gap-x-4">
+                <!-- TODO: Color swatch chip with click to copy hex... use a const for colors up top -->
+                <div class="w-full h-40 rounded bg-gradient-to-b from-brand-light to-brand-dark"></div>
+                <div class="w-full h-40 rounded bg-gradient-to-b from-slate-light to-slate-dark"></div>
+                <div class="w-full h-40 rounded bg-gradient-to-b from-pearl-light to-pearl-dark"></div>
+            </section>
+        </div>
     </section>
     <section>
-        <h2>Colors</h2>
-        <p>Colors are used to emphasize and create visual interest on the page. Colors are bucketed into dark and light theme collections to account for user preferences.</p>
-        <section>
-            <!-- TODO: Color swatch chip with click to copy hex... use a const for colors up top -->
-        </section>
+        <div class="prose centered">
+            <h2 class="section-heading">Containers</h2>
+            <p>Container styles define how elements are grouped together into a cohesive bounding box.</p>
+            <section>
+                <!-- TODO: Add elevations, card borders, dividers, etc. -->
+            </section>
+        </div>
     </section>
     <section>
-        <h2>Containers</h2>
-        <p>Container styles define how elements are grouped together into a cohesive bounding box.</p>
-        <section>
-            <!-- TODO: Add elevations, card borders, dividers, etc. -->
-        </section>
+        <div class="prose centered">
+            <h2 class="section-heading">Form Controls</h2>
+            <p>Various inputs and action styles used in this project.</p>
+            <section>
+                <!-- TODO: Add text inputs, numbers, buttons, etc. -->
+            </section>
+        </div>
     </section>
-    <section>
-        <h2>Form Controls</h2>
-        <p>Various inputs and action styles used in this project.</p>
-        <section>
-            <!-- TODO: Add text inputs, numbers, buttons, etc. -->
-        </section>
-    </section>
-</main>
+</Layout>
 
 <style>
     section {
