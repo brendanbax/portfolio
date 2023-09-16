@@ -13,7 +13,8 @@ module.exports = {
 			"pearl-light": '#f8fafc',
 			"pearl": '#e2e8f0',
 			"pearl-dark": '#cbd5e1',
-			"transparent": "rgba(255,255,255,0)",
+			"transparent": 'rgba(255,255,255,0)',
+			"inherit": "inherit",
 		},
 		borderRadius: {
 			sm: '0.5rem',
