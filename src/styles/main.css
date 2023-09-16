@@ -65,5 +65,20 @@
     .centered {
         @apply mx-auto;
     }
+    .card {
+        @apply rounded bg-pearl-light dark:bg-slate p-4 shadow;
+    }
+    .card.interactive {
+        @apply hover:bg-pearl dark:hover:bg-slate-light hover:shadow-lg transition-all;
+    }
+    .card-secondary {
+        @apply bg-inherit rounded p-4 shadow border-2 border-pearl-dark dark:border-slate;
+    }
+    .card-secondary.interactive {
+        @apply hover:bg-pearl-dark dark:hover:bg-slate-dark hover:shadow-lg hover:border-brand transition-all;
+    }
+    .section-divider {
+        @apply section-heading pb-2 mb-4 border-b border-pearl-dark dark:border-slate-light;
+    }
     /* Form Controls */
 }

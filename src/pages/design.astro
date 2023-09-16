@@ -19,7 +19,7 @@ import Layout from "../layouts/Layout.astro"
     </section>
     <section>
         <div class="prose centered">
-            <h2 class="section-heading">Font Family</h2>
+            <h2 class="section-divider">Font Family</h2>
             <p class="body-copy">The font family in use is Poppins, available via <a href="https://fonts.google.com/specimen/Poppins" target="_blank" class="inline-copy-link">Google Fonts</a>.</p>
             <section class="body-copy">
                 <div>
@@ -36,7 +36,7 @@ import Layout from "../layouts/Layout.astro"
     </section>
     <section class="bg-slate">
         <div class="prose centered">
-            <h2 class="section-heading">Typography</h2>
+            <h2 class="section-divider">Typography</h2>
             <p class="body-copy">A collection of type styles for various applications in this project. The goal of these type styles is to create a strong content hierarchy that blends personality with readability.</p>
             <section>
                 <div class="grid grid-cols-3 bg-slate-dark p-4 text-center mb-4">
@@ -121,7 +121,7 @@ import Layout from "../layouts/Layout.astro"
     </section>
     <section>
         <div class="prose centered">
-            <h2 class="section-heading">Colors</h2>
+            <h2 class="section-divider">Colors</h2>
             <p>Colors are used to emphasize and create visual interest on the page. Colors are bucketed into dark and light theme collections to account for user preferences.</p>
             <section class="grid grid-cols-3 grid-rows-3 gap-x-4">
                 <!-- TODO: Color swatch chip with click to copy hex... use a const for colors up top -->
@@ -144,16 +144,37 @@ import Layout from "../layouts/Layout.astro"
     </section>
     <section>
         <div class="prose centered">
-            <h2 class="section-heading">Containers</h2>
-            <p>Container styles define how elements are grouped together into a cohesive bounding box.</p>
+            <h2 class="section-divider">Containers</h2>
+            <p>Container styles define how elements are grouped together into a chunks using outlines and dividers.</p>
+            <section class="grid grid-cols-2 gap-4">
+                <div class="card">
+                    <p class="card-title">Card containers</p>
+                    <p class="card-body">Cards provide a pleasant container to scope a widget or succinct piece of content.</p>
+                </div>
+                <div class="card interactive">
+                    <p class="card-title">Interactive containers</p>
+                    <p class="card-body">A card containing an interactive element can get a hover state to draw attention to the interactive element within.</p>
+                    <a href="" class="inline-copy-link">Learn more</a>
+                </div>
+                <div class="card-secondary">
+                    <p class="card-title">Card containers</p>
+                    <p class="card-body">Cards provide a pleasant container to scope a widget or succinct piece of content.</p>
+                </div>
+                <div class="card-secondary interactive">
+                    <p class="card-title">Interactive containers</p>
+                    <p class="card-body">A card containing an interactive element can get a hover state to draw attention to the interactive element within.</p>
+                    <a href="" class="inline-copy-link">Learn more</a>
+                </div>
+            </section>
             <section>
-                <!-- TODO: Add elevations, card borders, dividers, etc. -->
+                <h3 class="section-divider">Section Dividers</h3>
+                <p class="body-copy">Use section dividers to divide content into chunks so readers can easily skim a body of writing.</p>
             </section>
         </div>
     </section>
     <section>
         <div class="prose centered">
-            <h2 class="section-heading">Form Controls</h2>
+            <h2 class="section-divider">Form Controls</h2>
             <p>Various inputs and action styles used in this project.</p>
             <section>
                 <!-- TODO: Add text inputs, numbers, buttons, etc. -->
