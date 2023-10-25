@@ -1,3 +1,24 @@
-<!-- Links: home, case studies, resume -->
-<!-- Desktop: top nav -->
-<!-- Mobile: bottom nav -->
+---
+import LogoShape from "./LogoShape.astro";
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1); // remove the first "/"
+---
+<nav class="nav-wrapper flex items-center px-8 py-4 gap-x-4 bg-pearl-light text-slate-dark">
+  <LogoShape class="logo" />
+  <a class={`${currentPath === "" ? "active" : ""} navigation-link`} href="/">Home</a>
+  <a class={`${currentPath === "projects" ? "active" : ""} navigation-link`} href="/projects">Projects</a>
+  <a class={`${currentPath === "about" ? "active" : ""} navigation-link`} href="/about">About</a>
+</nav>
+
+<style is:global>
+  nav {
+    border-bottom: 1px solid var(--color-pearl-dark);
+    position: sticky;
+    top: 0;
+  }
+	.logo {
+		color: #333333;
+    width: 1.5rem;
+    height: 1.5rem;
+	}
+</style>

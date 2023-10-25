@@ -7,6 +7,7 @@ import '@fontsource/poppins/700.css';
 import '@fontsource/poppins/400-italic.css';
 
 import '../styles/global.css';
+import NavBar from '../components/NavBar.astro';
 
 type Props = {title: string;}
 
@@ -31,6 +32,7 @@ const { title } = Astro.props;
 		</script>
 	</head>
 	<body>
+		<NavBar />
 		<!-- header -->
 		<main>
 			<slot />
