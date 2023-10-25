@@ -311,16 +311,22 @@ code {
 	margin-right: auto;
 }
 .card {
+	background-color: var(--color-pearl-light);
 	border-radius: 1rem;
 	padding: 1rem;
 	background-color: var(--pearl-light);
 	box-shadow: var(--shadow-base);
 	transition: all 240ms;
 }
+.dark .card {
+	background-color: var(--color-slate);
+}
 .card.interactive:hover {
-	background-color: var(--color-pearl);
 	box-shadow: var(--shadow-lg);
 	transition: all 240ms;
+}
+.dark .card.interactive:hover {
+	background-color: var(--color-slate-light);
 }
 .card-secondary {
 	background-color: inherit;
@@ -333,7 +339,6 @@ code {
 	transition: all 240ms;
 }
 .card-secondary.interactive:hover {
-	background-color: var(--color-pearl);
 	box-shadow: var(--shadow-lg);
 	border-color: var(--color-brand);
 	transition: all 240ms;
