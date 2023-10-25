@@ -7,14 +7,7 @@ import Layout from "../layouts/Layout.astro"
         <div class="prose centered">
             <h1 class="page-heading">Design System Preview</h1>
             <p class="body-copy">Below you will find an overview of various styles for this project including colors, type, containers, and basic components.</p>
-            <p class="body-copy">This project uses Tailwind CSS to simplify design token management. Styles are applied to semantic class names for easier translation of design to code.</p>
-            <p class="body-copy">For example, typography style rules are rolled up to classes like <code>.body-copy</code> and <code>.page-heading</code> which apply the Tailwind tokens.</p>
-            <pre>
-<code>
-{`.body-copy {
-    @apply text-base font-normal leading-7 mb-4 last:mb-0 opacity-90;
-}`}</code>
-            </pre>
+            <p class="body-copy">This project uses plain CSS. Styles are applied using semantic class names for easier translation of design language to code.</p>
         </div>
     </section>
     <section>
@@ -34,7 +27,7 @@ import Layout from "../layouts/Layout.astro"
             </section>
         </div>
     </section>
-    <section class="bg-slate">
+    <section class="bg-slate text-pearl-light">
         <div class="prose centered">
             <h2 class="section-divider">Typography</h2>
             <p class="body-copy">A collection of type styles for various applications in this project. The goal of these type styles is to create a strong content hierarchy that blends personality with readability.</p>
@@ -44,7 +37,7 @@ import Layout from "../layouts/Layout.astro"
                     <a href="" class="navigation-link">Navigation link</a>
                     <a href="" class="navigation-link">Navigation link</a>
                 </div>
-                <div class="py-8 mb-6 dark:bg-slate-dark bg-pearl text-center">
+                <div class="py-8 mb-6 bg-slate-dark text-pearl text-center">
                     <p class="page-hero">Page Hero</p>
                 </div>
                 <p class="page-heading">Page heading</p>
@@ -93,7 +86,7 @@ import Layout from "../layouts/Layout.astro"
                     </div>
                 </div>
                 <div class="mb-6 grid grid-cols-2">
-                    <div class="card">
+                    <div class="card mr-4">
                         <p class="card-title">Card title</p>
                         <p class="card-body">Card body</p>
                     </div>
@@ -134,11 +127,6 @@ import Layout from "../layouts/Layout.astro"
                 <div class="w-full h-12 bg-brand-dark rounded-b"></div>
                 <div class="w-full h-12 bg-slate-dark rounded-b"></div>
                 <div class="w-full h-12 bg-pearl-dark rounded-b"></div>
-            </section>
-            <section class="grid grid-cols-3 gap-x-4">
-                <div class="w-full h-40 rounded bg-gradient-to-b from-brand-light to-brand-dark"></div>
-                <div class="w-full h-40 rounded bg-gradient-to-b from-slate-light to-slate-dark"></div>
-                <div class="w-full h-40 rounded bg-gradient-to-b from-pearl-light to-pearl-dark"></div>
             </section>
         </div>
     </section>
