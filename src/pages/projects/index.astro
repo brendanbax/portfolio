@@ -1,8 +1,8 @@
 ---
-import CaseStudyCard from '../../components/CaseStudyCard.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
 import Layout from '../../layouts/Layout.astro';
 
-const caseStudies: CaseStudy[] = [
+const projects: Project[] = [
     {
         title: 'AtHome Lite',
         description: 'foo',
@@ -32,12 +32,12 @@ const caseStudies: CaseStudy[] = [
 ]
 ---
 
-<Layout title="Brendan Bax | Case Studies">
+<Layout title="Brendan Bax | Projects">
     <main class="text-white">
         <ul>
-            {caseStudies.map((c, i) => (
+            {projects.map((c, i) => (
                 <li>
-                    <CaseStudyCard case={c} index={i} />
+                    <ProjectCard project={c} index={i} />
                 </li>
             ))}
           </ul>

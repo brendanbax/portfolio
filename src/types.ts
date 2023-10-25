@@ -1,4 +1,4 @@
-type CaseStudy = {
+type Project = {
     title: string,
     description: string,
     cover: string,
