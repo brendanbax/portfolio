@@ -1,7 +1,7 @@
 ---
-import Logo from '../components/Logo.astro';
-import IconDribbble from '../components/IconDribbble.astro';
-import IconLinkedIn from '../components/IconLinkedIn.astro';
+import Logo from '../components/Logo.astro'
+import IconDribbble from '../components/IconDribbble.astro'
+import IconLinkedIn from '../components/IconLinkedIn.astro'
 ---
 
 <html lang="en">
@@ -12,22 +12,27 @@ import IconLinkedIn from '../components/IconLinkedIn.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body class="p-6 flex flex-col items-center justify-center bg-topography bg-stone-800 bg-blend-multiply h-screen">
-		<div class="flex flex-col gap-y-6 rounded-xl bg-white shadow-2xl p-6">
+	<body class="flex h-screen flex-col items-center justify-center bg-stone-800 bg-topography p-6 bg-blend-multiply">
+		<div class="flex flex-col gap-y-6 rounded-xl bg-white p-6 shadow-2xl">
 			<div class="flex items-center gap-x-6">
-				<div class="flex items-center justify-center p-3 rounded-full border-amber-500 border-[6px] text-amber-500" >
-					<Logo class="block w-10 h-10" />
+				<div class="flex items-center justify-center rounded-full border-[6px] border-amber-500 p-3 text-amber-500">
+					<Logo class="block h-10 w-10" />
 				</div>
 				<div>
 					<h1 class="text-3xl font-bold uppercase text-stone-900">Brendan Bax</h1>
 					<p class="text-stone-700">Software design and development</p>
 				</div>
 			</div>
-			<div class="max-w-sm font-light leading-6 flex flex-col gap-y-3">
+			<div class="flex max-w-sm flex-col gap-y-3 font-light leading-6">
 				<p>I'm currently working a major overhaul for this site, moving from Nuxt/Vue to Astro/React.</p>
-				<p>While this happens feel free to review my design work on <a href="https://dribbble.com/brendanbax" target="_blank">Dribbble</a>, or connect with me on <a href="https://www.linkedin.com/in/brendanbax" target="_blank">LinkedIn</a>.</p>
+				<p>
+					While this happens feel free to review my design work on <a href="https://dribbble.com/brendanbax" target="_blank">Dribbble</a>, or connect with me on <a
+						href="https://www.linkedin.com/in/brendanbax"
+						target="_blank">LinkedIn</a
+					>.
+				</p>
 			</div>
-			<div class="flex justify-center items-center gap-x-6">
+			<div class="flex items-center justify-center gap-x-6">
 				<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
 					<IconDribbble class="w-6" />
 					<span>Dribbble</span>
@@ -43,6 +48,6 @@ import IconLinkedIn from '../components/IconLinkedIn.astro';
 
 <style>
 	.home-link {
-		@apply p-3 flex gap-x-4 rounded-lg text-amber-500 bg-white hover:bg-amber-50 focus:bg-amber-50 hover:shadow focus:shadow transition-all;
+		@apply flex gap-x-4 rounded-lg bg-white p-3 text-amber-500 transition-all hover:bg-amber-50 hover:shadow focus:bg-amber-50 focus:shadow;
 	}
 </style>
