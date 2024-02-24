@@ -1,5 +1,7 @@
 ---
-
+import Logo from '../components/Logo.astro';
+import IconDribbble from '../components/IconDribbble.astro';
+import IconLinkedIn from '../components/IconLinkedIn.astro';
 ---
 
 <html lang="en">
@@ -10,7 +12,37 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="p-6 flex flex-col items-center justify-center bg-topography bg-stone-800 bg-blend-multiply h-screen">
+		<div class="flex flex-col gap-y-6 rounded-xl bg-white shadow-2xl p-6">
+			<div class="flex items-center gap-x-6">
+				<div class="flex items-center justify-center p-3 rounded-full border-amber-500 border-[6px] text-amber-500" >
+					<Logo class="block w-10 h-10" />
+				</div>
+				<div>
+					<h1 class="text-3xl font-bold uppercase text-stone-900">Brendan Bax</h1>
+					<p class="text-stone-700">Software design and development</p>
+				</div>
+			</div>
+			<div class="max-w-sm font-light leading-6 flex flex-col gap-y-3">
+				<p>I'm currently working a major overhaul for this site, moving from Nuxt/Vue to Astro/React.</p>
+				<p>While this happens feel free to review my design work on <a href="https://dribbble.com/brendanbax" target="_blank">Dribbble</a>, or connect with me on <a href="https://www.linkedin.com/in/brendanbax" target="_blank">LinkedIn</a>.</p>
+			</div>
+			<div class="flex justify-center items-center gap-x-6">
+				<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
+					<IconDribbble class="w-6" />
+					<span>Dribbble</span>
+				</a>
+				<a href="https://www.linkedin.com/in/brendanbax" target="_blank" class="home-link">
+					<IconLinkedIn class="w-6" />
+					<span>LinkedIn</span>
+				</a>
+			</div>
+		</div>
 	</body>
 </html>
+
+<style>
+	.home-link {
+		@apply p-3 flex gap-x-4 rounded-lg text-amber-500 bg-white hover:bg-amber-50 focus:bg-amber-50 hover:shadow focus:shadow transition-all;
+	}
+</style>
