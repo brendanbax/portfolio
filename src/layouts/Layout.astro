@@ -1,0 +1,19 @@
+---
+const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
+// TODO: set the UI theme here...
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter ? frontmatter.title : title}</title>
+	</head>
+	<body class="text-default bg-page antialiased">
+		<!-- TODO: navigation -->
+		<slot />
+		<!-- TODO: footer -->
+	</body>
+</html>

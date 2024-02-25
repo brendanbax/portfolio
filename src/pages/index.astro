@@ -1,18 +1,12 @@
 ---
+import Layout from '../layouts/Layout.astro'
 import Logo from '../components/Logo.astro'
 import IconDribbble from '../components/IconDribbble.astro'
 import IconLinkedIn from '../components/IconLinkedIn.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body class="flex h-screen flex-col items-center justify-center bg-stone-800 bg-topography p-6 bg-blend-multiply">
+<Layout title="Home">
+	<div class="flex h-screen flex-col items-center justify-center bg-stone-800 bg-topography p-6 bg-blend-multiply">
 		<div class="flex flex-col gap-y-6 rounded-xl bg-white p-6 shadow-2xl">
 			<div class="flex items-center gap-x-6">
 				<div class="flex items-center justify-center rounded-full border-[6px] border-amber-500 p-3 text-amber-500">
@@ -43,8 +37,8 @@ import IconLinkedIn from '../components/IconLinkedIn.astro'
 				</a>
 			</div>
 		</div>
-	</body>
-</html>
+	</div>
+</Layout>
 
 <style>
 	.home-link {
