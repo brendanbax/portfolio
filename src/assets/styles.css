@@ -25,7 +25,7 @@
   background-color: darkorange;
 }
 
-.dark {
+html.dark {
   --color-primary: rgb(30 64 175);
   --color-secondary: rgb(30 58 138);
   --color-accent: rgb(109 40 217);

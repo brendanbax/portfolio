@@ -4,11 +4,11 @@ import '@fontsource-variable/inter'
 
 import '../assets/styles.css'
 const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
-// TODO: set theme outside of frontmatter in dedicated <script> tag
-// https://github.com/onwidget/astrowind/blob/2df6a35a48137c69042c1c30b92e057818c3f586/src/components/common/ApplyColorMode.astro
+
+import ThemeButton from '../components/ThemeButton.astro'
 ---
 
-<html lang="en">
+<html lang="en" class="bg-page">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -16,9 +16,15 @@ const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file 
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter ? frontmatter.title : title}</title>
 	</head>
-	<body class="text-default bg-page antialiased">
+	<body class="text-default bg-page flex min-h-screen flex-col antialiased">
 		<!-- TODO: navigation -->
-		<slot />
+		<nav>
+			<ThemeButton />
+		</nav>
+		<div class="flex flex-grow flex-col">
+			<slot />
+		</div>
 		<!-- TODO: footer -->
+		<footer></footer>
 	</body>
 </html>
