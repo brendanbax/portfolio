@@ -1,0 +1,43 @@
+---
+import Layout from './Layout.astro'
+
+export type Changelog = {
+	date: string
+	title: string
+	description: string
+	changes: [string]
+}
+
+const { frontmatter } = Astro.props
+const sortedChanges = frontmatter.changelog.sort((a: Changelog, b: Changelog) => {
+	if (a.date > b.date) return -1
+	if (a.date < b.date) return 1
+	return 0
+})
+---
+
+<Layout title="Changelog">
+	<div class="mx-auto max-w-prose">
+		<h1 class="mb-4 text-2xl font-semibold">Changelog</h1>
+		<div class="flex flex-col gap-y-6">
+			{
+				sortedChanges.map((c: Changelog) => {
+					return (
+						<div class="rounded-lg p-6 shadow-lg">
+							<h2 class="mb-4 font-bold text-stone-800">
+								<span class="mr-1">{c.date}</span>
+								<span>{c.title}</span>
+							</h2>
+							<p class="text-light mb-4 leading-6 text-stone-600">{c.description}</p>
+							<ul class="list-disc pl-6 text-sm leading-6 text-stone-600">
+								{c.changes.map((cc: string) => (
+									<li>{cc}</li>
+								))}
+							</ul>
+						</div>
+					)
+				})
+			}
+		</div>
+	</div>
+</Layout>
