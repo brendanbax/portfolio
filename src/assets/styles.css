@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Core theme */
+/* TODO: Theme these colors using TW values? */
+:root {
+  --font-brand: 'Aleo Variable';
+  --font-sans: 'Inter Variable';
+  --font-serif: var(--font-brand);
+  --font-heading: var(--font-brand);
+
+  --color-primary: rgb(30 64 175);
+  --color-secondary: rgb(30 58 138);
+  --color-accent: rgb(109 40 217);
+
+  --color-text-heading: rgb(0 0 0);
+  --color-text-default: rgb(16 16 16);
+  --color-text-muted: rgb(16 16 16 / 66%);
+  --color-bg-page: rgb(255 255 255);
+
+  --color-bg-page-dark: rgb(3 6 32);
+}
+:root::selection {
+  background-color: darkorange;
+}
+
+.dark {
+  --color-primary: rgb(30 64 175);
+  --color-secondary: rgb(30 58 138);
+  --color-accent: rgb(109 40 217);
+
+  --color-text-heading: rgb(0 0 0);
+  --color-text-default: rgb(229 236 246);
+  --color-text-muted: rgb(229 236 246 / 66%);
+  --color-bg-page: var(--color-bg-page-dark);
+}
+
+.dark::selection {
+  background-color: black;
+  color: snow;
+}
+
+@layer utilities {
+  .bg-page {
+    background-color: var(--color-bg-page);
+  }
+  .bg-dark {
+    background-color: var(--color-bg-page-dark);
+  }
+  .bg-light {
+    background-color: var(--color-bg-page);
+  }
+  .text-page {
+    color: var(--color-text-page);
+  }
+  .text-muted {
+    color: var(--color-text-muted);
+  }
+}
+
+@layer components {
+    /* Things like buttons, links, etc */
+    /* You can define a style like .btn then @apply btn ... with other classnames in TW */
+}
