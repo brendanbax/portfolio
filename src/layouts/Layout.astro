@@ -1,6 +1,11 @@
 ---
+import '@fontsource-variable/aleo'
+import '@fontsource-variable/inter'
+
+import '../assets/styles.css'
 const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
-// TODO: set the UI theme here...
+// TODO: set theme outside of frontmatter in dedicated <script> tag
+// https://github.com/onwidget/astrowind/blob/2df6a35a48137c69042c1c30b92e057818c3f586/src/components/common/ApplyColorMode.astro
 ---
 
 <html lang="en">
