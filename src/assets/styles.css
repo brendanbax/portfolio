@@ -3,37 +3,43 @@
 @tailwind utilities;
 
 /* Core theme */
-/* TODO: Theme these colors using TW values? */
 :root {
+  @apply transition-colors;
   --font-brand: 'Aleo Variable';
-  --font-sans: 'Inter Variable';
   --font-serif: var(--font-brand);
   --font-heading: var(--font-brand);
+  --font-sans: 'Inter Variable';
+  
+  --color-primary: theme(colors.ink);
+  --color-secondary: theme(colors.slate);
+  --color-accent: theme(colors.ghost);
+  --color-brand: theme(colors.bolt);
+  --color-default: theme(colors.ink);
+  --color-muted: theme(colors.slate);
 
-  --color-primary: rgb(30 64 175);
-  --color-secondary: rgb(30 58 138);
-  --color-accent: rgb(109 40 217);
+  --color-text-heading: theme(colors.primary);
+  --color-text-default: theme(colors.primary);
+  --color-text-muted: theme(colors.secondary);
+  --color-bg-page: theme(colors.white);
 
-  --color-text-heading: rgb(0 0 0);
-  --color-text-default: rgb(16 16 16);
-  --color-text-muted: rgb(16 16 16 / 66%);
-  --color-bg-page: rgb(255 255 255);
-
-  --color-bg-page-dark: rgb(3 6 32);
+  --color-bg-page-dark: theme(colors.primary);
 }
 :root::selection {
   background-color: darkorange;
 }
 
 html.dark {
-  --color-primary: rgb(30 64 175);
-  --color-secondary: rgb(30 58 138);
-  --color-accent: rgb(109 40 217);
+  @apply transition-colors;
+  --color-primary: theme(colors.white);
+  --color-secondary: theme(colors.phantom);
+  --color-accent: theme(colors.ghost);
+  --color-default: theme(colors.white);
+  --color-muted: theme(colors.spectre);
 
-  --color-text-heading: rgb(0 0 0);
-  --color-text-default: rgb(229 236 246);
-  --color-text-muted: rgb(229 236 246 / 66%);
-  --color-bg-page: var(--color-bg-page-dark);
+  --color-text-heading: theme(colors.primary);
+  --color-text-default: theme(colors.primary);
+  --color-text-muted: theme(colors.muted);
+  --color-bg-page: theme(colors.ink);
 }
 
 .dark::selection {

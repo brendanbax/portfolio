@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
 
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -10,16 +9,25 @@ export default {
 				topography: "url('./topography.svg')"
 			},
 			colors: {
+				bolt: '#FFA903',
+				ink: '#172120',
+				slate: '#253231',
+				ghost: '#384745',
+				phantom: '#687775',
+				spectre: '#98A7A5',
+				white: '#FFFFFF',
 				primary: 'var(--color-primary)',
 				secondary: 'var(--color-secondary)',
 				accent: 'var(--color-accent)',
-				default: 'var(--color-text-default)',
-				muted: 'var(--color-text-muted)'
+				brand: 'var(--color-brand)',
+				default: 'var(--color-default)',
+				muted: 'var(--color-muted)'
 			},
 			fontFamily: {
-				sans: ['var(--font-sans)', ...defaultTheme.fontFamily.sans],
-				serif: ['var(--font-serif)', ...defaultTheme.fontFamily.serif],
-				heading: ['var(--font-heading)', ...defaultTheme.fontFamily.sans]
+				brand: 'var(--font-brand)',
+				sans: 'var(--font-sans)',
+				serif: 'var(--font-serif)',
+				heading: 'var(--font-serif)'
 			}
 		}
 	},
