@@ -24,12 +24,12 @@ const sortedChanges = frontmatter.changelog.sort((a: Changelog, b: Changelog) =>
 				sortedChanges.map((c: Changelog) => {
 					return (
 						<div class="rounded-lg p-6 shadow-lg">
-							<h2 class="mb-4 font-bold text-stone-800">
+							<h2 class="text-primary mb-4 font-bold">
 								<span class="mr-1">{c.date}</span>
 								<span>{c.title}</span>
 							</h2>
-							<p class="text-light mb-4 leading-6 text-stone-600">{c.description}</p>
-							<ul class="list-disc pl-6 text-sm leading-6 text-stone-600">
+							<p class="text-light text-muted mb-4 leading-6">{c.description}</p>
+							<ul class="text-secondary list-disc pl-6 text-sm leading-6">
 								{c.changes.map((cc: string) => (
 									<li>{cc}</li>
 								))}

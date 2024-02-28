@@ -1,9 +1,14 @@
 ---
+import '@fontsource-variable/aleo'
+import '@fontsource-variable/inter'
+
+import '../assets/styles.css'
 const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
-// TODO: set the UI theme here...
+
+import ThemeButton from '../components/ThemeButton.astro'
 ---
 
-<html lang="en">
+<html lang="en" class="bg-page">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -11,9 +16,19 @@ const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file 
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter ? frontmatter.title : title}</title>
 	</head>
-	<body class="text-default bg-page antialiased">
+	<body class="text-default flex min-h-screen flex-col antialiased">
 		<!-- TODO: navigation -->
-		<slot />
+		<nav class="flex items-center justify-between px-4 py-2">
+			<a href="/">Home</a>
+			<ThemeButton />
+		</nav>
+		<div class="flex flex-grow flex-col">
+			<slot />
+		</div>
 		<!-- TODO: footer -->
+		<footer class="text-muted flex items-center justify-between px-4 py-2">
+			<span>&copy; Brendan Bax 2024</span>
+			<a href="/changelog">Changelog</a>
+		</footer>
 	</body>
 </html>
