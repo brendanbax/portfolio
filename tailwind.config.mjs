@@ -6,7 +6,7 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				topography: "url('./topography.svg')"
+				topography: "url('/topography.svg')"
 			},
 			colors: {
 				bolt: '#FFA903',
