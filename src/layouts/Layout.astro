@@ -5,7 +5,7 @@ import '@fontsource-variable/inter'
 import '../assets/styles.css'
 const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
 
-import ThemeButton from '../components/ThemeButton.astro'
+import NavBar from '../components/NavBar.astro'
 ---
 
 <html lang="en" class="bg-page">
@@ -16,17 +16,13 @@ import ThemeButton from '../components/ThemeButton.astro'
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter ? frontmatter.title : title}</title>
 	</head>
-	<body class="text-default flex min-h-screen flex-col antialiased">
-		<!-- TODO: navigation -->
-		<nav class="flex items-center justify-between px-4 py-2">
-			<a href="/">Home</a>
-			<ThemeButton />
-		</nav>
+	<body class="flex min-h-dvh flex-col text-default antialiased">
+		<NavBar />
 		<div class="flex flex-grow flex-col">
 			<slot />
 		</div>
 		<!-- TODO: footer -->
-		<footer class="text-muted flex items-center justify-between px-4 py-2">
+		<footer class="flex items-center justify-between px-4 py-2 text-muted">
 			<span>&copy; Brendan Bax 2024</span>
 			<a href="/changelog">Changelog</a>
 		</footer>
