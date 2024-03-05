@@ -15,7 +15,7 @@
   --color-accent: theme(colors.ghost);
   --color-brand: theme(colors.bolt);
   --color-default: theme(colors.ink);
-  --color-muted: theme(colors.slate);
+  --color-muted: theme(colors.spectre);
 
   --color-text-heading: theme(colors.primary);
   --color-text-default: theme(colors.primary);

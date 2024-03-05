@@ -6,6 +6,7 @@ import '../assets/styles.css'
 const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
 
 import NavBar from '../components/NavBar.astro'
+import FootBar from '../components/FootBar.astro'
 ---
 
 <html lang="en" class="bg-page">
@@ -16,15 +17,11 @@ import NavBar from '../components/NavBar.astro'
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter ? frontmatter.title : title}</title>
 	</head>
-	<body class="flex min-h-dvh flex-col text-default antialiased">
+	<body class="flex max-h-dvh min-h-dvh flex-col text-default antialiased">
 		<NavBar />
-		<div class="flex flex-grow flex-col">
+		<div class="flex flex-grow flex-col overflow-y-auto">
 			<slot />
+			<FootBar />
 		</div>
-		<!-- TODO: footer -->
-		<footer class="flex items-center justify-between px-4 py-2 text-muted">
-			<span>&copy; Brendan Bax 2024</span>
-			<a href="/changelog">Changelog</a>
-		</footer>
 	</body>
 </html>

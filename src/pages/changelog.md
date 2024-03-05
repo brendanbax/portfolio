@@ -25,12 +25,13 @@ changelog: [
 	},
 	{
 		date: '2024/03/04',
-		title: 'Navbar update',
-		description: 'Updates the navbar to be a dedicated component with Tailwind style logic for theme toggle.',
+		title: 'Layout update',
+		description: 'Updates the nav and footers to be a dedicated components.',
 		changes: [
 			'Set page height to be dynamic',
 			'Style theme toggle with Tailwind classes',
 			'Add logo to navbar, make nav its own component',
+			'Add dedicated footer component with links to source'
 		]
 	},
 ]
