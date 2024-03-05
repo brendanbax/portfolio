@@ -26,7 +26,7 @@ changelog: [
 	{
 		date: '2024/03/04',
 		title: 'Layout update',
-		description: 'Updates the nav and footers to be a dedicated components.',
+		description: 'Updated the layout for a fixed navbar. The nav and footer are now dedicated components.',
 		changes: [
 			'Set page height to be dynamic',
 			'Style theme toggle with Tailwind classes',
