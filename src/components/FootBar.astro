@@ -1,0 +1,20 @@
+---
+const computedDate = (() => {
+	const now = new Date()
+	return now.getFullYear()
+})()
+---
+
+<footer class="flex items-center justify-between p-4 text-xs text-muted">
+	<span>&copy; Brendan Bax {computedDate}</span>
+	<div class="flex items-center gap-x-4">
+		<a class="footer-link" href="/changelog">Changelog</a>
+		<a class="footer-link" href="https://github.com/brendanbax/portfolio" target="_blank">View Source</a>
+	</div>
+</footer>
+
+<style>
+	.footer-link {
+		@apply border-b border-b-accent transition-colors hover:border-b-brand hover:text-default;
+	}
+</style>
