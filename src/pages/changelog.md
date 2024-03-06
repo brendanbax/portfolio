@@ -34,5 +34,15 @@ changelog: [
 			'Add dedicated footer component with links to source'
 		]
 	},
+	{
+		date: '2024/03/05',
+		title: 'Design system documentation',
+		description: 'Created a dedicated design page to document the evolving type scale and styles.',
+		changes: [
+			'Add design route, link in footer',
+			'Build semantic CSS classes for typography',
+			'Build basic component styles for cards and buttons'
+		]
+	},
 ]
 ---
