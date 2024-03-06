@@ -14,7 +14,7 @@ export default {
 				slate: '#253231',
 				ghost: '#384745',
 				phantom: '#687775',
-				spectre: '#98A7A5',
+				spectre: '#AAB7B5',
 				white: '#FFFFFF',
 				primary: 'var(--color-primary)',
 				secondary: 'var(--color-secondary)',
