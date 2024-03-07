@@ -17,19 +17,19 @@ const sortedChanges = frontmatter.changelog.sort((a: Changelog, b: Changelog) =>
 ---
 
 <Layout title="Changelog">
-	<div class="mx-auto max-w-prose pt-6">
+	<div class="mx-auto max-w-prose px-6 pt-6">
 		<h1 class="mb-4 text-2xl font-semibold">Changelog</h1>
 		<div class="flex flex-col gap-y-6">
 			{
 				sortedChanges.map((c: Changelog) => {
 					return (
-						<div class="rounded-lg p-6 shadow-lg">
-							<h2 class="mb-4 font-bold text-primary">
+						<div class="card">
+							<h2 class="card-title">
 								<span class="mr-1">{c.date}</span>
 								<span>{c.title}</span>
 							</h2>
-							<p class="text-light mb-4 leading-6 text-muted">{c.description}</p>
-							<ul class="list-disc pl-6 text-sm leading-6 text-secondary">
+							<p class="card-body">{c.description}</p>
+							<ul class="card-body list-disc pl-6 text-muted">
 								{c.changes.map((cc: string) => (
 									<li>{cc}</li>
 								))}

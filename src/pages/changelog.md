@@ -44,5 +44,15 @@ changelog: [
 			'Build basic component styles for cards and buttons'
 		]
 	},
+	{
+		date: '2024/03/06',
+		title: 'Minor style updates',
+		description: 'Applied container styles to changelog and added some padding for mobile users.',
+		changes: [
+			'Add WIP link styles to navigation',
+			'Add padding to content pages',
+			'Apply card styles to changelog cards'
+		]
+	},
 ]
 ---
