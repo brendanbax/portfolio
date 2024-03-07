@@ -144,9 +144,8 @@ pre {
 code {
   @apply text-sm leading-5 font-mono;
 }
-/* TODO: Convert this to a grouped element with some more interesting styles */
 .navigation-link {
-  @apply text-sm leading-5 font-medium transition-colors hover:text-brand;
+  @apply text-sm leading-5 font-medium transition-all pb-1 px-1 border-b-2 border-transparent hover:border-brand focus:border-brand opacity-60 hover:opacity-100 focus:opacity-100;
 }
 .inline-copy-link {
   @apply text-base leading-6 font-semibold underline underline-offset-2 transition-colors max-w-fit cursor-pointer hover:text-brand;
