@@ -81,7 +81,7 @@ html.dark {
   }
   /* Actions */
   .button {
-    @apply px-6 py-2 rounded-lg text-center w-full font-medium text-ink;
+    @apply px-6 py-2 rounded-lg text-center w-full font-medium text-ink overflow-hidden overflow-ellipsis text-nowrap;
   }
   button.primary {
     @apply button bg-gradient-to-t from-brand to-amber-300 via-amber-400;
