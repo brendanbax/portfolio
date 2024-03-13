@@ -54,5 +54,15 @@ changelog: [
 			'Apply card styles to changelog cards'
 		]
 	},
+	{
+		date: '2024/03/12',
+		title: 'Responsive style updates',
+		description: 'Applied design system styles to changelog, improved responsive layout for design page.',
+		changes: [
+			'Add xs breakpoint to Tailwind config',
+			'Add responsive styles to 2 col grid on design page',
+			'Apply type scale to changelog cards and page header'
+		]
+	},
 ]
 ---
