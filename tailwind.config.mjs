@@ -28,6 +28,9 @@ export default {
 				sans: 'var(--font-sans)',
 				serif: 'var(--font-serif)',
 				heading: 'var(--font-serif)'
+			},
+			screens: {
+				xs: '480px'
 			}
 		}
 	},
