@@ -64,5 +64,14 @@ changelog: [
 			'Apply type scale to changelog cards and page header'
 		]
 	},
+	{
+		date: '2024/03/14',
+		title: 'Codepen link',
+		description: 'Added a link to Codepen to the main CTA.',
+		changes: [
+			'Add Codepen logo as SVG',
+			'Add link to Codepen profile',
+		]
+	},
 ]
 ---
