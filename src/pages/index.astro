@@ -1,35 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Logo from '../components/Logo.astro'
+import IconCodepen from '../components/IconCodepen.astro'
 import IconDribbble from '../components/IconDribbble.astro'
 import IconLinkedIn from '../components/IconLinkedIn.astro'
 ---
 
 <Layout title="Home">
-	<div class="flex flex-grow flex-col items-center justify-center bg-topography px-6 bg-blend-multiply">
-		<div class="bg-page flex flex-col gap-y-6 rounded-xl p-6 shadow-2xl">
-			<div class="flex items-center gap-x-6">
-				<div class="flex items-center justify-center rounded-full border-[6px] border-amber-500 p-3 text-amber-500">
-					<Logo class="block h-10 w-10" />
-				</div>
-				<div>
-					<h1 class="text-page font-brand text-3xl font-bold uppercase">Brendan Bax</h1>
-					<p class="text-muted">Software design and development</p>
-				</div>
-			</div>
-			<div class="flex max-w-sm flex-col gap-y-3 font-light leading-6">
-				<p>I'm currently working a major overhaul for this site, moving from Nuxt/Vue to Astro/React.</p>
-				<p>
-					While this happens feel free to review my design work on <a href="https://dribbble.com/brendanbax" target="_blank">Dribbble</a>, or connect with me on <a
-						href="https://www.linkedin.com/in/brendanbax"
-						target="_blank">LinkedIn</a
-					>.
-				</p>
+	<div class="hero-container flex flex-grow flex-col items-center justify-center px-6">
+		<div class="bg-page flex max-w-prose flex-col gap-y-6 rounded-xl p-6 shadow-2xl">
+			<div>
+				<p class="subsection-heading uppercase text-muted">Brendan Bax</p>
+				<h1 class="page-heading uppercase">App Design & Development</h1>
+				<p class="body-copy">I help companies build innovative software experiences through lean research, iterative design, and agile software development.</p>
 			</div>
 			<div class="flex items-center justify-center gap-x-6">
 				<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
 					<IconDribbble class="w-6" />
 					<span>Dribbble</span>
+				</a>
+				<a href="https://codepen.io/brendanbax" target="_blank" class="home-link">
+					<IconCodepen class="w-6" />
+					<span>Codepen</span>
 				</a>
 				<a href="https://www.linkedin.com/in/brendanbax" target="_blank" class="home-link">
 					<IconLinkedIn class="w-6" />
@@ -41,6 +32,9 @@ import IconLinkedIn from '../components/IconLinkedIn.astro'
 </Layout>
 
 <style>
+	.hero-container {
+		background-image: radial-gradient(circle at top right, theme(colors.zinc.800), theme(colors.zinc.900));
+	}
 	.home-link {
 		@apply flex gap-x-4 rounded-lg p-3 text-amber-500 transition-all hover:bg-amber-50 hover:shadow focus:bg-amber-50 focus:shadow;
 	}
