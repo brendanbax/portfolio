@@ -17,7 +17,8 @@ import Layout from '../layouts/Layout.astro'
 		<div class="mx-auto max-w-prose">
 			<h2 class="section-divider">Font Family</h2>
 			<p class="body-copy">
-				The branded font family is Aleo, available via <a href="https://fonts.google.com/specimen/Aleo" target="_blank" class="inline-copy-link">Google Fonts</a
+				The branded font family is Lexend, available via <a href="https://fonts.google.com/specimen/Lexend" target="_blank" class="inline-copy-link"
+					>Google Fonts</a
 				>.
 			</p>
 			<section class="body-copy font-brand">
@@ -34,8 +35,8 @@ import Layout from '../layouts/Layout.astro'
 				A collection of type styles for various applications in this project. The goal of these type styles is to create a strong content hierarchy that blends
 				personality with readability.
 			</p>
-			<section class="xs:gap-y-4 flex flex-col gap-y-12">
-				<div class="xs:grid-cols-3 mb-4 grid grid-cols-1 p-4 text-center">
+			<section class="flex flex-col gap-y-12 xs:gap-y-4">
+				<div class="mb-4 grid grid-cols-1 p-4 text-center xs:grid-cols-3">
 					<a href="" class="navigation-link active">Navigation link</a>
 					<a href="" class="navigation-link">Navigation link</a>
 					<a href="" class="navigation-link">Navigation link</a>
@@ -139,48 +140,9 @@ import Layout from '../layouts/Layout.astro'
 	</section>
 	<section>
 		<div class="mx-auto max-w-prose">
-			<h2 class="section-divider">Colors</h2>
-			<p>
-				Colors are used to emphasize content and create visual interest on the page. Colors are applied as a spectrum to account for user theme preferences.
-			</p>
-			<section class="grid grid-cols-4 grid-rows-2 gap-x-4">
-				<!-- TODO: Color swatch chip with click to copy hex... use a const for colors up top -->
-				<p class="text-center">Primary</p>
-				<p class="text-center">Secondary</p>
-				<p class="text-center">Accent</p>
-				<p class="text-center">Brand</p>
-				<div class="h-12 w-full bg-primary"></div>
-				<div class="h-12 w-full bg-secondary"></div>
-				<div class="h-12 w-full bg-accent"></div>
-				<div class="h-12 w-full bg-brand"></div>
-			</section>
-			<section>
-				<div class="swatch h-12 w-full bg-ink">
-					<p>Ink</p>
-				</div>
-				<div class="swatch h-12 w-full bg-slate">
-					<p>Slate</p>
-				</div>
-				<div class="swatch h-12 w-full bg-ghost">
-					<p>Ghost</p>
-				</div>
-				<div class="swatch h-12 w-full bg-phantom">
-					<p>Phantom</p>
-				</div>
-				<div class="swatch h-12 w-full bg-spectre">
-					<p>Spectre</p>
-				</div>
-				<div class="swatch h-12 w-full bg-bolt">
-					<p>Bolt</p>
-				</div>
-			</section>
-		</div>
-	</section>
-	<section>
-		<div class="mx-auto max-w-prose">
 			<h2 class="section-divider">Containers</h2>
 			<p>Container styles define how elements are grouped together into a chunks using outlines and dividers.</p>
-			<section class="xs:grid-cols-2 grid grid-cols-1 gap-4">
+			<section class="grid grid-cols-1 gap-4 xs:grid-cols-2">
 				<div class="card">
 					<p class="card-title">Card containers</p>
 					<p class="card-body">Cards provide a pleasant container to scope a widget or succinct piece of content.</p>
@@ -203,7 +165,7 @@ import Layout from '../layouts/Layout.astro'
 			<section>
 				<h3 class="section-divider">Actions</h3>
 				<p class="body-copy">Use actions to clearly indicate desired user input.</p>
-				<div class="xs:grid-cols-3 grid grid-cols-1 gap-4">
+				<div class="grid grid-cols-1 gap-4 xs:grid-cols-3">
 					<button class="primary">Primary</button>
 					<button class="secondary">Secondary</button>
 					<button class="tertiary">Tertiary</button>
@@ -234,10 +196,10 @@ import Layout from '../layouts/Layout.astro'
 		padding: 1rem 0;
 	}
 	.style-grid-block {
-		@apply xs:grid-cols-2 xs:divide-none mb-6 grid grid-cols-1 divide-y divide-phantom dark:divide-ghost;
+		@apply mb-6 grid grid-cols-1 divide-y divide-zinc-700 dark:divide-zinc-500 xs:grid-cols-2 xs:divide-none;
 	}
 	.style-grid-block > *:last-child {
-		@apply xs:mt-0 xs:pt-0 mt-8 pt-8;
+		@apply mt-8 pt-8 xs:mt-0 xs:pt-0;
 	}
 	.swatch {
 		@apply flex items-center justify-center text-white;
