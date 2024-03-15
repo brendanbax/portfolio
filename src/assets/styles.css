@@ -5,17 +5,17 @@
 /* Core theme */
 :root {
   @apply transition-colors;
-  --font-brand: 'Aleo Variable';
+  --font-brand: 'Lexend Variable';
   --font-serif: var(--font-brand);
   --font-heading: var(--font-brand);
-  --font-sans: 'Inter Variable';
+  --font-sans: 'Lexend Variable';
   
-  --color-primary: theme(colors.ink);
-  --color-secondary: theme(colors.phantom);
-  --color-accent: theme(colors.spectre);
+  --color-primary: theme(colors.zinc.900);
+  --color-secondary: theme(colors.zinc.700);
+  --color-accent: theme(colors.zinc.500);
   --color-brand: theme(colors.bolt);
-  --color-default: theme(colors.ink);
-  --color-muted: theme(colors.spectre);
+  --color-default: theme(colors.zinc.900);
+  --color-muted: theme(colors.zinc.300);
 
   --color-text-heading: theme(colors.primary);
   --color-text-default: theme(colors.primary);
@@ -31,15 +31,15 @@
 html.dark {
   @apply transition-colors;
   --color-primary: theme(colors.white);
-  --color-secondary: theme(colors.phantom);
-  --color-accent: theme(colors.slate);
+  --color-secondary: theme(colors.zinc.500);
+  --color-accent: theme(colors.zinc.700);
   --color-default: theme(colors.white);
-  --color-muted: theme(colors.spectre);
+  --color-muted: theme(colors.zinc.300);
 
   --color-text-heading: theme(colors.primary);
   --color-text-default: theme(colors.primary);
   --color-text-muted: theme(colors.muted);
-  --color-bg-page: theme(colors.ink);
+  --color-bg-page: theme(colors.zinc.900);
 }
 
 .dark::selection {
@@ -68,20 +68,20 @@ html.dark {
 @layer components {
   /* Containers */
   .card {
-    @apply bg-spectre bg-opacity-10 dark:bg-accent rounded-2xl p-4 shadow-md;
+    @apply bg-zinc-300 bg-opacity-10 dark:bg-accent rounded-2xl p-4 shadow-md;
   }
   .card.interactive {
-    @apply hover:bg-phantom hover:bg-opacity-20 dark:hover:bg-ghost hover:shadow-lg transition-all;
+    @apply hover:bg-zinc-500 hover:bg-opacity-20 dark:hover:bg-zinc-700 hover:shadow-lg transition-all;
   }
   .card-secondary {
-    @apply card !bg-inherit border-2 border-spectre dark:border-accent;
+    @apply card !bg-inherit border-2 border-zinc-300 dark:border-accent;
   }
   .card-secondary.interactive {
     @apply hover:border-brand transition-all;
   }
   /* Actions */
   .button {
-    @apply px-6 py-2 rounded-lg text-center w-full font-medium text-ink overflow-hidden overflow-ellipsis text-nowrap;
+    @apply px-6 py-2 rounded-lg text-center w-full font-medium text-zinc-900 overflow-hidden overflow-ellipsis text-nowrap;
   }
   button.primary {
     @apply button bg-gradient-to-t from-brand to-amber-300 via-amber-400;
@@ -139,7 +139,7 @@ strong, b { font-weight: bolder; }
   @apply text-sm leading-6 font-normal mb-3 last:mb-0;
 }
 pre {
-  @apply p-4 rounded-lg bg-phantom text-white font-mono;
+  @apply p-4 rounded-lg bg-zinc-500 text-white font-mono;
 }
 code {
   @apply text-sm leading-5 font-mono;
