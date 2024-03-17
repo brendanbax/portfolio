@@ -38,8 +38,11 @@ import IconLinkedIn from '../components/IconLinkedIn.astro'
 	</div>
 </Layout>
 
-<style>
+<style is:global>
 	.hero-container {
+		background-image: radial-gradient(circle at top right, theme(colors.white), theme(colors.gray.50));
+	}
+	.dark .hero-container {
 		background-image: radial-gradient(circle at top right, theme(colors.zinc.800), theme(colors.zinc.900));
 	}
 	.home-link {
