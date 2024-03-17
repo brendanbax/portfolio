@@ -9,7 +9,7 @@ import NavBar from '../components/NavBar.astro'
 import FootBar from '../components/FootBar.astro'
 ---
 
-<html lang="en" class="bg-page">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -17,7 +17,7 @@ import FootBar from '../components/FootBar.astro'
 		<meta name="generator" content={Astro.generator} />
 		<title>{frontmatter ? frontmatter.title : title}</title>
 	</head>
-	<body class="flex max-h-dvh min-h-dvh flex-col text-default antialiased">
+	<body class="flex max-h-dvh min-h-dvh flex-col antialiased">
 		<NavBar />
 		<div class="flex flex-grow flex-col overflow-y-auto">
 			<slot />
