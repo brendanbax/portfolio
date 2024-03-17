@@ -5,17 +5,16 @@ const computedDate = (() => {
 })()
 ---
 
-<footer class="mt-4 flex items-center justify-between px-6 py-4 text-xs text-muted">
+<footer class="bg-fill-muted flex items-center justify-between px-6 py-4 text-xs">
 	<span>&copy; Brendan Bax {computedDate}</span>
 	<div class="flex items-center gap-x-4">
 		<a class="footer-link" href="/changelog">Changelog</a>
 		<a class="footer-link" href="https://github.com/brendanbax/portfolio" target="_blank">View Source</a>
-		<a class="footer-link" href="/design">DZN</a>
 	</div>
 </footer>
 
 <style>
 	.footer-link {
-		@apply border-b border-b-accent transition-colors hover:border-b-brand hover:text-default;
+		@apply border-b-2 border-transparent transition-colors hover:border-accent;
 	}
 </style>
