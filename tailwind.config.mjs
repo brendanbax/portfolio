@@ -5,23 +5,17 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {
-			backgroundImage: {
-				topography: "url('/topography.svg')"
-			},
 			colors: {
-				bolt: '#FFA903',
-				primary: 'var(--color-primary)',
-				secondary: 'var(--color-secondary)',
-				accent: 'var(--color-accent)',
-				brand: 'var(--color-brand)',
-				default: 'var(--color-default)',
-				muted: 'var(--color-muted)'
+				'fg-muted': 'var(--text-muted)',
+				fg: 'var(--text-default)',
+				'fill-muted': 'var(--fill-muted)',
+				fill: 'var(--fill-default)',
+				'accent-muted': 'var(--accent-muted)',
+				accent: 'var(--accent-default)'
 			},
 			fontFamily: {
-				brand: 'var(--font-brand)',
-				sans: 'var(--font-sans)',
-				serif: 'var(--font-serif)',
-				heading: 'var(--font-serif)'
+				sans: 'Lexend Variable',
+				serif: 'Lexend Variable'
 			},
 			screens: {
 				xs: '480px'
