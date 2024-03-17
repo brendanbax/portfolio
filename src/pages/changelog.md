@@ -73,5 +73,16 @@ changelog: [
 			'Add link to Codepen profile',
 		]
 	},
+	{
+		date: '2024/03/17',
+		title: 'Design refactor',
+		description: 'Removed the design route and all the boilerplate component styles I built a week or two ago... Essentially these elements were defined for the sake of definition, but weren't going to be used. I have opted to build out styles as needed when composing varous elements across the site, vs a weighty library built up front.',
+		changes: [
+			'Distills theme to base and muted colors',
+			'Applies theme globally with bg and text styles',
+			'Removes design route',
+			'Removes all the CSS I wrote',
+		]
+	},
 ]
 ---
