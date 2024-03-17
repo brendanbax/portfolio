@@ -3,9 +3,11 @@ import ThemeButton from '../components/ThemeButton.astro'
 import Logo from './Logo.astro'
 ---
 
-<nav class="flex items-center justify-between border-b border-muted px-6 py-4 dark:border-accent">
-	<Logo class="h-6 w-6 text-default" />
+<nav class="flex items-center justify-between">
+	<div class="flex items-center bg-brand p-6">
+		<Logo class="h-6 w-6 text-slate" />
+	</div>
 	<!-- TODO: Convert this to a more interesting navigation element with animations and custom CSS -->
 	<a href="/" class="navigation-link">Home</a>
-	<ThemeButton class="h-6 w-6" />
+	<ThemeButton class="mr-6 h-6 w-6" />
 </nav>
