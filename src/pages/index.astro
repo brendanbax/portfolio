@@ -1,50 +1,8 @@
 ---
+import IndexHero from '../components/IndexHero.astro'
 import Layout from '../layouts/Layout.astro'
-import IconCodepen from '../components/IconCodepen.astro'
-import IconDribbble from '../components/IconDribbble.astro'
-import IconLinkedIn from '../components/IconLinkedIn.astro'
 ---
 
 <Layout title="Home">
-	<div class="flex flex-grow flex-col items-center justify-center px-6">
-		<div class="bg-fill flex max-w-prose flex-col gap-y-6 rounded-xl p-6 shadow-2xl">
-			<div>
-				<p class="text-lg font-medium uppercase tracking-widest opacity-75">Brendan Bax</p>
-				<h1 class="mb-6 text-5xl font-bold uppercase">
-					<span class="text-fg-muted">App Design</span>
-					<span class="text-accent">&amp;</span>
-					<span class="text-fg">Development</span>
-				</h1>
-				<p class="text-lg font-light leading-normal">
-					I build innovative software experiences through lean research, iterative design, and agile software development.
-				</p>
-			</div>
-			<div class="flex items-center gap-x-6">
-				<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
-					<IconDribbble class="w-6" />
-					<span>Dribbble</span>
-				</a>
-				<a href="https://codepen.io/brendanbax" target="_blank" class="home-link">
-					<IconCodepen class="w-6" />
-					<span>Codepen</span>
-				</a>
-				<a href="https://www.linkedin.com/in/brendanbax" target="_blank" class="home-link">
-					<IconLinkedIn class="w-6" />
-					<span>LinkedIn</span>
-				</a>
-			</div>
-		</div>
-	</div>
+	<IndexHero />
 </Layout>
-
-<style is:global>
-	.hero-container {
-		background-image: radial-gradient(circle at top right, theme(colors.white), theme(colors.gray.50));
-	}
-	.dark .hero-container {
-		background-image: radial-gradient(circle at top right, theme(colors.zinc.800), theme(colors.zinc.900));
-	}
-	.home-link {
-		@apply flex gap-x-4 rounded-lg p-3 text-accent transition-all;
-	}
-</style>

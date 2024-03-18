@@ -1,0 +1,87 @@
+---
+import IconCodepen from '../components/IconCodepen.astro'
+import IconDribbble from '../components/IconDribbble.astro'
+import IconLinkedIn from '../components/IconLinkedIn.astro'
+import Logo from './Logo.astro'
+
+const { class: className, ...rest } = Astro.props
+---
+
+<div class="relative flex flex-grow flex-col items-center justify-center bg-gradient-to-tr from-fill-muted to-fill px-6">
+	<Logo
+		pathLength="4"
+		class="animate-stroke absolute left-1/2 top-1/2 max-h-[75vh] max-w-lg -translate-x-1/2 -translate-y-1/2 transform fill-none stroke-fg-muted opacity-45 dark:opacity-30"
+	/>
+	<div class="relative z-10 my-6 flex w-full max-w-3xl flex-col gap-y-6">
+		<div>
+			<p class="text-base font-medium uppercase tracking-widest opacity-75 xs:text-lg">Brendan Bax</p>
+			<h1 class="mb-6 text-3xl font-bold uppercase xs:text-5xl">
+				<span class="text-fg-muted">App Design</span>
+				<span id="ampersand" class="relative z-0 text-accent">&amp;</span>
+				<span class="text-fg">Development</span>
+			</h1>
+			<p class="max-w-lg text-base font-light leading-normal xs:text-lg md:max-w-full">
+				I build innovative software experiences through lean research, iterative design, and agile software development.
+			</p>
+		</div>
+		<div class="mr-auto flex flex-col items-center gap-4 xs:flex-row md:gap-6">
+			<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
+				<IconDribbble class="w-4 sm:w-6" />
+				<span>Dribbble</span>
+			</a>
+			<a href="https://codepen.io/brendanbax" target="_blank" class="home-link">
+				<IconCodepen class="w-4 sm:w-6" />
+				<span>Codepen</span>
+			</a>
+			<a href="https://www.linkedin.com/in/brendanbax" target="_blank" class="home-link">
+				<IconLinkedIn class="w-4 sm:w-6" />
+				<span>LinkedIn</span>
+			</a>
+		</div>
+	</div>
+</div>
+
+<style>
+	.animate-stroke {
+		stroke-dasharray: 1;
+		stroke-dashoffset: 0;
+		animation: hash 45s linear reverse infinite;
+	}
+	@keyframes hash {
+		0% {
+			stroke-dashoffset: 4;
+		}
+		50% {
+			stroke-dashoffset: 8;
+		}
+		100% {
+			stroke-dashoffset: 12;
+		}
+	}
+	#ampersand::before {
+		@apply top-0 xs:top-1.5;
+		color: var(--fill-default);
+		content: '&';
+		left: -0.25rem;
+		opacity: 0.5;
+		position: absolute;
+		text-shadow:
+			-1px -1px 0 var(--text-muted),
+			1px -1px 0 var(--text-muted),
+			-1px 1px 0 var(--text-muted),
+			1px 1px 0 var(--text-muted);
+		z-index: -1;
+	}
+</style>
+
+<style is:global>
+	.hero-container {
+		background-image: radial-gradient(circle at top right, theme(colors.white), theme(colors.gray.50));
+	}
+	.dark .hero-container {
+		background-image: radial-gradient(circle at top right, theme(colors.zinc.800), theme(colors.zinc.900));
+	}
+	.home-link {
+		@apply flex gap-x-4 rounded-lg p-3 text-sm text-accent transition-all sm:text-base;
+	}
+</style>
