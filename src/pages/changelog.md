@@ -78,6 +78,7 @@ changelog: [
 		title: 'Design refactor',
 		description: 'Removed the design route and all the boilerplate component styles I built a week or two ago... Essentially these elements were defined for the sake of definition, but were not going to be used. I have opted to build out styles as needed when composing varous elements across the site, vs a weighty library built up front.',
 		changes: [
+			'Restyle home hero, add animation',
 			'Distills theme to base and muted colors',
 			'Applies theme globally with bg and text styles',
 			'Removes design route',

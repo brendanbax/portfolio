@@ -7,7 +7,7 @@
   @apply transition-colors;
   --text-muted: theme(colors.slate.700);
   --text-default: theme(colors.slate.900);
-  --fill-muted: theme(colors.slate.100);
+  --fill-muted: theme(colors.slate.200);
   --fill-default: theme(colors.slate.50);
   --accent-muted: theme(colors.lime.400);
   --accent-default: theme(colors.lime.500);
@@ -19,21 +19,29 @@ html.dark {
   @apply transition-colors;
   --text-muted: theme(colors.slate.300);
   --text-default: theme(colors.slate.50);
-  --fill-muted: theme(colors.slate.800);
-  --fill-default: theme(colors.slate.900);
+  --fill-muted: theme(colors.slate.900);
+  --fill-default: theme(colors.slate.800);
   --accent-muted: theme(colors.lime.300);
   --accent-default: theme(colors.lime.400);
 }
 
 *::selection {
-  color: var(--fill-default);
-  background-color: var(--accent-muted);
+  @apply text-fg dark:text-fill bg-accent-muted;
 }
 
 @layer utilities {
   
 }
 @layer components {
-  /* Containers */
-  
+
+}
+
+/* Animations */
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

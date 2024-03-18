@@ -3,12 +3,17 @@ import ThemeButton from '../components/ThemeButton.astro'
 import Logo from './Logo.astro'
 ---
 
-<nav class="bg-fill-muted flex items-center justify-between">
-	<div class="flex items-center bg-brand p-6">
+<nav class="relative flex items-center justify-between bg-gradient-to-r from-fill-muted to-fill">
+	<div class="bg-brand flex items-center p-6">
 		<Logo class="text-slate h-6 w-6" />
 	</div>
-	<a href="/" class="navigation-link">Home</a>
-	<ThemeButton class="mr-6 h-6 w-6" />
+	<div class="flex items-center gap-x-6">
+		<a href="/" class="navigation-link">Home</a>
+		<!-- <a href="/" class="navigation-link">Resume</a>
+		<a href="/" class="navigation-link">Contact</a> -->
+		<ThemeButton class="mr-6 h-4 w-4" />
+	</div>
+	<span class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-fg-muted to-transparent opacity-20"></span>
 </nav>
 
 <style>

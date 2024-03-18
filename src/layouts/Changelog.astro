@@ -23,13 +23,13 @@ const sortedChanges = frontmatter.changelog.sort((a: Changelog, b: Changelog) =>
 			{
 				sortedChanges.map((c: Changelog) => {
 					return (
-						<div class="bg-fill rounded-xl p-6 shadow-lg">
+						<div class="rounded-xl bg-fill p-6 shadow-lg">
 							<p class="text-sm font-semibold uppercase text-accent">{c.date}</p>
-							<h2 class="text-fg-muted text-xl font-bold">{c.title}</h2>
-							<p class="mb-2 text-base font-light leading-loose">{c.description}</p>
-							<ul class="text-fg-muted list-disc pl-6 text-sm opacity-75">
+							<h2 class="mb-2 text-xl font-bold text-fg-muted">{c.title}</h2>
+							<p class="mb-2 text-base font-light leading-8">{c.description}</p>
+							<ul class="list-disc pl-6 text-sm text-fg-muted opacity-75">
 								{c.changes.map((cc: string) => (
-									<li>{cc}</li>
+									<li class="mb-2 last:mb-0">{cc}</li>
 								))}
 							</ul>
 						</div>
