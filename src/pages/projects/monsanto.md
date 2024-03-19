@@ -6,6 +6,11 @@ assets: 'monsanto'
 summary: 'Rapid prototyping for an agroscience giant'
 ---
 
+## Brief
+## Strategy
+## Challenges
+## Outcomes
+
 ## Overview
 
 I had a cool opportunity to work at Monsanto (now Bayer Crop Sciences) as a contractor in 2018. UX at this company is a federated model - meaning everybody pays a sort of "tax" to the UX group and different practitioners get sprinkled around to various projects.

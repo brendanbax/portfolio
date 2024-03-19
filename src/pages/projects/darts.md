@@ -6,6 +6,11 @@ assets: 'darts'
 summary: 'Saving money through effortless damage tracking'
 ---
 
+## Brief
+## Strategy
+## Challenges
+## Outcomes
+
 ## Background
 
 D.A.R.T.S. is a shipping and receiving app designed to ensure accurate parcel delivery, reduce loss from damaged items, and improve carrier rates by identifying top performers. I joined the project just in time for an MVP launch and worked to improve the user experience and design new features for upcoming releases.

@@ -6,6 +6,11 @@ assets: 'international'
 summary: 'Increasing online mortgage applications for a national bank'
 ---
 
+## Brief
+## Strategy
+## Challenges
+## Outcomes
+
 ## Background
 
 As a UX Designer with WWT Asynchrony Labs I was assigned to a long-term contract with a national bank. The goal of my engagement was to modernize their online mortgage application which currently had zero traffic. They were looking to roll out a new design that would increase online mortgage app conversions, with a long-term goal of modeling this approach to other consumer lending applications.

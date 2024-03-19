@@ -7,6 +7,11 @@ summary: 'Simplified management for persons of interest data'
 ---
 
 ## Brief
+## Strategy
+## Challenges
+## Outcomes
+
+## Brief
 
 _A quick foreword, the following application is for security and threat management. The faces and names used in the images below were sourced from Unsplash and open-source libraries. All names were generated with randomizer tools in Sketch._
 

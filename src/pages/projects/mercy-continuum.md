@@ -6,6 +6,11 @@ assets: 'mercy-continuum'
 summary: 'Connecting patients with care teams for virtual health'
 ---
 
+## Brief
+## Strategy
+## Challenges
+## Outcomes
+
 ## Background
 
 One of the first projects I contributed to when joining Mercy Virtual in 2019 was a redesign for an iPad app. The development team wasn't happy with how the app looked and had specific issues around main navigation and how they might enable some new features on the road map.

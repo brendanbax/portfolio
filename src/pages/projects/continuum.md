@@ -6,6 +6,11 @@ assets: 'continuum'
 summary: 'Helping to keep complex care kids out of the ER'
 ---
 
+## Brief
+## Strategy
+## Challenges
+## Outcomes
+
 ## Background
 
 Prior to COVID-19 I worked for Mercy Hospital Network's virtual R&D team. An opportunity came up to build a critical pediatric monitoring app. The main objectives were to improve communication between care givers and the care team, give consistent touch-points for patient monitoring, and track engagement to help ensure patient wellness.

@@ -6,6 +6,11 @@ assets: 'coolfire'
 summary: 'Hot new branding for a startup SaaS product'
 ---
 
+## Brief
+## Strategy
+## Challenges
+## Outcomes
+
 ## Background
 
 I was a Senior UX Designer at Coolfire Solutions which was part agency part SaaS startup. They were working on a new project called _Ronin_ and I was given a chance to design the web experience.
