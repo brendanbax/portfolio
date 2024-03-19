@@ -1,0 +1,27 @@
+---
+import Layout from './Layout.astro'
+
+export type CaseStudy = {
+	assets: string
+	date: string
+	summary: string
+	title: string
+}
+
+const { frontmatter } = Astro.props
+const { title, date, summary } = frontmatter
+---
+
+<Layout title={title}>
+	<div class="mx-auto max-w-prose p-6">
+		<h1 class="mb-6 text-3xl font-bold">{title}</h1>
+		<div class="rounded-xl bg-fill p-6 shadow-lg">
+			<p class="text-sm font-semibold uppercase text-accent">{date}</p>
+			<h2 class="mb-2 text-xl font-bold text-fg-muted">{title}</h2>
+			<p class="text-base font-light">{summary}</p>
+		</div>
+		<main>
+			<slot />
+		</main>
+	</div>
+</Layout>
