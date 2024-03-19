@@ -85,5 +85,15 @@ changelog: [
 			'Removes all the CSS I wrote',
 		]
 	},
+	{
+		date: '2024/03/18',
+		title: 'Content copy',
+		description: 'Migrated content from old MD files to new site, nothing visible at this time.',
+		changes: [
+			'Add case study layout component with blocked content',
+			'Add generic gallery component to show images',
+			'Copy paste a whole mess of old content',
+		]
+	},
 ]
 ---

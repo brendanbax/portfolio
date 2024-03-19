@@ -1,0 +1,19 @@
+---
+import type { ImageMetadata } from 'astro'
+import { Image } from 'astro:assets'
+interface Props {
+	path: string
+}
+const { path } = Astro.props
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*.{jpeg,jpg,png,gif}')
+const filteredImages = Object.keys(images).filter((i: string) => i.toLowerCase().includes(path.toLowerCase()))
+---
+
+<!-- TODO: make a proper gallery with a lightbox and view controls, responsively designed -->
+<div>
+	{
+		filteredImages.map((i) => {
+			return <Image src={images[i]()} alt={'altText'} />
+		})
+	}
+</div>
