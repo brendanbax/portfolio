@@ -1,4 +1,5 @@
 ---
+import ImageGallery from '../components/ImageGallery.astro'
 import Layout from './Layout.astro'
 
 export type CaseStudy = {
@@ -9,7 +10,7 @@ export type CaseStudy = {
 }
 
 const { frontmatter } = Astro.props
-const { title, date, summary } = frontmatter
+const { title, date, assets, summary } = frontmatter
 ---
 
 <Layout title={title}>
@@ -23,5 +24,8 @@ const { title, date, summary } = frontmatter
 		<main>
 			<slot />
 		</main>
+		<aside>
+			<ImageGallery path={assets} />
+		</aside>
 	</div>
 </Layout>
