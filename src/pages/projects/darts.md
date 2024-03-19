@@ -18,16 +18,6 @@ Part of the redesign involved leveraging a mobile-first approach so users wouldn
 
 I also mocked up a driver check-in flow to streamline checking in. The current model involved drivers flagging a worker down to be added to the queue which caused frustration and interrupted jobs being done. Additionally, I designed an admin panel to track the queue and access damage metrics which were key to negotiating carrier rate contracts.
 
-![Overview of mobile-first screen designs](/darts/darts_00.jpg)
-
-![Mockup for kiosk and smartphone check-in flow](/darts/darts_01.png)
-
-![Detailed view for check-in questions](/darts/darts_02.png)
-
-![Web-based dashboard detailing truck queue](/darts/darts_03.png)
-
-![App view showing data entry for damaged items](/darts/darts_04.png)
-
 ## Code Contributions
 
 I paired with another developer for a few days to build a functional prototype with Angular 2.0. We were able to do a complete rebuild and get the app in front of users to validate this design direction. My specific contributions were the HTML and CSS for the app as I was not overly familiar with Angular at the time.

@@ -24,24 +24,6 @@ We built the mobile app using React Native, our first time as a team building wi
 
 Continuum was a legacy name we inherited from a previous product. I put together a logo and color scheme for our mobile app (everybody loved the purple) and it looked like what's below.
 
-![App icon, launch screen, log in page](/continuum/01_launch.png)
-
-![Account creation flow and confirmation](/continuum/02_account.png)
-
-![Password and terms of service](/continuum/03_signup.png)
-
-![Linked patient list and patient linking flow](/continuum/04_patient.png)
-
-![Chat interactions including image and emoji support](/continuum/05_chat.png)
-
-![Survey list and survey question examples](/continuum/06_survey.png)
-
-![Education list view and example content](/continuum/07_education.png)
-
-![In-app notifications and actions, ex: receiving a survey or video request](/continuum/08_messaging.png)
-
-![User account management and password update](/continuum/09_settings.png)
-
 ## Learning Moments
 
 React Native was a super cool bit of tech to learn. One of the developers on our team had a lot of iOS and Swift experience and he was a bit hesitant to use RN, but found it to be really fast to work with. I felt like the documentation was easy to follow and our app came together really fast.

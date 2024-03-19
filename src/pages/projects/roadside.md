@@ -20,41 +20,25 @@ I continued the discovery work by running a design sprint and some workshops wit
 
 I put together basic wire frames and prototypes to illustrate the user flows, blending the desire for prescribed workflows of management with the flexibility needed by call center agents (you never knew how a call would go or what information you would get first).
 
-![Log in! Everybody loves a log in screen](/roadside/FHD-1.png)
-
 ## Cool Bits
 
 One major finding from the shadowing was how essential sticky notes were on the calls. You really never knew what was going to happen when you picked up your phone - or what information the caller would have on hand. Stickies were essential to capturing quick spurts of info so you could plug it into the system later.
 
 I implemented an in-app version of this feature so users could quickly add a note whenever they needed and it would be easily transferred or parsed into the correct forms at a later time. Also one of the main needs was an easy way to transfer callers to the correct department.
 
-![Quick notes, transfers, and ticket lookup experience](/roadside/FHD-2.png)
-
 A major pivot to the app design was going from forms and data to a big ol' map. This was a crucial conversation with Andrew Dellamano, lead developer on the project. He knew more about the geospatial data they wanted to leverage and suggested a map experience. I took his idea and ran with it and was really happy with that direction.
 
 This of course meant convincing the business that we could pull a "hard left" and still make deadlines, and Andrew was confident it would work.
 
-![Ticket details were focused on a map because everything roadside related was map oriented](/roadside/FHD-3.png)
-
 The map was essential - users were Googling mile markers and landmarks based on what callers would be describing. They'd search around for tire shops, tow trucks, rest stops, etc. to get the driver to a safe place or find the closest Enterprise branch so the vehicle could be swapped out.
 
 We drew the rental branch, return branch, and nearby branches on the maps and offered up meta data about each including phone numbers and hours of operation. We were also hoping to pull in real time data on inventory so agents could find the appropriate replacement vehicles.
-
-![Mapping to branches with extra branch info](/roadside/FHD-4.png)
-
-![Dropping pins for any reason](/roadside/FHD-5.png)
 
 ## Outcomes
 
 In the end, Roadside allowed users to find a customer's rental in the database, surface relevant information about the rental ticket, and find the customer on a map then identify the nearest solution to their problem (tow truck, gas station, rental branch).
 
 Opportunities for delight included simplified search, easy-to-use mapping, a wizard for identifying problems, and simplifying access to a vehicle features database.
-
-![Detailing the rental history to give agents more context](/roadside/FHD-7.png)
-
-![Scheduling services to solve the roadside issue](/roadside/FHD-6.png)
-
-![Guided assist to help suggest the most relevant solution based on the caller problems](/roadside/FHD-8.png)
 
 The call center is live and being actively used for roadside problems. Coolfire's client passed on feedback from a training session with new workers:
 

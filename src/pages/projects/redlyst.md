@@ -20,21 +20,9 @@ As the lead product designer I worked closely with Coolfire's Principle Software
 
 Most of the process involved hearing war stories from the security personnel and how they do their jobs. Then we'd workshop ideas and rapidly prototype a solution in Sketch, or in the app. Biv, the Software Architect, was a wizard with Swift and could crank out functional improvements to the app in a few hours. He'd demo the app and get more feedback, then we'd continue iterating the designs.
 
-![Desktop activity feed](/redlyst/10-Home.png)
-
-![Desktop people detail view](/redlyst/11-Selected.png)
-
 Some major considerations for the designs included emphasizing faces as much as possible. This was needed for facial recognition software but also to help field agents find targets faster. We also wanted to provide _just enough_ information to users because mobile devices make consuming a lot of information very hard. A strength of the web app was it's ability to spread information all throughout the UI.
 
 We also wanted to build trust with the platform by solving real problems. The security teams were veterans in their craft and adopting a whiz-bang app wasn't something they really wanted to do. We had to seal the deal by delivering measurable value and hitting direct pain points in their process. Redlyst needed to deliver the right information to the right hands, at the right time.
-
-![Branding and log in flow](/redlyst/00-OpenLogin.png)
-
-![Onboarding with custom illustrations](/redlyst/01-Onboarding.png)
-
-![Mobile activity feed with details on high alerts](/redlyst/02-ActivityFeed.png)
-
-![Face match event design using stock photos - not real threats](/redlyst/03-FaceMatch.png)
 
 ## Wrinkles
 
@@ -42,23 +30,11 @@ One issue with the app was the "kitchen sink" nature of the features. It was a f
 
 I tried to leverage progressive disclosure as much as I could, giving users a "taste" of the information and letting them make the choice about how they want to dive deeper. I also shook up the design, showing some information in feed form and that same set of data on a map. Context was a driving force behind the designs which helped improve usability.
 
-![Map view and geolocation data display](/redlyst/04-Map.png)
-
-![In app messaging and communication sync](/redlyst/05-Chat.png)
-
-![Details for managing sensors and cameras](/redlyst/06-Sensors.png)
-
 Since data is the new gold and oil, the premise from the company was to enable a marketplace for sharing data. The feature was a bit if a business dream. If you had a list of bad guys or a map of the tunnels under your city you could share those resources with other security teams and make a few bucks. Or the company could curate data sets and sell them to customers.
 
 _For the record, my job wasn't to judge the ideas - just push the pixels and make the experience as attractive as possible._
 
-![Data marketplace uploads and sharing](/redlyst/07-Subscriptions.png)
-
-![Subscription marketplace](/redlyst/08-Marketplace.png)
-
 In addition to juggling the many experiences I handled the branding for Redlyst (the company and the software). The market differentiator was to go away from other military-style security apps, so I went with lowercase letters that were rounded and approachable. I also worked on some custom illustrations to use throughout the apps which help communicate some of the core app features.
-
-![Branding breakout](/redlyst/09-Interactions.png)
 
 ## Outcomes
 

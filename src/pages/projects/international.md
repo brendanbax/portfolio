@@ -20,12 +20,6 @@ This may seem common place today if you've use Rocket Mortgage or Turbo Tax soft
 
 I took my design a step further and built a responsive prototype using HTML, SaSS, and JavaScript because I believe in giving users the highest fidelity prototype to test with. Also, when an application is data-centric or uses a lot of forms I find that static pictures or slide shows create a huge disconnect with users. It was nice to give them a real form to fill out when testing.
 
-![Outline of the various wire frames and user flows](/international/journey.jpg)
-
-![Mobile design for the mortgage application flow](/international/mocks2.png)
-
-![Sample user testing session](/international/testing.jpg)
-
 ## Code Contributions
 
 When it came time to produce the app I was blessed to work with Calvin Cox, an amazing developer and mentor. He gave me a few development tasks to help implement the UI styles and form controls into his Angular 4 codebase. I was still learning modern JavaScript at the time so I stuck to HTML and CSS mostly.
@@ -49,5 +43,3 @@ We shipped our MVP on time and were awarded an additional project by the client 
   <p>Rory Ferrell</p>
   <p>VP Customer Experience</p>
 </div>
-
-![Responsive design for the additional mortgage tracker project](/international/mocks3.png)

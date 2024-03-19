@@ -20,18 +20,6 @@ Brennan and I looked at Slack, iMessage, Android messenger, Skype, etc. to get a
 
 I decided to test out InVision's new design tool [Studio](https://www.invisionapp.com/studio) to see what all the hubub was about. Intantly I was very impressed - I was able to animate the log in flows as well as some delightful conversation browsing interactions very quickly. The rest of the design experience, however, was garbage.
 
-![Animated prototype of chat application](/ronin-chat/ronin_chat_animation.gif)
-
 ## Outcomes
 
 Brennan and I were able to deliver a great sample app in record time. The demo app is live and available for download from [Github](https://github.com/coolfiresolutions/ronin-chat-android). I also learned a new tool, and also realized that while Sketch wasn't as flashy with animation - it was a far superior design tool. Oh well.
-
-![Sign in flow](/ronin-chat/chat_1.png)
-
-![Creating new threads](/ronin-chat/chat_2.png)
-
-![Chat details](/ronin-chat/chat_3.png)
-
-![Finding chat channels](/ronin-chat/chat_4.png)
-
-![Channel mentions and details](/ronin-chat/chat_5.png)

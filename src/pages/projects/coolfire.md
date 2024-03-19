@@ -22,18 +22,6 @@ I put basic wire frames in front of stake holders to get feedback. We did some d
 
 ## Design Artifacts
 
-![Ronin home page with custom illustrations](/coolfire/coolfire_1.png)
-
-![Ronin product pricing page with custom illustrations](/coolfire/coolfire_2.png)
-
-![Ronin demo app documentation](/coolfire/coolfire_3.png)
-
-![Ronin support page wireframe](/coolfire/coolfire_4.png)
-
-![Ronin billing and account settings mockup](/coolfire/coolfire_5.png)
-
-![Ronin brand stickers because everyone loves stickers](/coolfire/stickers.png)
-
 Design feedback was strong and positive. Ronin was just a code name picked by management because they liked the name - this was the first time it came to life as a brand. The project was a blast and I was very happy with the illustrations that came out of it (all made using Sketch).
 
 <div class="quote">

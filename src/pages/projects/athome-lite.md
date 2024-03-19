@@ -18,16 +18,6 @@ As a UX designer for the project I devoted a lot of time to understanding the us
 
 Until this point the MVP was 1 doctor, 1 patient. We wanted to enable doctors to get multiple patients on the call either via invite before the session or during. This required special thinking around building the recipient list and streamlining invitations while in the video UI.
 
-![Basic personas for different app users and a map of how personas interact](/athome-lite/ah-personas.jpg)
-
-![Basic user flow for an MVP](/athome-lite/ah-usermvp.jpg)
-
-![How video sessions would work with multiple users](/athome-lite/ah-multi-user.jpg)
-
-![Provisioning user accounts for the app](/athome-lite/ah-user-accounts.jpg)
-
-![Documenting the video access steps to streamline error handling](/athome-lite/ah-video-access.jpg)
-
 ## Pixel Pushing
 
 As we started building the UI out I took time to mock up the various interfaces and experiences. Most of this was helping to visualize the chat screen when multiple video participants were engaged. Some of this was driven from competitive analysis against products like Microsoft Teams, Skype, Face Time, etc but with the product differentiator of controlling what video feed the doctor sees and the level of detail in that stream.
@@ -35,14 +25,6 @@ As we started building the UI out I took time to mock up the various interfaces 
 The use case here was that a physician may not care who's speaking, they want the patient in full frame so that they can zoom in to different parts of the video and see a more detailed stream. This was vital for doctors to be able to conduct appropriate remote visits and get eyes on the patient.
 
 I worked to put mockups together and we got feedback from any physician willing to use the app and give their opinions (thankfully they didn't write it down).
-
-![Initial log in and video screen designs](/athome-lite/01_initial.png)
-
-![Inviting patients to a video visit, with validation](/athome-lite/02_basic-invites.png)
-
-![Inviting multiple patients to a video visit](/athome-lite/03_multiple-invites.png)
-
-![In app notifications and modals](/athome-lite/04_misc.png)
 
 ## Code Contributions
 
