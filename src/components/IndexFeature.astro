@@ -1,34 +1,28 @@
 ---
-import * as feature from '../pages/projects/athome-lite.md';
+import * as feature from '../pages/projects/athome-lite.md'
 import imgReference from '/src/assets/athome-lite/cover.webp'
 import { Image } from 'astro:assets'
 
-const {
-    title,
-    date,
-    assets,
-    summary,
-    projectDate,
-    technology,
-    roles
-} = feature.frontmatter
-
+const { title, date, assets, summary, projectDate, technology, roles } = feature.frontmatter
 ---
-<!-- TODO: Do a triangle shape bit up top to bleed into the hero some -->
-<div class="mx-auto py-12 flex gap-x-12 items-center">
-    <!-- TODO: Responsive layout... consider moving the content in FRONT of the image ? -->
-    <div class="max-w-prose">
-        <p class="text-sm uppercase text-fg-muted opacity-80">Feature</p>
-        <h2 class="text-3xl font-bold">{title}</h2>
-        <!-- TODO: Write longer summary for this featured project -->
-        <!-- TODO: more interesting elements, maybe a vertical line to the left that draws up / down / uses parallax -->
-        <p class="font-light text-fg-muted leading-loose">{summary}</p>
-        <!-- TODO: Style this as a link animated hover state -->
-        <a class="my-12 block text-accent" href="/projects/athome-lite">Full story</a>
-    </div>
-    <div>
-        <!-- TODO: fade this image in (maybe subtle animation) -->
-        <!-- TODO: add an outlined and offset box around it like the && in the hero section -->
-        <Image class="block max-w-screen-sm" src={imgReference} alt={'altText'} />
-    </div>
+
+<!-- TODO: Do a triangle shape bit up top to bleed into the hero some --><!-- TODO: Responsive layout... consider moving the content in FRONT of the image ? -->
+<div class="relative mx-auto my-12 max-w-5xl">
+	<div
+		class="max-w-sm rounded border border-t border-b-neutral-950 border-l-neutral-900 border-r-neutral-800 border-t-neutral-700 bg-gradient-to-bl from-fill to-fill-muted p-6"
+	>
+		<p class="mb-2 text-sm uppercase text-fg-muted opacity-80">Feature</p>
+		<h2 class="mb-4 text-3xl font-bold">{title}</h2>
+		<!-- TODO: more interesting elements, maybe a vertical line to the left that draws up / down / uses parallax -->
+		<p class="mb-6 font-light leading-loose text-fg-muted">{summary}</p>
+		<!-- TODO: Style this as a link animated hover state -->
+		<a class="block text-accent" href="/projects/athome-lite">Full story</a>
+	</div>
+	<!-- TODO: fade this image in (maybe subtle animation) -->
+	<!-- TODO: add an outlined and offset box around it like the && in the hero section -->
+	<Image
+		class="absolute left-1/2 top-1/2 -z-10 block max-w-screen-sm -translate-y-1/2 transform"
+		src={imgReference}
+		alt={'Mobile screens for AtHome Lite video visit application - phone screens with various chat interfaces'}
+	/>
 </div>
