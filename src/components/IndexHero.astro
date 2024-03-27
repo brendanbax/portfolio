@@ -7,7 +7,7 @@ import Logo from './Logo.astro'
 const { class: className, ...rest } = Astro.props
 ---
 
-<div class="relative flex flex-grow flex-col items-center justify-center bg-gradient-to-tr from-fill-muted to-fill px-6">
+<div class="relative flex flex-grow flex-col items-center justify-center bg-gradient-to-tr from-fill-muted to-fill px-6 min-h-dvh">
 	<Logo
 		pathLength="4"
 		class="animate-stroke absolute left-1/2 top-1/2 max-h-[75vh] max-w-lg -translate-x-1/2 -translate-y-1/2 transform fill-none stroke-fg-muted opacity-45 dark:opacity-30"

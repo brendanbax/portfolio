@@ -10,9 +10,18 @@ export type CaseStudy = {
 }
 
 const { frontmatter } = Astro.props
-const { title, date, assets, summary } = frontmatter
+const {
+    title,
+    date,
+    assets,
+    summary,
+    projectDate,
+    technology,
+    roles
+} = frontmatter
 ---
-
+<!-- Reference the cover.webp image as the hero image -->
+<!-- Include remaining frontmatter content -->
 <Layout title={title}>
 	<div class="mx-auto max-w-prose p-6">
 		<h1 class="mb-6 text-3xl font-bold">{title}</h1>
