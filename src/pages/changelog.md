@@ -95,5 +95,15 @@ changelog: [
 			'Copy paste a whole mess of old content',
 		]
 	},
+	{
+		date: '2024/03/26',
+		title: 'Featured Case Study',
+		description: 'Added a featured case study to the home page with some light styling.',
+		changes: [
+			'Add featured case study to home page',
+			'Add basic styles to this element',
+			'Make dark mode darker',
+		]
+	},
 ]
 ---
