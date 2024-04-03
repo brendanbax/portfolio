@@ -4,7 +4,7 @@ title: 'Redlyst'
 date: '2019-06-01'
 assets: 'redlyst'
 summary: 'Simplified management for persons of interest data'
-projectDate: 'March 2018'
+projectDate: 'January 2019'
 technology: ['Sketch', 'InVision']
 roles: ['UX Designer']
 ---

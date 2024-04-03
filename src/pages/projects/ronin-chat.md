@@ -4,7 +4,7 @@ title: 'Ronin Chat'
 date: '2019-04-01'
 assets: 'ronin-chat'
 summary: 'Guiding customers into an ecosystem'
-projectDate: '???'
+projectDate: 'March 2019'
 technology: ['Sketch', 'InVision Studio']
 roles: ['UX Designer']
 ---

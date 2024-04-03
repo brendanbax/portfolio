@@ -4,7 +4,7 @@ title: 'Roadside'
 date: '2019-05-24'
 assets: 'roadside'
 summary: 'Helping a rental giant support weary travelers'
-projectDate: '???'
+projectDate: 'April 2019'
 technology: ['Sketch', 'InVision Studio']
 roles: ['UX Designer']
 ---
