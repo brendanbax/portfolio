@@ -40,12 +40,12 @@ html.dark {
 .fade-left {
   opacity: 0;
   position: relative;
-  animation: fadeLeft 350ms 200ms forwards, fadeIn 350ms 200ms forwards;
+  animation: fadeLeft 500ms 400ms forwards, fadeIn 500ms 400ms forwards;
 }
 .fade-right {
   position: relative;
-  animation: fadeRight 350ms forwards, fadeIn 350ms forwards;
-  transition: opacity 350ms;
+  animation: fadeRight 500ms forwards, fadeIn 500ms forwards;
+  transition: opacity 500ms;
 }
 @keyframes draw {
   from {
@@ -65,7 +65,7 @@ html.dark {
 }
 @keyframes fadeLeft {
   from {
-    transform: translateX(3rem);
+    transform: translateX(1.25rem);
   }
   to {
     transform: translateX(0);
@@ -73,7 +73,7 @@ html.dark {
 }
 @keyframes fadeRight {
   from {
-    transform: translateX(-3rem);
+    transform: translateX(-1.25rem);
   }
   to {
     transform: translateX(0);

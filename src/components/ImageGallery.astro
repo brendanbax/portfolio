@@ -10,7 +10,7 @@ const filteredImages = Object.keys(images).filter((i: string) => i.toLowerCase()
 ---
 
 <!-- TODO: make a proper gallery with a lightbox and view controls, responsively designed -->
-<div>
+<div class="flex flex-col gap-6">
 	{
 		filteredImages.map((i) => {
 			return <Image src={images[i]()} alt={'altText'} />

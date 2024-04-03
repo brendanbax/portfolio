@@ -105,5 +105,15 @@ changelog: [
 			'Make dark mode darker',
 		]
 	},
+	{
+		date: '2024/04/02',
+		title: 'Style Case Study Content',
+		description: 'Added some basic styles and formatting for case study content.',
+		changes: [
+			'Add styles for header, section titles, and body copy',
+			'Move animation script to global component',
+			'Improve gallery component spacing',
+		]
+	},
 ]
 ---
