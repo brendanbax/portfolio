@@ -1,40 +1,69 @@
 ---
+import Chip from '../components/Chip.astro'
 import ImageGallery from '../components/ImageGallery.astro'
 import Layout from './Layout.astro'
 
 export type CaseStudy = {
 	assets: string
-	date: string
-	summary: string
+	projectDate: string
+	roles: string[]
+	technology: string[]
 	title: string
 }
 
 const { frontmatter } = Astro.props
 const {
-    title,
-    date,
-    assets,
-    summary,
+	assets,
     projectDate,
+    roles,
     technology,
-    roles
+    title,
 } = frontmatter
 ---
-<!-- Reference the cover.webp image as the hero image -->
-<!-- Include remaining frontmatter content -->
 <Layout title={title}>
-	<div class="mx-auto max-w-prose p-6">
-		<h1 class="mb-6 text-3xl font-bold">{title}</h1>
-		<div class="rounded-xl bg-fill p-6 shadow-lg">
-			<p class="text-sm font-semibold uppercase text-accent">{date}</p>
-			<h2 class="mb-2 text-xl font-bold text-fg-muted">{title}</h2>
-			<p class="text-base font-light">{summary}</p>
+	<div class="relative min-h-96 bg-cover bg-center z-0" style={{ backgroundImage: `url("/src/assets/${assets}/cover.webp")`}}>
+		<div class="absolute inset-0 flex flex-col items-center justify-center bg-neutral-100 dark:bg-neutral-900 bg-opacity-75 dark:bg-opacity-75">
+			<h1 class="text-3xl md:text-4xl font-bold">{title}</h1>
+			<p class="header-label">{projectDate}</p>
 		</div>
-		<main>
+	</div>
+	<div class="mx-auto max-w-prose p-6 relative z-10 -my-24">
+		<main class="rounded-xl bg-fill p-6 shadow-lg">
+			<div class="mb-6 flex flex-col gap-y-4">
+				<div>
+					<p class="header-label">Roles:</p>
+					<div class="flex gap-4 flex-wrap">
+						{roles.map((r: string) => {
+							return <Chip>{r}</Chip>
+						})}
+					</div>
+				</div>
+				<div>
+					<p class="header-label">Technology:</p>
+					<div class="flex gap-4 flex-wrap">
+						{technology.map((t: string) => {
+							return <Chip>{t}</Chip>
+						})}
+					</div>
+				</div>
+			</div>
 			<slot />
-		</main>
-		<aside>
 			<ImageGallery path={assets} />
-		</aside>
+		</main>
 	</div>
 </Layout>
+
+<style>
+	.header-label {
+		@apply font-semibold text-sm mb-2 text-fg-muted;
+	}
+</style>
+
+<style is:global>
+	main > h2 {
+		@apply text-xl font-bold mb-3;
+	}
+	main > p {
+		@apply font-light leading-loose mb-6;
+	}
+</style>
