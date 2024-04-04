@@ -1,10 +1,32 @@
 ---
+import { getCollection } from 'astro:content';
+
 import IndexFeature from '../components/IndexFeature.astro'
 import IndexHero from '../components/IndexHero.astro'
 import Layout from '../layouts/Layout.astro'
+
+const projects = await getCollection('projects').then(data => data.sort((a, b) => a.data.date > b.data.date ? -1 : 1))
 ---
 
 <Layout title="Home">
 	<IndexHero />
-	<IndexFeature />
+	<div class="section relative flex flex-col items-center pb-12 px-6 gap-y-12">
+		{projects.map((p, index) => {
+			return <IndexFeature index={index} project={p} />
+		})}
+	</div>
 </Layout>
+
+<style>
+	.section::before {
+        --height: 10vh;
+        content: '';
+        position: absolute;
+        top: calc(var(--height) * -1);
+        left: 0;
+        right: 0;
+        height: 0;
+        border-bottom: var(--height) solid theme(colors.fill-muted);
+        border-left: 100vw solid transparent;
+    }
+</style>
