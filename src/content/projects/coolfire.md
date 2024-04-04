@@ -3,7 +3,7 @@ layout: '../../layouts/CaseStudy.astro'
 title: 'Coolfire'
 date: '2019-07-01'
 assets: 'coolfire'
-summary: 'Hot new branding for a startup SaaS product'
+summary: 'Website, branding, and illustrations for a new Ronin SaaS product from Coolfire Solutions.'
 projectDate: 'July 2019'
 technology: ['Sketch']
 roles: ['UX Designer']

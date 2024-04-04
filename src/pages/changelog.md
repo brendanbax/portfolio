@@ -115,5 +115,16 @@ changelog: [
 			'Improve gallery component spacing',
 		]
 	},
+	{
+		date: '2024/04/03',
+		title: 'Update Case Study List',
+		description: 'Refined case study content and added all case studies to home page.',
+		changes: [
+			'Add dynamic route for collection of case studies',
+			'Convert featured case study element to reusable component',
+			'Update animation script to handle other animation types',
+			'Update responsive sizing and layout for case study body',
+		]
+	},
 ]
 ---

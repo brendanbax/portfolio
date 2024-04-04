@@ -3,7 +3,7 @@ layout: '../../layouts/CaseStudy.astro'
 title: 'International'
 date: '2017-11-12'
 assets: 'international'
-summary: 'Increasing online mortgage applications for a national bank'
+summary: 'A redesigned consumer lending application experience that drove new borrowers to a national bank.'
 projectDate: 'November 2017'
 technology: ['Angular 4', 'HTML', 'CSS', 'JavaScript', 'Sketch', 'InVision', 'Cypress']
 roles: ['UX Designer', 'Front End Developer']

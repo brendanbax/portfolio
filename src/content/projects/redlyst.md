@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/CaseStudy.astro'
 title: 'Redlyst'
-date: '2019-06-01'
+date: '2019-01-01'
 assets: 'redlyst'
-summary: 'Simplified management for persons of interest data'
+summary: 'A cross-platform security application, built on IoT infrastructure, that simplified management for persons of interest data and decreased threat response times.'
 projectDate: 'January 2019'
 technology: ['Sketch', 'InVision']
 roles: ['UX Designer']

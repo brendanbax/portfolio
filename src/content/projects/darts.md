@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/CaseStudy.astro'
 title: 'D.A.R.T.S.'
-date: '2017-04-01'
+date: '2017-03-01'
 assets: 'darts'
-summary: 'Saving money through effortless damage tracking'
+summary: 'A damage tracker for inbound freight designed to reducing loss of products, and productivity.'
 projectDate: 'March 2017'
 technology: ['Angular 2', 'JavaScript', 'HTML', 'CSS', 'Sketch']
 roles: ['UX Designer', 'Front End Developer']

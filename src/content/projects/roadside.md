@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/CaseStudy.astro'
 title: 'Roadside'
-date: '2019-05-24'
+date: '2019-04-24'
 assets: 'roadside'
-summary: 'Helping a rental giant support weary travelers'
+summary: 'Code-named HERO, this roadside assistance app helped a rental giant support weary travelers by equipping a new in-house support team with superior situational awareness.'
 projectDate: 'April 2019'
 technology: ['Sketch', 'InVision Studio']
 roles: ['UX Designer']
