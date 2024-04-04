@@ -30,7 +30,6 @@ const reversed = !(index % 2 == 0)
         alt={project.data.summary}
     />
     <div class={`${reversed ? 'rounded-b-2xl sm:rounded-br-none sm:rounded-tl-2xl' : 'rounded-b-2xl sm:rounded-bl-none sm:rounded-tr-2xl'} w-full sm:w-2/3 p-4 xs:p-6 bg-neutral-50 dark:bg-fill dark:bg-gradient-to-bl from-fill to-fill-muted`}>
-        <p class="text-fg-muted mb-0 text-sm">{project.data.projectDate}</p>
         <h2 class="mb-2 text-3xl font-bold">{project.data.title}</h2>
         <p class="flex items-center justify-between gap-2 flex-wrap text-sm dark:text-accent-muted mb-2">{project.data.roles.join(', ')}</p>
         <p class="mb-6 font-light leading-relaxed text-fg-muted text-sm">{project.data.summary}</p>
