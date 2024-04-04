@@ -23,7 +23,7 @@ const imgPath = `/src/assets/${project.data.assets}/cover.webp`
 const reversed = !(index % 2 == 0)
 
 ---
-<div class={`${reversed ? 'sm:flex-row-reverse fade-right' : 'sm:flex-row fade-left'} opacity-0 container relative z-0 flex flex-col items-stretch justify-stretch max-w-3xl rounded-2xl dark:border dark:border-b-neutral-950 dark:border-l-neutral-900 dark:border-r-neutral-800 dark:border-t-neutral-700`}>
+<div class={`${reversed ? 'sm:flex-row-reverse fade-right' : 'sm:flex-row fade-left'} will-animate opacity-0 container relative z-0 flex flex-col items-stretch justify-stretch max-w-3xl rounded-2xl dark:border dark:border-b-neutral-950 dark:border-l-neutral-900 dark:border-r-neutral-800 dark:border-t-neutral-700`}>
     <Image
         class={`${reversed ? 'rounded-t-2xl sm:rounded-tl-none sm:rounded-br-2xl' : 'rounded-t-2xl sm:rounded-tr-none sm:rounded-bl-2xl'} w-full sm:w-1/3 min-h-60 sm:min-h-full object-cover`}
         src={covers[imgPath]()}

@@ -27,15 +27,20 @@ import FootBar from '../components/FootBar.astro'
 </html>
 
 <script>
-    const elements = document.querySelectorAll('.willFadeIn')
+    const animatedElements = document.querySelectorAll('.will-animate')
 
-    if (elements) {
-        elements.forEach(e => {
+    if (animatedElements) {
+        animatedElements.forEach(e => {
             const observer = new IntersectionObserver(entries =>{
                 entries.forEach(entry => {
                     if (entry && entry.isIntersecting) {
-                        e.classList.remove('opacity-0') // Use toggle here if you want it to pop in and out
-                        e.classList.add('fade-left') // Use toggle here if you want it to pop in and out
+                        e.classList.remove('opacity-0')
+                        
+                        if (e.classList.contains('fade-right')) {
+                            e.classList.add('animate-fade-right')
+                        } else if (e.classList.contains('fade-left')) {
+                            e.classList.add('animate-fade-left')
+                        }
                     }
                 })
             });

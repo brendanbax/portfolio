@@ -37,12 +37,12 @@ html.dark {
 }
 
 /* Animations */
-.fade-left {
+.animate-fade-left {
   opacity: 0;
   position: relative;
   animation: fadeLeft 500ms 400ms forwards, fadeIn 500ms 400ms forwards;
 }
-.fade-right {
+.animate-fade-right {
   position: relative;
   animation: fadeRight 500ms forwards, fadeIn 500ms forwards;
   transition: opacity 500ms;
