@@ -3,7 +3,7 @@ layout: '../../layouts/CaseStudy.astro'
 title: 'Continuum iPad'
 date: '2019-09-10'
 assets: 'mercy-continuum'
-summary: 'Connecting patients with care teams for virtual health'
+summary: 'Continuum for iPad was a total health platform designed to connect patients with care teams for routine virtual health visits.'
 projectDate: 'September 2019'
 technology: ['Sketch', 'InVision']
 roles: ['UX Designer']

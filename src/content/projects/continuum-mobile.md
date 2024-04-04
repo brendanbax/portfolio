@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/CaseStudy.astro'
 title: 'Continuum'
-date: '2020-03-01'
-assets: 'continuum'
-summary: 'Helping to keep complex care kids out of the ER'
+date: '2020-01-01'
+assets: 'continuum-mobile'
+summary: 'Continuum mobile was an adaptation of the Mercy Continuum platform designed to keep complex care kids out of the ER.'
 projectDate: 'January 2020'
 technology: ['React Native', 'JavaScript', 'Sketch']
 roles: ['UX Designer', 'Mobile Developer']

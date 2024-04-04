@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/CaseStudy.astro'
 title: 'Monsanto'
-date: '2018-07-01'
+date: '2018-03-01'
 assets: 'monsanto'
-summary: 'Rapid prototyping for an agroscience giant'
+summary: 'A collection of white-labeled projects and prototypes designed while working as a contractor for Bayer (formerly Monsanto).'
 projectDate: 'March 2018'
 technology: ['Sketch', 'InVision']
 roles: ['UX Designer']

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/CaseStudy.astro'
 title: 'AtHome Lite'
-date: '2020-05-17'
+date: '2020-04-17'
 assets: 'athome-lite'
 summary: 'Mercy AtHome Lite aimed to simplify virtual visits during the complex times of COVID-19. This web application, built with React, SocketIO, WebRTC, and Twilio integrations, helped provide a stable, scalable, and simple to use solution for providers needing to connect with patients.'
 projectDate: 'April 2020'
