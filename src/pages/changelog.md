@@ -126,5 +126,15 @@ changelog: [
 			'Update responsive sizing and layout for case study body',
 		]
 	},
+	{
+		date: '2024/04/06',
+		title: 'Update Case Study Previews',
+		description: 'Added progressive disclosure pattern to case study list.',
+		changes: [
+			'Show 3 case studies at a time with action to show more',
+			'Fix padding bug on case study details',
+			'Add additional summary content to case study section',
+		]
+	},
 ]
 ---
