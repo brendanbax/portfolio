@@ -10,11 +10,16 @@ const projects = await getCollection('projects').then(data => data.sort((a, b) =
 
 <Layout title="Home">
 	<IndexHero />
-	<div class="section relative flex flex-col items-center pb-12 px-6 gap-y-12">
+	<project-summary class="section relative flex flex-col items-center pb-12 px-6 gap-y-12">
 		{projects.map((p, index) => {
-			return <IndexFeature index={index} project={p} />
+			return (
+                <div class="project-wrapper hidden">
+                    <IndexFeature index={index} project={p} />
+                </div>
+            )
 		})}
-	</div>
+        <button>Show more</button>
+	</project-summary>
 </Layout>
 
 <style>
@@ -30,3 +35,37 @@ const projects = await getCollection('projects').then(data => data.sort((a, b) =
         border-left: 100vw solid transparent;
     }
 </style>
+
+<script>
+    class ProjectSummary extends HTMLElement {
+        constructor() {
+            super()
+            let count = 3;
+
+            const moreButton = this.querySelector('button')
+            const allProjects = this.querySelectorAll('.project-wrapper')
+
+            function showProjects() {
+                if (allProjects && allProjects.length > 0) {
+                    for (let i = 0; i < count; i++) {
+                        if (i >= allProjects.length && moreButton) {
+                            moreButton.classList.add('hidden')
+                            return;
+                        }
+                        allProjects[i].classList.remove('hidden')
+                    }
+                }
+            }
+
+            if (moreButton) {
+                moreButton.addEventListener('click', () => {
+                    count+= 3;
+                    showProjects()
+                });
+            }
+
+            showProjects()
+        }
+    }
+    customElements.define('project-summary', ProjectSummary);
+</script>
