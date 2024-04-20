@@ -6,6 +6,7 @@ import IndexHero from '../components/IndexHero.astro'
 import Layout from '../layouts/Layout.astro'
 
 const projects = await getCollection('projects').then(data => data.sort((a, b) => a.data.date > b.data.date ? -1 : 1))
+const personalProjects = await getCollection('personal')
 
 const careerLength = (() => {
 	const origin = new Date('2013/11/01')
@@ -32,6 +33,14 @@ const careerLength = (() => {
 		})}
         <button class="px-4 py-2 rounded-lg bg-accent hover:bg-accent-muted text-neutral-900 text-sm transition-colors">Show more</button>
 	</project-summary>
+    <!-- TODO: Grid of tiles for personal projects -->
+    <div class="py-12 px-6 bg-fill">
+        {personalProjects.map((p, index) => {
+            return (
+                <div>{p.data.title}</div>
+            )
+        })}
+    </div>
 </Layout>
 
 <style>
