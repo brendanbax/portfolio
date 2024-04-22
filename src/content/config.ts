@@ -18,6 +18,7 @@ const personalCollection = defineCollection({
   schema: z.object({
       title: z.string(),
       assets: z.string(),
+      cover: z.string(),
   }),
 });
 
