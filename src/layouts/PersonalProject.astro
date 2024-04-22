@@ -13,15 +13,15 @@ const { frontmatter } = Astro.props
 const {
 	assets,
     title,
+	cover,
 } = frontmatter
 
-const covers = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/cover.webp')
-const imgPath = `/src/assets/${assets}/cover.webp`
+const covers = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*[.png, .jpg]')
 
 ---
 <Layout title={title}>
 	<div class="relative min-h-96 z-0 overflow-hidden">
-		<Image class="absolute inset-0 block object-cover h-full w-full" src={covers[imgPath]()} alt={'altText'} />
+		<Image class="absolute inset-0 block object-cover h-full w-full" src={covers[cover]()} alt={'altText'} />
 		<div class="absolute inset-0 flex flex-col items-center justify-center bg-neutral-100 dark:bg-neutral-900 bg-opacity-75 dark:bg-opacity-75">
 			<h1 class="text-3xl md:text-4xl font-bold">{title}</h1>
 		</div>
