@@ -7,15 +7,18 @@ cover: '/src/assets/tvc/cover.png'
 
 ## Inspiration
 
-My parents raised me and needed a better logo and website for their pottery business, always help your parents.
+My folks are retired and do pottery as a hobby. They needed a simple website to showcase some pieces and help people feel confident giving them money for things. They also needed a logo that was easy to stamp into clay. And business cards. Always help your parents.
 
 ## Strategy
 
-Design a logo that aligned with their business name, that was also easy to stamp on pottery. Create a 3D print so they can consistently stamp their wares. Build a website with solid product photography, host it for free to save them money.
+Design a logo that aligned with their business name, Tavern Valley Clay. The monogram was geometric and easy to stamp on pottery. To make it easy on my dad I 3D printed a few resin tools so he could consistently stamp their wares.
+
+I whipped up a business card that worked for both of them so they wouldn't need to print two sets. I also built a website using Nuxt (Vue, as a static site) and hosted it for free on Netlify to save them some money. I used Tailwind CSS and wrote a custom lightbox to handle the gallery.
+
+Lastly, I did a photo shoot with their favorite pieces to get some good photos on the site.
 
 ## Outcomes
 
-Cool website. Check it out, link below.
-Awesome 3D printed stamp.
-Logo + business cards.
-Portfolio of high quality pottery images.
+I saved my folks some money so they could do their hobby with confidence. The website is basic but gets the job done, and I really like how most of the photos turned out. The 3D stamp was a nice touch, my dad was very appreciative because carving the logo was a major constraint on creativity.
+
+Check out the <a href="https://www.tvclay.com" target="_blank">website</a> to see their work.

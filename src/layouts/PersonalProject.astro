@@ -47,4 +47,13 @@ const covers = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*[.p
 	main > p {
 		@apply font-light leading-relaxed mb-6;
 	}
+	main a {
+		@apply font-light text-accent underline underline-offset-2 hover:text-accent-muted;
+	}
+	main ol {
+		@apply pl-6;
+	}
+	main li {
+		@apply font-light list-decimal mb-6;
+	}
 </style>

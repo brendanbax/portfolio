@@ -7,12 +7,12 @@ cover: '/src/assets/shirts/cover.png'
 
 ## Inspiration
 
-I love CSS and the Vess soda brand. I made flavors of CSS because front end development always has new flavors.
+In the early days, my favorite part of learning web development was learning CSS. It was also a huge challenge because of the pre and post processors, browser compatibility, and different technical versions of the language. I decided to celebrate this variety with some fun artwork.
 
 ## Strategy
 
-Design shirts inspired by soda flavors, celebrating the various tools for writing CSS.
+I designed a series of shirts using Affinity Designer. The graphics are available from Cotton Bureau, inspired by Vess soda, in celebration of the various ways of writing CSS.
 
 ## Outcomes
 
-Fun shirts. Go buy them! Link below.
+Fun shirts for everyone. <a href="https://cottonbureau.com/people/brendan-bax" target="_blank">Go buy one</a>!
