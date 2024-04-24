@@ -1,13 +1,10 @@
 ---
-import IconCodepen from '../components/IconCodepen.astro'
-import IconDribbble from '../components/IconDribbble.astro'
-import IconLinkedIn from '../components/IconLinkedIn.astro'
 import Logo from './Logo.astro'
 
 const { class: className, ...rest } = Astro.props
 ---
 
-<div class="relative flex flex-grow flex-col items-center justify-center bg-gradient-to-tr from-fill-muted to-fill px-6 min-h-dvh">
+<div id="hero-wrapper" class="relative flex flex-grow flex-col items-center justify-center bg-gradient-to-tr from-fill-muted to-fill px-6">
 	<Logo
 		pathLength="4"
 		class="animate-stroke absolute left-1/2 top-1/2 max-h-[75vh] max-w-lg -translate-x-1/2 -translate-y-1/2 transform fill-none stroke-fg-muted opacity-45 dark:opacity-30"
@@ -24,24 +21,13 @@ const { class: className, ...rest } = Astro.props
 				I build innovative software experiences through lean research, iterative design, and agile software development.
 			</p>
 		</div>
-		<div class="mr-auto flex flex-col items-center gap-4 xs:flex-row md:gap-6">
-			<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
-				<IconDribbble class="w-4 sm:w-6" />
-				<span>Dribbble</span>
-			</a>
-			<a href="https://codepen.io/brendanbax" target="_blank" class="home-link">
-				<IconCodepen class="w-4 sm:w-6" />
-				<span>Codepen</span>
-			</a>
-			<a href="https://www.linkedin.com/in/brendanbax" target="_blank" class="home-link">
-				<IconLinkedIn class="w-4 sm:w-6" />
-				<span>LinkedIn</span>
-			</a>
-		</div>
 	</div>
 </div>
 
 <style>
+	#hero-wrapper {
+		min-height: 80dvh;
+	}
 	.animate-stroke {
 		stroke-dasharray: 1;
 		stroke-dashoffset: 0;
@@ -80,8 +66,5 @@ const { class: className, ...rest } = Astro.props
 	}
 	.dark .hero-container {
 		background-image: radial-gradient(circle at top right, theme(colors.zinc.800), theme(colors.zinc.900));
-	}
-	.home-link {
-		@apply flex gap-x-4 rounded-lg p-3 text-sm text-accent transition-all sm:text-base;
 	}
 </style>

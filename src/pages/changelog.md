@@ -136,5 +136,15 @@ changelog: [
 			'Add additional summary content to case study section',
 		]
 	},
+	{
+		date: '2024/04/23',
+		title: 'Add Personal Projects',
+		description: 'Added some personal projects to home page.',
+		changes: [
+			'Show a grid of personal projects',
+			'Add relevant content to project pages',
+			'Add relevant media to project pages',
+		]
+	},
 ]
 ---

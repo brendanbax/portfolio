@@ -13,6 +13,16 @@ const projectCollection = defineCollection({
     }),
 });
 
+const personalCollection = defineCollection({
+  type: 'content',
+  schema: z.object({
+      title: z.string(),
+      assets: z.string(),
+      cover: z.string(),
+  }),
+});
+
 export const collections = {
   'projects': projectCollection,
+  'personal': personalCollection,
 };
