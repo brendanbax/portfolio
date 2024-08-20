@@ -17,6 +17,9 @@ const covers = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*[.p
 
 ---
 <Layout title={title}>
+	<div>
+		<a href="/blog">Back</a>
+	</div>
 	<div class="relative min-h-96 z-0 overflow-hidden">
         <!-- TODO: add a generic blog post hero here -->
 		<div class="absolute inset-0 flex flex-col items-center justify-center bg-neutral-100 dark:bg-neutral-900 bg-opacity-75 dark:bg-opacity-75">
