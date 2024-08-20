@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+
+import Layout from '../../layouts/Layout.astro';
+
+const posts = await getCollection('blog').then(data => data.sort((a, b) => a.data.publishDate > b.data.publishDate ? -1 : 1))
+---
+<Layout>
+    <div class="max-w-lg md:max-w-full mx-auto flex-grow">
+        {posts.map(p => {
+            return (
+                <div>
+                    <h2>{p.data.title}</h2>
+                    <a href={`/blog/${p.slug}`}>Read more</a>
+                </div>
+            )
+        })}
+    </div>
+</Layout>
