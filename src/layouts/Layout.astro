@@ -3,19 +3,30 @@ import '@fontsource-variable/lexend'
 import '@fontsource-variable/urbanist' // This is supplemental... not used but good for blog body later
 
 import '../assets/styles.css'
-const { frontmatter, title } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
+const { frontmatter, title, description = '' } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
 import NavBar from '../components/NavBar.astro'
 import FootBar from '../components/FootBar.astro'
 ---
 
+<!doctype html>
 <html lang="en">
 	<head>
+		<!-- Global Metadata -->
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
+
+		<!-- Canonical URL -->
+		<link rel="canonical" href={canonicalURL} />
+
+		<!-- Primary Meta Tags -->
 		<title>{frontmatter ? frontmatter.title : title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
 	</head>
 	<body class="flex max-h-dvh min-h-dvh flex-col antialiased">
 		<NavBar />
@@ -27,24 +38,24 @@ import FootBar from '../components/FootBar.astro'
 </html>
 
 <script>
-    const animatedElements = document.querySelectorAll('.will-animate')
+	const animatedElements = document.querySelectorAll('.will-animate')
 
-    if (animatedElements) {
-        animatedElements.forEach(e => {
-            const observer = new IntersectionObserver(entries =>{
-                entries.forEach(entry => {
-                    if (entry && entry.isIntersecting) {
-                        e.classList.remove('opacity-0')
-                        
-                        if (e.classList.contains('fade-right')) {
-                            e.classList.add('animate-fade-right')
-                        } else if (e.classList.contains('fade-left')) {
-                            e.classList.add('animate-fade-left')
-                        }
-                    }
-                })
-            });
-            observer.observe(e)
-        })
-    }
+	if (animatedElements) {
+		animatedElements.forEach((e) => {
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry && entry.isIntersecting) {
+						e.classList.remove('opacity-0')
+
+						if (e.classList.contains('fade-right')) {
+							e.classList.add('animate-fade-right')
+						} else if (e.classList.contains('fade-left')) {
+							e.classList.add('animate-fade-left')
+						}
+					}
+				})
+			})
+			observer.observe(e)
+		})
+	}
 </script>
