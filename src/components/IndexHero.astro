@@ -2,6 +2,12 @@
 import Logo from './Logo.astro'
 
 const { class: className, ...rest } = Astro.props
+const careerLength = (() => {
+	const origin = new Date('2013/11/01')
+	const now = new Date()
+	const years = new Date(now.getTime() - origin.getTime()).getFullYear() - 1970
+	return years
+})()
 ---
 
 <div id="hero-wrapper" class="relative flex flex-grow flex-col items-center justify-center bg-gradient-to-tr from-fill-muted to-fill px-6">
@@ -10,16 +16,15 @@ const { class: className, ...rest } = Astro.props
 		class="animate-stroke absolute left-1/2 top-1/2 max-h-[75vh] max-w-lg -translate-x-1/2 -translate-y-1/2 transform fill-none stroke-fg-muted opacity-45 dark:opacity-30"
 	/>
 	<div class="relative z-10 my-6 flex w-full max-w-3xl flex-col gap-y-6">
-		<div>
-			<p class="text-base font-medium uppercase tracking-widest opacity-75 xs:text-lg">Brendan Bax</p>
-			<h1 class="mb-6 text-3xl font-bold uppercase xs:text-5xl">
-				<span class="text-fg-muted">App Design</span>
-				<span id="ampersand" class="relative z-0 text-accent">&amp;</span>
-				<span class="text-fg">Development</span>
+		<div class="text-center">
+			<h1 class="mb-6 text-3xl font-bold text-fg xs:text-5xl xs:leading-[64px]">
+				Empowering software teams to build the <span class="text-accent">best</span> experiences.
 			</h1>
 			<p class="max-w-lg text-base font-light leading-normal xs:text-lg md:max-w-full">
-				I build innovative software experiences through lean research, iterative design, and agile development.
+				I've spent the last {careerLength} years helping create innovative technology at startups, agencies, and major corporations across the United States. My
+				passion for human-centered design, agile development, and lean project management helps bring exceptional products to life.
 			</p>
+			<!-- TODO: actions to link to method section and contact section [ :arrow down: Methods ] [ :mail: Contact ] -->
 		</div>
 	</div>
 </div>
