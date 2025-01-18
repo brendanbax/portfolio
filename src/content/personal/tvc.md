@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PersonalProject.astro'
 title: 'Tavern Valley Clay'
 assets: 'tvc'
 cover: '/src/assets/tvc/cover.png'

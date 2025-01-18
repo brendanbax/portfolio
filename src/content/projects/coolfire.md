@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'Coolfire'
 date: '2019-07-01'
 assets: 'coolfire'

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PersonalProject.astro'
 title: 'CSS Shirts'
 assets: 'shirts'
 cover: '/src/assets/shirts/cover.png'

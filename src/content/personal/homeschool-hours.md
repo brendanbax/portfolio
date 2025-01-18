@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PersonalProject.astro'
 title: 'Homeschool Hours'
 assets: 'homeschool-hours'
 cover: '/src/assets/homeschool-hours/cover.png'

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'Redlyst'
 date: '2019-01-01'
 assets: 'redlyst'

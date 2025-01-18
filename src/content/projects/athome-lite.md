@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'AtHome Lite'
 date: '2020-04-17'
 assets: 'athome-lite'

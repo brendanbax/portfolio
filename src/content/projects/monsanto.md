@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'Monsanto'
 date: '2018-03-01'
 assets: 'monsanto'

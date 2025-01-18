@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'Continuum iPad'
 date: '2019-09-10'
 assets: 'mercy-continuum'

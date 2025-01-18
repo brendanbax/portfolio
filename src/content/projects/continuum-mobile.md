@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'Continuum'
 date: '2020-01-01'
 assets: 'continuum-mobile'

@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'Roadside'
 date: '2019-04-24'
 assets: 'roadside'

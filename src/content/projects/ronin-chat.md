@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'Ronin Chat'
 date: '2019-03-01'
 assets: 'ronin-chat'

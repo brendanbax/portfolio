@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/PersonalProject.astro'
 title: 'Nichijougo'
 assets: 'nichijougo'
 cover: '/src/assets/nichijougo/Nichijougo.png'

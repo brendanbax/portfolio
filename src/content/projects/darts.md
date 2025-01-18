@@ -1,5 +1,4 @@
 ---
-layout: '../../layouts/CaseStudy.astro'
 title: 'D.A.R.T.S.'
 date: '2017-03-01'
 assets: 'darts'

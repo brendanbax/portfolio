@@ -1,14 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from 'astro:content'
+import PersonalProject from '../../layouts/PersonalProject.astro'
 
 export async function getStaticPaths() {
-  const projectEntries = await getCollection('personal');
-  return projectEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
-  }));
+	const projectEntries = await getCollection('personal')
+	return projectEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry }
+	}))
 }
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { entry } = Astro.props
+const { Content } = await entry.render()
 ---
-<Content />
+
+<PersonalProject>
+	<Content />
+</PersonalProject>
