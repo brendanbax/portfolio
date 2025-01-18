@@ -1,13 +1,5 @@
 ---
 import Logo from './Logo.astro'
-
-const { class: className, ...rest } = Astro.props
-const careerLength = (() => {
-	const origin = new Date('2013/11/01')
-	const now = new Date()
-	const years = new Date(now.getTime() - origin.getTime()).getFullYear() - 1970
-	return years
-})()
 ---
 
 <div id="hero-wrapper" class="relative flex flex-grow flex-col items-center justify-center bg-gradient-to-tr from-fill-muted to-fill px-6">
@@ -15,17 +7,15 @@ const careerLength = (() => {
 		pathLength="4"
 		class="animate-stroke absolute left-1/2 top-1/2 max-h-[75vh] max-w-lg -translate-x-1/2 -translate-y-1/2 transform fill-none stroke-fg-muted opacity-45 dark:opacity-30"
 	/>
-	<div class="relative z-10 my-6 flex w-full max-w-3xl flex-col gap-y-6">
-		<div class="text-center">
-			<h1 class="mb-6 text-3xl font-bold text-fg xs:text-5xl xs:leading-[64px]">
-				Empowering software teams to build the <span class="text-accent">best</span> experiences.
-			</h1>
-			<p class="max-w-lg text-base font-light leading-normal xs:text-lg md:max-w-full">
-				I've spent the last {careerLength} years helping create innovative technology at startups, agencies, and major corporations across the United States. My
-				passion for human-centered design, agile development, and lean project management helps bring exceptional products to life.
-			</p>
-			<!-- TODO: actions to link to method section and contact section [ :arrow down: Methods ] [ :mail: Contact ] -->
-		</div>
+	<div class="relative z-10 my-6 flex w-full max-w-3xl flex-col text-center">
+		<h1 class="mb-6 text-3xl font-bold text-fg xs:text-5xl xs:leading-[64px]">
+			Empowering software teams to build the <span class="text-accent">best</span> experiences.
+		</h1>
+		<p class="max-w-lg xs:text-lg md:max-w-full">
+			I've spent the last <span id="career-length"></span> years helping create innovative technology at startups, agencies, and major corporations across the United
+			States. My passion for human-centered design, agile development, and lean project management helps bring exceptional products to life.
+		</p>
+		<!-- TODO: actions to link to method section and contact section [ :arrow down: Methods ] [ :mail: Contact ] -->
 	</div>
 </div>
 
@@ -49,20 +39,6 @@ const careerLength = (() => {
 			stroke-dashoffset: 12;
 		}
 	}
-	#ampersand::before {
-		@apply top-0 xs:top-1.5;
-		color: var(--fill-default);
-		content: '&';
-		left: -0.25rem;
-		opacity: 0.5;
-		position: absolute;
-		text-shadow:
-			-1px -1px 0 var(--text-muted),
-			1px -1px 0 var(--text-muted),
-			-1px 1px 0 var(--text-muted),
-			1px 1px 0 var(--text-muted);
-		z-index: -1;
-	}
 </style>
 
 <style is:global>
@@ -73,3 +49,18 @@ const careerLength = (() => {
 		background-image: radial-gradient(circle at top right, theme(colors.zinc.800), theme(colors.zinc.900));
 	}
 </style>
+
+<script is:inline>
+	const careerLength = (() => {
+		const origin = new Date('2013/11/01')
+		const now = new Date()
+		const years = new Date(now.getTime() - origin.getTime()).getFullYear() - 1970
+		return years
+	})()
+
+	const careerLengthTag = document.querySelector('#career-length')
+
+	if (careerLengthTag) {
+		careerLengthTag.textContent = String(careerLength)
+	}
+</script>
