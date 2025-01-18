@@ -1,16 +1,11 @@
 ---
-import IconCodepen from "./IconCodepen.astro"
-import IconDribbble from "./IconDribbble.astro"
-import IconLinkedIn from "./IconLinkedIn.astro"
-
-const computedDate = (() => {
-	const now = new Date()
-	return now.getFullYear()
-})()
+import IconCodepen from './IconCodepen.astro'
+import IconDribbble from './IconDribbble.astro'
+import IconLinkedIn from './IconLinkedIn.astro'
 ---
 
-<footer class="md:hidden bg-fill-muted px-6 py-4 text-xs">
-	<div class="md:hidden grid grid-cols-3 gap-2 mx-auto mb-2">
+<footer class="bg-fill-muted px-6 py-4 text-xs md:hidden">
+	<div class="mx-auto mb-2 grid grid-cols-3 gap-2 md:hidden">
 		<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link mx-auto">
 			<IconDribbble class="w-4" />
 			<span class="text-base">Dribbble</span>
@@ -24,21 +19,21 @@ const computedDate = (() => {
 			<span class="text-base">LinkedIn</span>
 		</a>
 	</div>
-	<div class="flex items-center gap-x-4 ml-auto">
+	<div class="ml-auto flex items-center gap-x-4">
 		<div class="flex flex-col xs:flex-row xs:gap-x-2">
-			<p>&copy; Brendan Bax {computedDate}.</p>
+			<p>&copy;<span id="computed-date"></span> Brendan Bax</p>
 			<p>Made in the USA.</p>
 		</div>
-		<div class="flex flex-col xs:flex-row items-center gap-x-4 ml-auto">
+		<div class="ml-auto flex flex-col items-center gap-x-4 xs:flex-row">
 			<a class="footer-link" href="/changelog">Changelog</a>
 			<a class="footer-link" href="https://github.com/brendanbax/portfolio" target="_blank">View Source</a>
 		</div>
 	</div>
 </footer>
 
-<footer class="hidden bg-fill-muted px-6 py-4 text-xs md:grid grid-cols-2 md:grid-cols-3 items-center">
-	<span>&copy; Brendan Bax {computedDate}. Made in the USA.</span>
-	<div class="hidden md:flex items-center gap-2 mx-auto">
+<footer class="hidden grid-cols-2 items-center bg-fill-muted px-6 py-4 text-xs md:grid md:grid-cols-3">
+	<span>&copy;<span id="computed-date"></span> Brendan Bax. Made in the USA.</span>
+	<div class="mx-auto hidden items-center gap-2 md:flex">
 		<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
 			<IconDribbble class="w-4" />
 			<span>Dribbble</span>
@@ -52,7 +47,7 @@ const computedDate = (() => {
 			<span>LinkedIn</span>
 		</a>
 	</div>
-	<div class="flex items-center gap-x-4 ml-auto">
+	<div class="ml-auto flex items-center gap-x-4">
 		<a class="footer-link" href="/changelog">Changelog</a>
 		<a class="footer-link" href="https://github.com/brendanbax/portfolio" target="_blank">View Source</a>
 	</div>
@@ -63,6 +58,21 @@ const computedDate = (() => {
 		@apply border-b-2 border-transparent transition-colors hover:border-accent;
 	}
 	.home-link {
-		@apply flex gap-x-2 md:gap-x-4 rounded-lg md:p-3 text-xs text-accent transition-all;
+		@apply flex gap-x-2 rounded-lg text-xs text-accent transition-all md:gap-x-4 md:p-3;
 	}
 </style>
+
+<script is:inline>
+	const computedDate = (() => {
+		const now = new Date()
+		return now.getFullYear()
+	})()
+
+	const computedDateTags = document.querySelectorAll('#computed-date')
+
+	if (computedDateTags.length > 0) {
+		computedDateTags.forEach((t) => {
+			t.innerHTML = `${computedDate}`
+		})
+	}
+</script>
