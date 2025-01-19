@@ -4,78 +4,80 @@
 
 /* Core theme */
 :root {
-  @apply transition-colors;
-  --text-muted: theme(colors.neutral.700);
-  --text-default: theme(colors.neutral.900);
-  --fill-muted: theme(colors.neutral.200);
-  --fill-default: theme(colors.neutral.50);
-  --accent-muted: theme(colors.lime.400);
-  --accent-default: theme(colors.lime.500);
+	@apply transition-colors;
+	--text-muted: theme(colors.neutral.700);
+	--text-default: theme(colors.neutral.900);
+	--fill-muted: theme(colors.neutral.200);
+	--fill-default: theme(colors.neutral.50);
+	--accent-muted: theme(colors.lime.400);
+	--accent-default: theme(colors.lime.500);
 }
 html {
-  @apply bg-fill-muted text-fg;
+	@apply bg-fill-muted text-fg;
 }
 html.dark {
-  @apply transition-colors;
-  --text-muted: theme(colors.neutral.300);
-  --text-default: theme(colors.neutral.50);
-  --fill-muted: theme(colors.neutral.900);
-  --fill-default: theme(colors.neutral.800);
-  --accent-muted: theme(colors.lime.300);
-  --accent-default: theme(colors.lime.400);
+	@apply transition-colors;
+	--text-muted: theme(colors.neutral.300);
+	--text-default: theme(colors.neutral.50);
+	--fill-muted: theme(colors.neutral.900);
+	--fill-default: theme(colors.neutral.800);
+	--accent-muted: theme(colors.lime.300);
+	--accent-default: theme(colors.lime.400);
 }
 
 *::selection {
-  @apply text-fg dark:text-fill bg-accent-muted;
+	@apply bg-accent-muted text-fg dark:text-fill;
 }
 
 @layer utilities {
-  
 }
 @layer components {
-
 }
 
 /* Animations */
 .animate-fade-left {
-  opacity: 0;
-  position: relative;
-  animation: fadeLeft 500ms 400ms forwards, fadeIn 500ms 400ms forwards;
+	opacity: 0;
+	position: relative;
+	animation:
+		fadeLeft 500ms 400ms forwards,
+		fadeIn 500ms 400ms forwards;
 }
 .animate-fade-right {
-  position: relative;
-  animation: fadeRight 500ms forwards, fadeIn 500ms forwards;
-  transition: opacity 500ms;
+	position: relative;
+	animation:
+		fadeRight 500ms forwards,
+		fadeIn 500ms forwards;
+	transition: opacity 500ms;
 }
 @keyframes draw {
-  from {
-    stroke-dashoffset: 1;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+	from {
+		stroke-dashoffset: 1;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 @keyframes fadeLeft {
-  from {
-    transform: translateX(1.25rem);
-  }
-  to {
-    transform: translateX(0);
-  }
+	from {
+		transform: translateX(1.25rem);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 @keyframes fadeRight {
-  from {
-    transform: translateX(-1.25rem);
-  }
-  to {
-    transform: translateX(0);
-  }
+	from {
+		transform: translateX(-1.25rem);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
