@@ -15,7 +15,7 @@ export default {
 			},
 			fontFamily: {
 				sans: 'Lexend Variable',
-				serif: 'Lexend Variable'
+				serif: 'Urbanist Variable'
 			},
 			screens: {
 				xs: '480px'
