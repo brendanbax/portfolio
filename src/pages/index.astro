@@ -1,75 +1,15 @@
 ---
 import IndexHero from '../components/IndexHero.astro'
 import IndexRecommendations from '../components/IndexRecommendations.astro'
+import IndexSummary from '../components/IndexSummary.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Home">
 	<IndexHero />
-	<section>
-		<div style="height: 3000px; display: block;">
-			<!-- Can do a Left / Right / Left series of sections with an animated graphic on one side + the content on the other -->
-			<!-- Small text, overline style -->
-			<h4>Design</h4>
-			<!-- Section header text -->
-			<h5>More than pretty pixels</h5>
-			<!-- Description -->
-			<p>
-				Simple sentence that captures my view of design... humility, risk mitigation, curiousty, unity, empathy. Help stakeholders measure the impact of the
-				problem and solution.
-			</p>
-			<!-- List of outputs (badge bank?) -->
-			<p>
-				Decorated bullet list of design methodologies like persona building, journey mapping, competitive analysis, quantitative and qualitative data, user
-				acceptance testing, wrieframes, prototypes, design languages, usability testing, natural skeptic, curious, desire to validate problems, seek to
-				understand the users and context, mitigate risks associated with assumptions, destroy confirmation bias, colaborate to conceptualize solutions
-			</p>
-
-			<h4>Engineering</h4>
-			<h5>Code makes it click</h5>
-			<p>
-				Simple sentence that captures my view of engineering... conceptual, agile, systems and components, testing. Decisions that impact the user experience
-				happen outside of Figma.
-			</p>
-			<p>
-				Decorated bullet list of developer values like design systems, stateful interfaces, moderated user sessions, quality assurance, testing and stability,
-				Meticulous, detail oriented, system-minded, build solutions that can be validated quickly, test-driven for easy maintenenace
-			</p>
-
-			<h4>Strategy</h4>
-			<h5>Life after production</h5>
-			<p>Simple sentence that captures my view of strategy... unity, flexibility, time management, leading with data, qualifying opportunties</p>
-			<p>
-				Decorated bullet list of strategy values like setting scope, clarifying objectives, managing feedback planning rollouts, pivots, staying lean,
-				Collaborative, agile mindset, goal oreinted, empower others, lead from the front, focus on transparency of process, inclusive to other departments,
-				experience in product roles helps me mitigate risks and more accuratley estimate timelines
-			</p>
-
-			<h4>Tools and Tech</h4>
-			<!-- Put this in a ribbon and use the icons / logos (svgs) to break things up -->
-			<ul>
-				<li>React</li>
-				<li>Vue</li>
-				<li>JavaScript</li>
-				<li>TypeScript</li>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Tailwind</li>
-				<li>SCSS</li>
-				<li>Bootstrap</li>
-				<li>Figma</li>
-				<li>Sketch</li>
-				<li>Node</li>
-				<li>Express</li>
-				<li>Postgres</li>
-				<li>Slack</li>
-				<li>Linear</li>
-				<li>Jira</li>
-			</ul>
-		</div>
-	</section>
+	<IndexSummary />
 	<IndexRecommendations />
-	<section id="contact">Contact</section>
+	<section id="contact" style="min-height: 480px;">Contact</section>
 </Layout>
 
 <script>
