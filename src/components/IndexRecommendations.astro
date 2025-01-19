@@ -3,17 +3,19 @@ import data from '../assets/data.json'
 const { recommendations } = data
 ---
 
-<section>
-	<h2>Recommendations</h2>
-	<!-- Trendy grid of cards with frosty effect and profile images (if avialable) or generic avatar (initials) -->
-	<ul>
-		{
-			recommendations.map((r) => (
-				<li>
-					<p>{r.content}</p>
-					<p>{r.author}</p>
-				</li>
-			))
-		}
-	</ul>
+<section class="bg-fg text-fill">
+	<div class="mx-auto max-w-6xl">
+		<h2>Recommendations</h2>
+		<!-- Trendy grid of cards with frosty effect and profile images (if avialable) or generic avatar (initials) -->
+		<ul class="grid grid-cols-4">
+			{
+				recommendations.map((r) => (
+					<li>
+						<p>{r.content}</p>
+						<p>{r.author}</p>
+					</li>
+				))
+			}
+		</ul>
+	</div>
 </section>
