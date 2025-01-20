@@ -5,11 +5,11 @@ import Logo from './Logo.astro'
 <div id="hero-wrapper" class="relative flex flex-grow flex-col items-center justify-center bg-gradient-to-tr from-fill-muted to-fill px-6">
 	<Logo
 		pathLength="4"
-		class="animate-stroke fixed left-1/2 top-1/2 max-h-[75vh] max-w-lg -translate-x-1/2 -translate-y-1/2 transform fill-none stroke-fg-muted opacity-45 dark:opacity-30"
+		class="animate-stroke absolute left-1/2 top-1/2 max-h-[75vh] max-w-lg -translate-x-1/2 -translate-y-1/2 transform fill-none stroke-fg-muted opacity-45 dark:opacity-30"
 	/>
+	<div class="dot-grid absolute bottom-0 left-0 top-3/4 w-1/4 opacity-50 dark:opacity-30"></div>
+	<div class="dot-grid absolute bottom-3/4 right-0 top-0 w-1/4 opacity-50 dark:opacity-30"></div>
 	<div class="relative z-0 my-6 flex w-full max-w-3xl flex-col items-center text-center">
-		<div class="dot-grid fixed bottom-0 left-0 top-3/4 -z-50 w-1/4 opacity-20"></div>
-		<div class="dot-grid fixed bottom-3/4 right-0 top-0 -z-50 w-1/4 opacity-20"></div>
 		<h1 class="mb-6 text-3xl font-black text-fg xs:text-5xl xs:leading-[64px]">
 			Empowering software teams to build the <span class="text-accent">best</span> experiences.
 		</h1>

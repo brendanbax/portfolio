@@ -9,7 +9,7 @@
 	--text-default: theme(colors.neutral.900);
 	--fill-muted: theme(colors.neutral.200);
 	--fill-default: theme(colors.neutral.50);
-	--accent-muted: theme(colors.lime.400);
+	--accent-muted: theme(colors.lime.600);
 	--accent-default: theme(colors.lime.500);
 }
 html {
@@ -21,7 +21,7 @@ html.dark {
 	--text-default: theme(colors.neutral.50);
 	--fill-muted: theme(colors.neutral.900);
 	--fill-default: theme(colors.neutral.800);
-	--accent-muted: theme(colors.lime.300);
+	--accent-muted: theme(colors.lime.600);
 	--accent-default: theme(colors.lime.400);
 }
 
@@ -36,6 +36,18 @@ html.dark {
 	}
 	.dark .dot-grid {
 		background-image: url('data:image/svg+xml, <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="1" fill="white" /></svg>');
+	}
+	.text-outline {
+		text-transform: uppercase;
+		text-shadow:
+			1px 0 0 var(--text-muted),
+			1px 1px 0 var(--text-muted),
+			-1px 0 0 var(--text-muted),
+			-1px -1px 0 var(--text-muted),
+			0 1px 0 var(--text-muted),
+			0 01px 0 var(--text-muted);
+		opacity: 0.75;
+		color: var(--fill-default);
 	}
 }
 @layer utilities {
