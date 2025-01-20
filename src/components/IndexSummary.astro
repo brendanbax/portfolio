@@ -1,5 +1,6 @@
 ---
 import Icon from 'heroicons-astro/Heroicon.astro'
+import TechIcon from './TechIcon.astro'
 const summaryItems = [
 	{
 		overline: 'Design',
@@ -21,15 +22,21 @@ const summaryItems = [
 		overline: 'Engineering',
 		title: 'Code makes it click',
 		description:
-			'Staying agile, I work to bring meaningful interactions to life using real systems and data so we can get critical feedback from users. As the product evolves, I provide the necessary polish to release tested, delightful experiences.',
-		// TODO: Replace these with an array of SVG elements?
-		tech: ['React', 'Vue', 'TypeScript', 'Tailwind', 'HTML', 'CSS', 'JavaScript', 'Node', 'Express', 'Postgres', 'Git', 'VS Code']
-	},
-	{
-		overline: 'Strategy',
-		title: 'Life after merging',
-		description:
-			'Shipping code is only part of the job. I set other teams up for success by documenting features, onboarding customers, and establishing analytics and support integrations essential to monitoring a healthy product.'
+			'I build polished product experiences using modern web technology and agile best practices. I love to prototype new solutions that enable users to explore real data and workflows, providing valuable feedback into my design process.',
+		tech: [
+			{ label: 'React', icon: 'react' },
+			{ label: 'Vue', icon: 'vue' },
+			{ label: 'TypeScript', icon: 'typescript' },
+			{ label: 'Tailwind', icon: 'tailwind' },
+			{ label: 'HTML', icon: 'html' },
+			{ label: 'CSS', icon: 'css' },
+			{ label: 'JavaScript', icon: 'javascript' },
+			{ label: 'Node', icon: 'node' },
+			{ label: 'Express', icon: 'express' },
+			{ label: 'Postgres', icon: 'postgres' },
+			{ label: 'Git', icon: 'git' },
+			{ label: 'VS Code', icon: 'vscode' }
+		]
 	}
 ]
 ---
@@ -40,9 +47,9 @@ const summaryItems = [
 			summaryItems.map((summary) => (
 				<div class="relative z-10 rounded-3xl border border-fill bg-neutral-200 bg-opacity-25 p-6 text-center backdrop-blur-sm dark:bg-neutral-900 dark:bg-opacity-25">
 					<h5 class="text-sm font-bold uppercase text-accent xs:text-base">{summary.overline}</h5>
-					<h4 class="mb-2 font-sans text-2xl font-semibold xs:text-3xl">{summary.title}</h4>
-					<p class="mb-4 text-fg-muted">{summary.description}</p>
-					<div class="grid grid-cols-1 gap-4 xs:grid-cols-2 sm:grid-cols-4">
+					<h4 class="mb-4 font-sans text-2xl font-semibold xs:text-3xl">{summary.title}</h4>
+					<p class="mb-12 text-fg-muted">{summary.description}</p>
+					<div class="grid grid-cols-1 gap-12 xs:grid-cols-2 sm:grid-cols-4">
 						{summary.skills &&
 							summary.skills.map((s) => (
 								<div class="flex items-center gap-x-2">
@@ -55,13 +62,12 @@ const summaryItems = [
 
 						{summary.tech &&
 							summary.tech.map((t) => (
-								<div class="">
-									{/* TODO: create an astro component that returns the correct svg given the prop (like the Icons component) */}
-									<span class="">{t}</span>
+								<div>
+									<TechIcon class="mx-auto h-10 w-10" technology={t.icon} />
+									<p class="mt-2 text-center text-xs">{t.label}</p>
 								</div>
 							))}
 					</div>
-					{/* TODO: for strategy, add an animated element maybe a racecar that drives by as you scroll down */}
 				</div>
 			))
 		}
