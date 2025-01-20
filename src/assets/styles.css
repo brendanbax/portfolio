@@ -13,7 +13,7 @@
 	--accent-default: theme(colors.lime.500);
 }
 html {
-	@apply bg-fill-muted text-fg;
+	@apply scroll-smooth bg-fill-muted text-fg;
 }
 html.dark {
 	@apply transition-colors;
@@ -53,6 +53,24 @@ html.dark {
 @layer utilities {
 }
 @layer components {
+	.button {
+		@apply flex cursor-pointer items-center gap-x-2 rounded-full px-4 py-2 font-medium transition-colors;
+	}
+	.button-primary {
+		@apply bg-lime-400 text-neutral-900 hover:bg-lime-300;
+	}
+	.button-primary:hover,
+	.button-primary:focus {
+		box-shadow: 0 0 1rem theme(colors.lime.400);
+	}
+	.button-secondary {
+		@apply border border-fg-muted bg-fill text-fg;
+	}
+	.button-secondary:hover,
+	.button-secondary:focus {
+		@apply bg-fill-muted;
+		box-shadow: 0 0 1rem theme(colors.neutral.300);
+	}
 }
 
 /* Animations */
