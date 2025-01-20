@@ -38,7 +38,7 @@ const summaryItems = [
 	<div class="mx-auto my-16 flex max-w-3xl flex-col gap-y-16 px-4 md:px-0">
 		{
 			summaryItems.map((summary) => (
-				<div class="rounded-3xl border border-fill bg-neutral-200 bg-opacity-25 p-6 text-center backdrop-blur-sm dark:bg-neutral-900 dark:bg-opacity-25">
+				<div class="relative z-10 rounded-3xl border border-fill bg-neutral-200 bg-opacity-25 p-6 text-center backdrop-blur-sm dark:bg-neutral-900 dark:bg-opacity-25">
 					<h5 class="text-sm font-bold uppercase text-accent xs:text-base">{summary.overline}</h5>
 					<h4 class="mb-2 font-sans text-2xl font-semibold xs:text-3xl">{summary.title}</h4>
 					<p class="mb-4 text-fg-muted">{summary.description}</p>

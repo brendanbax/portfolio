@@ -4,7 +4,7 @@ import IconDribbble from './IconDribbble.astro'
 import IconLinkedIn from './IconLinkedIn.astro'
 ---
 
-<footer class="bg-fill-muted px-6 py-4 text-xs md:hidden">
+<footer class="relative z-10 bg-fill-muted px-6 py-4 text-xs md:hidden">
 	<div class="mx-auto mb-2 grid grid-cols-3 gap-2 md:hidden">
 		<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link mx-auto">
 			<IconDribbble class="w-4" />
@@ -31,7 +31,7 @@ import IconLinkedIn from './IconLinkedIn.astro'
 	</div>
 </footer>
 
-<footer class="hidden grid-cols-2 items-center bg-fill-muted px-6 py-4 text-xs md:grid md:grid-cols-3">
+<footer class="relative z-10 hidden grid-cols-2 items-center bg-fill-muted px-6 py-4 text-xs md:grid md:grid-cols-3">
 	<span>&copy;<span id="computed-date"></span> Brendan Bax. Made in the USA.</span>
 	<div class="mx-auto hidden items-center gap-2 md:flex">
 		<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
