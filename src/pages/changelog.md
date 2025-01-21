@@ -154,7 +154,8 @@ changelog: [
 			'Remove professional projects, assets available on Dribbble',
 			'Remove personal projects',
 			'New, focused content on home page',
-			'New about page with career highlights',
+			'Added professional recommendations',
+			'Updated design and animations',
 		]
 	},
 ]
