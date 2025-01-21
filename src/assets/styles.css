@@ -83,19 +83,15 @@ html.dark {
 }
 
 /* Animations */
-.animate-fade-left {
+.will-animate {
+	@apply relative;
+}
+.animate-fade-in {
 	opacity: 0;
 	position: relative;
 	animation:
-		fadeLeft 500ms 400ms forwards,
-		fadeIn 500ms 400ms forwards;
-}
-.animate-fade-right {
-	position: relative;
-	animation:
-		fadeRight 500ms forwards,
-		fadeIn 500ms forwards;
-	transition: opacity 500ms;
+		fadeUp 500ms 500ms forwards,
+		fadeIn 500ms 500ms forwards;
 }
 @keyframes draw {
 	from {
@@ -113,19 +109,11 @@ html.dark {
 		opacity: 1;
 	}
 }
-@keyframes fadeLeft {
+@keyframes fadeUp {
 	from {
-		transform: translateX(1.25rem);
+		transform: translateY(1.25rem);
 	}
 	to {
-		transform: translateX(0);
-	}
-}
-@keyframes fadeRight {
-	from {
-		transform: translateX(-1.25rem);
-	}
-	to {
-		transform: translateX(0);
+		transform: translateY(0);
 	}
 }
