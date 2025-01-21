@@ -4,78 +4,116 @@
 
 /* Core theme */
 :root {
-  @apply transition-colors;
-  --text-muted: theme(colors.neutral.700);
-  --text-default: theme(colors.neutral.900);
-  --fill-muted: theme(colors.neutral.200);
-  --fill-default: theme(colors.neutral.50);
-  --accent-muted: theme(colors.lime.400);
-  --accent-default: theme(colors.lime.500);
+	@apply transition-colors;
+	--text-muted: theme(colors.neutral.700);
+	--text-default: theme(colors.neutral.900);
+	--fill-muted: theme(colors.neutral.200);
+	--fill-default: theme(colors.neutral.50);
+	--accent-muted: theme(colors.lime.600);
+	--accent-default: theme(colors.lime.500);
 }
 html {
-  @apply bg-fill-muted text-fg;
+	@apply scroll-smooth bg-fill-muted text-fg;
 }
 html.dark {
-  @apply transition-colors;
-  --text-muted: theme(colors.neutral.300);
-  --text-default: theme(colors.neutral.50);
-  --fill-muted: theme(colors.neutral.900);
-  --fill-default: theme(colors.neutral.800);
-  --accent-muted: theme(colors.lime.300);
-  --accent-default: theme(colors.lime.400);
+	@apply transition-colors;
+	--text-muted: theme(colors.neutral.300);
+	--text-default: theme(colors.neutral.50);
+	--fill-muted: theme(colors.neutral.900);
+	--fill-default: theme(colors.neutral.800);
+	--accent-muted: theme(colors.lime.600);
+	--accent-default: theme(colors.lime.400);
 }
 
 *::selection {
-  @apply text-fg dark:text-fill bg-accent-muted;
+	@apply bg-lime-200 text-neutral-900;
 }
 
+@layer base {
+	.dot-grid {
+		background-image: url('data:image/svg+xml, <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="1" fill="black" /></svg>');
+		background-repeat: repeat;
+	}
+	.dark .dot-grid {
+		background-image: url('data:image/svg+xml, <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="1" fill="white" /></svg>');
+	}
+	.text-outline {
+		text-transform: uppercase;
+		text-shadow:
+			1px 0 0 var(--text-muted),
+			1px 1px 0 var(--text-muted),
+			-1px 0 0 var(--text-muted),
+			-1px -1px 0 var(--text-muted),
+			0 1px 0 var(--text-muted),
+			0 01px 0 var(--text-muted);
+		opacity: 0.75;
+		color: var(--fill-default);
+	}
+}
 @layer utilities {
-  
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.no-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
 }
 @layer components {
-
+	.button {
+		@apply flex cursor-pointer items-center gap-x-2 rounded-full px-4 py-2 font-medium transition-colors;
+	}
+	.button-primary {
+		@apply bg-lime-400 text-neutral-900 hover:bg-lime-300;
+	}
+	.button-primary:hover,
+	.button-primary:focus {
+		box-shadow: 0 0 1rem theme(colors.lime.400);
+	}
+	.button-secondary {
+		@apply border border-fg-muted bg-fill text-fg;
+	}
+	.button-secondary:hover,
+	.button-secondary:focus {
+		@apply bg-fill-muted;
+		box-shadow: 0 0 1rem theme(colors.neutral.300);
+	}
 }
 
 /* Animations */
-.animate-fade-left {
-  opacity: 0;
-  position: relative;
-  animation: fadeLeft 500ms 400ms forwards, fadeIn 500ms 400ms forwards;
+.will-animate {
+	@apply relative;
 }
-.animate-fade-right {
-  position: relative;
-  animation: fadeRight 500ms forwards, fadeIn 500ms forwards;
-  transition: opacity 500ms;
+.animate-fade-in {
+	opacity: 0;
+	position: relative;
+	animation:
+		fadeUp 500ms 500ms forwards,
+		fadeIn 500ms 500ms forwards;
 }
 @keyframes draw {
-  from {
-    stroke-dashoffset: 1;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+	from {
+		stroke-dashoffset: 1;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
-@keyframes fadeLeft {
-  from {
-    transform: translateX(1.25rem);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-@keyframes fadeRight {
-  from {
-    transform: translateX(-1.25rem);
-  }
-  to {
-    transform: translateX(0);
-  }
+@keyframes fadeUp {
+	from {
+		transform: translateY(1.25rem);
+	}
+	to {
+		transform: translateY(0);
+	}
 }

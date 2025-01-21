@@ -146,5 +146,17 @@ changelog: [
 			'Add relevant media to project pages',
 		]
 	},
+	{
+		date: '2025/01/19',
+		title: 'Remove Legacy Content',
+		description: 'I am finding less time to document my work the older I get and feel that the legacy content on my site is not adding much value (and does not age well). Time for some cleanup!',
+		changes: [
+			'Remove professional projects, assets available on Dribbble',
+			'Remove personal projects',
+			'New, focused content on home page',
+			'Added professional recommendations',
+			'Updated design and animations',
+		]
+	},
 ]
 ---

@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro'
+import data from '../assets/data.json'
+const { resume, certifications } = data
+---
+
+<Layout title="About">
+	<main class="mx-auto my-6 w-full max-w-prose">
+		<section>
+			<h1>About Me</h1>
+			<p>
+				Hello, my name is Brendan and I'm an application designer and developer in Wentzville, Missouri. My love for art and technology led me to pursue a
+				Bachelor of Science degree in Game Art from Full Sail University. Despite graduating Valedictorian in 2010, I was unable to find paying work in the
+				industry due to the economy.
+			</p>
+			<p>
+				To make ends meet I worked a variety of jobs including line cook, retail manager, B2B salesman, janitor, hand-dyed-yarn colorist, becoming a licensed
+				Realtor, teaching at a technical college, and starting my own business. Ultimately I decided to learn to code with <a href="" target="_blank"
+					>Free Code Camp</a
+				>, start building web apps, and I haven't looked back.
+			</p>
+			<p>
+				I'm a charismatic leader and love teaching, having given career talks about design and user experience to local high school students. Outside of work I
+				lead small groups with my church and volunteer in the kids ministry on Sundays.
+			</p>
+		</section>
+		<scection>
+			<h2>Resume</h2>
+			<ul>
+				{
+					resume.map((r) => (
+						<li>
+							<p>
+								{r.duration} • {r.title}
+							</p>
+							<p>{r.business}</p>
+							<p>{r.description}</p>
+						</li>
+					))
+				}
+			</ul>
+		</scection>
+		<scection>
+			<h2>Education</h2>
+			<h3>University</h3>
+			<p>Full Sail Stuff</p>
+			<h3>Free Code Camp Certifications</h3>
+			<ul>
+				{
+					certifications.map((c) => (
+						<li>
+							<a href={c.slug} target="_blank">
+								{c.title}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</scection>
+		<scection>
+			<h2>Personal Projects</h2>
+			<ul>
+				<li>Nichijugo book</li>
+				<li>Shirts - why not, probably won't update them ever</li>
+				<li>Website for my parents using Nuxt + photography</li>
+				<li>Bible study app using Vue</li>
+			</ul>
+		</scection>
+	</main>
+</Layout>

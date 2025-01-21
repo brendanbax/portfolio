@@ -1,99 +1,47 @@
 ---
-import { getCollection } from 'astro:content';
-
-import IndexFeature from '../components/IndexFeature.astro'
 import IndexHero from '../components/IndexHero.astro'
+import IndexRecommendations from '../components/IndexRecommendations.astro'
+import IndexSummary from '../components/IndexSummary.astro'
 import Layout from '../layouts/Layout.astro'
-import IndexPersonalProject from '../components/IndexPersonalProject.astro';
-
-const projects = await getCollection('projects').then(data => data.sort((a, b) => a.data.date > b.data.date ? -1 : 1))
-const personalProjects = await getCollection('personal')
-
-const careerLength = (() => {
-	const origin = new Date('2013/11/01')
-    const now = new Date()
-    const years = new Date(now.getTime() - origin.getTime()).getFullYear() - 1970
-	return years
-})()
 ---
 
 <Layout title="Home">
 	<IndexHero />
-	<project-summary class="section relative flex flex-col items-center pb-12 px-6 gap-y-12">
-        <div class="w-full max-w-3xl mx-auto">
-            <h3 class="mb-4 text-lg font-bold xs:text-2xl text-fg-muted">Professional Projects</h3>
-            <p class="text-base font-light leading-normal xs:text-lg md:max-w-full">I have over {careerLength} years of experience as a UX Designer and Front End Developer. I leverage my versatile skills and product-first mindset to deliver experiences user love.</p>
-            <p class="text-xs xs:text-sm font-light mt-2 opacity-60">Work is shared with permission, in some cases branding and product names have been white-labeled.</p>
-        </div>
-		{projects.map((p, i) => {
-			return (
-                <div class="project-wrapper hidden">
-                    <IndexFeature index={i} project={p} />
-                </div>
-            )
-		})}
-        <button class="px-4 py-2 rounded-lg bg-accent hover:bg-accent-muted text-neutral-900 text-sm transition-colors">Show more</button>
-	</project-summary>
-    <div class="py-12 px-6 bg-fill">
-        <h3 class="text-center mb-4 text-lg font-bold xs:text-2xl text-fg-muted">Personal Projects</h3>
-        <p class="text-center max-w-prose mx-auto text-base font-light leading-normal xs:text-lg">I build side projects to stay sharp and have fun. These tend to be focused on graphic design, branding, and mobile app development.</p>
-        <div class="flex flex-col xs:grid xs:grid-cols-6 xl:grid-cols-5 gap-6 mt-6">
-            {personalProjects.map((p, i) => {
-                return (
-                    <IndexPersonalProject
-                        project={p}
-                        class={i > 2 ? 'xs:col-span-3 xl:col-span-1' : 'xs:col-span-2 xl:col-span-1'}
-                    />
-                )
-            })}
-        </div>
-    </div>
+	<IndexSummary />
+	<IndexRecommendations />
+	<!-- <section id="contact" class="relative z-10 bg-fill" style="min-height: 480px;">Contact</section> -->
 </Layout>
 
-<style>
-	.section::before {
-        --height: 10vh;
-        content: '';
-        position: absolute;
-        top: calc(var(--height) * -1);
-        left: 0;
-        right: 0;
-        height: 0;
-        border-bottom: var(--height) solid theme(colors.fill-muted);
-        border-left: 100vw solid transparent;
-    }
-</style>
-
 <script>
-    class ProjectSummary extends HTMLElement {
-        constructor() {
-            super()
-            let count = 3;
+	class ProjectSummary extends HTMLElement {
+		constructor() {
+			super()
+			let count = 3
 
-            const moreButton = this.querySelector('button')
-            const allProjects = this.querySelectorAll('.project-wrapper')
+			const moreButton = this.querySelector('button')
+			const allProjects = this.querySelectorAll('.project-wrapper')
 
-            function showProjects() {
-                if (allProjects && allProjects.length > 0) {
-                    for (let i = 0; i < count; i++) {
-                        if (i >= allProjects.length && moreButton) {
-                            moreButton.classList.add('hidden')
-                            return;
-                        }
-                        allProjects[i].classList.remove('hidden')
-                    }
-                }
-            }
+			function showProjects() {
+				if (allProjects && allProjects.length > 0) {
+					for (let i = 0; i < count; i++) {
+						if (i >= allProjects.length && moreButton) {
+							moreButton.classList.add('hidden')
+							return
+						}
+						allProjects[i].classList.remove('hidden')
+					}
+				}
+			}
 
-            if (moreButton) {
-                moreButton.addEventListener('click', () => {
-                    count+= 3;
-                    showProjects()
-                });
-            }
+			if (moreButton) {
+				moreButton.addEventListener('click', () => {
+					count += 3
+					showProjects()
+				})
+			}
 
-            showProjects()
-        }
-    }
-    customElements.define('project-summary', ProjectSummary);
+			showProjects()
+		}
+	}
+	customElements.define('project-summary', ProjectSummary)
 </script>

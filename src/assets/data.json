@@ -1,132 +1,142 @@
 {
-    "resume": [
-        {
-            "title": "Sr. UX Designer",
-            "business": "Freight Science",
-            "duration": "2022 to Present",
-            "description": "Product design, management, and development for a data-driven logistics software startup."
-        },
-        {
-            "title": "UX Architect",
-            "business": "Intrusion, Inc.",
-            "duration": "2021 to 2022",
-            "description": "Solo designer and Vue.js developer for Intrusion. Handled a Vue 3 migration, implemented tests, and built a few new web-based SaaS products to support broader network security projects."
-        },
-        {
-            "title": "UX Architect",
-            "business": "Bayer (Crop Sciences)",
-            "duration": "2021 (Contract)",
-            "description": "Partnered with agile software teams to humanize data visualization apps used by various user groups. Was a contributor to Bayer global design system standards and documentation, improving design consistency and culture."
-        },
-        {
-            "title": "Full Stack Developer",
-            "business": "World Wide Technology",
-            "duration": "2020 to 2021",
-            "description": "Built user interfaces and back-end services for the WWT corporate website which has over 30,000 monthly visitors. Reduced time on task and improved edit accuracy by building a POC for editing content live from the website instead of using the legacy proprietary CDN."
-        },
-        {
-            "title": "Sr. Software Design Engineer",
-            "business": "Mercy",
-            "duration": "2019 to 2020",
-            "description": "Improved virtual visits during COVID-19 by building a point-to-point video chat app, supporting 2k-3k video visits per day. Reduced pediatric ER visits and improved patient quality of life by creating a patient portal that connects sick kids and their caregivers to medical staff for 24/7 support."
-        },
-        {
-            "title": "Sr. UX Designer",
-            "business": "Coolfire",
-            "duration": "2018 to 2019",
-            "description": "Led design for multiple client projects including a roadside call center app</a> that reduced call times and costs, a private security app that simplified Person of Interest management, and a real-time logistics tracking and ordering platform that enabled drop shipments to resupply partners. Operated as practice lead for a small design team and handled idendity design for new SaaS products."
-        },
-        {
-            "title": "Product Designer",
-            "business": "Monsanto",
-            "duration": "2018 (Contract)",
-            "description": "Drove vision behind software solutions related to plant breeding and geospatial data collection. Supported agile development teams by working as an embedded designer and facilitating user testing sessions."
-        },
-        {
-            "title": "UX Designer",
-            "business": "WWT Asynchrony Labs",
-            "duration": "2017 to 2018",
-            "description": "UX Designer and Front End Developer for various client-service projects. Transformed the online mortgage application</a> for a major bank using conversational UI, massively growing online form submissions. Reduced product loss for WWT logistics by improving the UI for a damage control application."
-        },
-        {
-            "title": "Owner / Chief Designer",
-            "business": "Bax Art & Design Co. LLC",
-            "duration": "2015 to Present",
-            "description": "Chief designer, accountant, HR, customer service, and head of sales and marketing. Made people happy by pushing pixels as a graphic designer, web designer, and 3D artist."
-        },
-        {
-            "title": "Senior Designer",
-            "business": "Controller Chaos",
-            "duration": "2013 to 2015",
-            "description": "Led design for a new online product builder that increased sales and profit margins. Reduced costs by digitizing new product pipelines, reducing time to site by 75%. Maintained revenue through dry seasons by developing an auxiliary brand and managing operations of that business. Trained up the next generation of designers by providing thought leadership and mentorship."
-        },
-        {
-            "title": "Adjunct Instructor",
-            "business": "ITT Technical Institute",
-            "duration": "2011 to 2013",
-            "description": "Warped the minds and inspired the futures of eager students in the field of graphic design, 3D modeling, and computer animation. Gave lectures, provided life skills, and occasionally took attendance."
-        }
-    ],
-    "certifications": [
-        {
-            "title": "Responsive Web Design",
-            "slug": "https://www.freecodecamp.org/certification/brendanbax/responsive-web-design"
-        },
-        {
-            "title": "Front End Libraries",
-            "slug": "https://www.freecodecamp.org/certification/brendanbax/front-end-libraries"
-        },
-        {
-            "title": "JavaScript Algorithms and Data Structures",
-            "slug": "https://www.freecodecamp.org/certification/brendanbax/javascript-algorithms-and-data-structures"
-        },
-        {
-            "title": "APIs and Microservices",
-            "slug": "https://www.freecodecamp.org/certification/brendanbax/apis-and-microservices"
-        }
-    ],
-    "recommendations": [
-        {
-            "content": "Brendan is extremely passionate about his work, creating/delivering great products, and has great insights. His experience in design thinking and elements, coding, and understanding business value delivery makes him a huge asset to any team.",
-            "author": "Alex Courtney",
-            "role": "Director of Innovation R&D, Mercy Virtual",
-            "social": "https://www.linkedin.com/in/alex-courtney-93aa9157/"
-        },
-        {
-            "content": "Brendan is a rare combination - a software engineer plus user-experience designer. And he is not just adequate at both, he excels.",
-            "author": "Peter Granderson",
-            "role": "Developer, Mercy Virtual",
-            "social": ""
-        },
-        {
-            "content": "Brendan has an infectious attitude that leaves you feeling excited to execute on the designs and concepts that he creates. He has also been a great mentor to the design team and has helped to bring them up to speed quickly.",
-            "author": "Nicholas Kajok",
-            "role": "Staff Engineer, Coolfire Solutions",
-            "social": "https://www.linkedin.com/in/nkajok/"
-        },
-        {
-            "content": "Brendan is a talented, thoughtful UX and interaction designer. I am convinced he can learn and master any skill or practice to make himself a UX thought and practice lead.",
-            "author": "Kate Chadha",
-            "role": "Research Practice Lead, Asynchrony Labs",
-            "social": "https://www.linkedin.com/in/katechadha/"
-        },
-        {
-            "content": "Brendan brought strong design skills to our projects together while at Asynchrony. He was able to manage the client relationship and user feedback to build a complete application. Brendan was also quick to jump into technical discussions and gain knowledge and understanding of every aspect of the user experience.",
-            "author": "Calvin Cox",
-            "role": "Developer, Asynchrony Labs",
-            "social": "https://www.linkedin.com/in/calvinkcox/"
-        },
-        {
-            "content": "His designs clearly articulate the value a user will get out of each interaction with the page. Working with Brendan was a treat. In three days of pairing, we were able to redesign the entire application and put forward a working prototype.",
-            "author": "Johnny Steenbergen",
-            "role": "Developer, Asynchrony Labs",
-            "social": "https://www.linkedin.com/in/jwsteenbergen/"
-        },
-        {
-            "content": "Working with Brendan in Mercy Virtual's R&D group was a pleasure. His programming skills were top notch and his personality, drive, and ability to understand the mission was unparalleled. Brendan's eye for design and desire to build usable, yet beautiful interfaces really stood out while we worked together. He was always eager to teach and learn and his leadership kept us on track in our agile environment. Great guy, great developer, great designer, and a pleasure to work with.",
-            "author": "Jordan Woerndle",
-            "role": "Developer, Mercy Virtual",
-            "social": "https://www.linkedin.com/in/jordan-woerndle/"
-        }
-    ]
+	"resume": [
+		{
+			"title": "Applications Team Lead",
+			"business": "Freight Science",
+			"duration": "2025 to Present",
+			"description": "Project manager and team lead deliving high-value capabilities for the web platform."
+		},
+		{
+			"title": "Sr. UX Designer",
+			"business": "Freight Science",
+			"duration": "2022 to 2025",
+			"description": "User research, product design and full-stack development for a data-driven logistics software startup."
+		},
+		{
+			"title": "UX Architect",
+			"business": "Intrusion, Inc.",
+			"duration": "2021 to 2022",
+			"description": "Solo designer and Vue.js developer for Intrusion. Handled a Vue 3 migration, implemented tests, and built a few new web-based SaaS products to support broader network security projects."
+		},
+		{
+			"title": "UX Architect",
+			"business": "Bayer (Crop Sciences)",
+			"duration": "2021 (Contract)",
+			"description": "Partnered with agile software teams to humanize data visualization apps used by various user groups. Was a contributor to Bayer global design system standards and documentation, improving design consistency and culture."
+		},
+		{
+			"title": "Full Stack Developer",
+			"business": "World Wide Technology",
+			"duration": "2020 to 2021",
+			"description": "Built user interfaces and back-end services for the WWT corporate website which has over 30,000 monthly visitors. Reduced time on task and improved edit accuracy by building a POC for editing content live from the website instead of using the legacy proprietary CDN."
+		},
+		{
+			"title": "Sr. Software Design Engineer",
+			"business": "Mercy",
+			"duration": "2019 to 2020",
+			"description": "Improved virtual visits during COVID-19 by building a point-to-point video chat app, supporting 2k-3k video visits per day. Reduced pediatric ER visits and improved patient quality of life by creating a patient portal that connects sick kids and their caregivers to medical staff for 24/7 support.",
+			"links": ["foo", "bar", "baz"]
+		},
+		{
+			"title": "Sr. UX Designer",
+			"business": "Coolfire",
+			"duration": "2018 to 2019",
+			"description": "Led design for multiple client projects including a roadside call center app</a> that reduced call times and costs, a private security app that simplified Person of Interest management, and a real-time logistics tracking and ordering platform that enabled drop shipments to resupply partners. Operated as practice lead for a small design team and handled idendity design for new SaaS products.",
+			"links": ["foo", "bar", "baz"]
+		},
+		{
+			"title": "Product Designer",
+			"business": "Monsanto",
+			"duration": "2018 (Contract)",
+			"description": "Drove vision behind software solutions related to plant breeding and geospatial data collection. Supported agile development teams by working as an embedded designer and facilitating user testing sessions.",
+			"links": ["foo", "bar", "baz"]
+		},
+		{
+			"title": "UX Designer",
+			"business": "WWT Asynchrony Labs",
+			"duration": "2017 to 2018",
+			"description": "UX Designer and Front End Developer for various client-service projects. Transformed the online mortgage application</a> for a major bank using conversational UI, massively growing online form submissions. Reduced product loss for WWT logistics by improving the UI for a damage control application.",
+			"links": ["foo", "bar", "baz"]
+		},
+		{
+			"title": "Owner / Chief Designer",
+			"business": "Bax Art & Design Co. LLC",
+			"duration": "2015 to Present",
+			"description": "Chief designer, accountant, HR, customer service, and head of sales and marketing. Made people happy by pushing pixels as a graphic designer, web designer, and 3D artist."
+		},
+		{
+			"title": "Senior Designer",
+			"business": "Controller Chaos",
+			"duration": "2013 to 2015",
+			"description": "Led design for a new online product builder that increased sales and profit margins. Reduced costs by digitizing new product pipelines, reducing time to site by 75%. Maintained revenue through dry seasons by developing an auxiliary brand and managing operations of that business. Trained up the next generation of designers by providing thought leadership and mentorship."
+		},
+		{
+			"title": "Adjunct Instructor",
+			"business": "ITT Technical Institute",
+			"duration": "2011 to 2013",
+			"description": "Warped the minds and inspired the futures of eager students in the field of graphic design, 3D modeling, and computer animation. Gave lectures, provided life skills, and occasionally took attendance."
+		}
+	],
+	"certifications": [
+		{
+			"title": "Responsive Web Design",
+			"slug": "https://www.freecodecamp.org/certification/brendanbax/responsive-web-design"
+		},
+		{
+			"title": "Front End Libraries",
+			"slug": "https://www.freecodecamp.org/certification/brendanbax/front-end-libraries"
+		},
+		{
+			"title": "JavaScript Algorithms and Data Structures",
+			"slug": "https://www.freecodecamp.org/certification/brendanbax/javascript-algorithms-and-data-structures"
+		},
+		{
+			"title": "APIs and Microservices",
+			"slug": "https://www.freecodecamp.org/certification/brendanbax/apis-and-microservices"
+		}
+	],
+	"recommendations": [
+		{
+			"content": "Brendan is extremely passionate about his work, creating/delivering great products, and has great insights. His experience in design thinking and elements, coding, and understanding business value delivery makes him a huge asset to any team.",
+			"author": "Alex Courtney",
+			"role": "Director of Innovation R&D, Mercy Virtual",
+			"social": "https://www.linkedin.com/in/alexander-courtney-stl/"
+		},
+		{
+			"content": "Working with Brendan in Mercy Virtual's R&D group was a pleasure. His programming skills were top notch and his personality, drive, and ability to understand the mission was unparalleled. Brendan's eye for design and desire to build usable, yet beautiful interfaces really stood out while we worked together. He was always eager to teach and learn and his leadership kept us on track in our agile environment. Great guy, great developer, great designer, and a pleasure to work with.",
+			"author": "Jordan Woerndle",
+			"role": "Developer, Mercy Virtual",
+			"social": "https://www.linkedin.com/in/jordan-woerndle/"
+		},
+		{
+			"content": "Brendan is a rare combination - a software engineer plus user-experience designer. And he is not just adequate at both, he excels.",
+			"author": "Peter Granderson",
+			"role": "Developer, Mercy Virtual",
+			"social": ""
+		},
+		{
+			"content": "Brendan has an infectious attitude that leaves you feeling excited to execute on the designs and concepts that he creates. He has also been a great mentor to the design team and has helped to bring them up to speed quickly.",
+			"author": "Nicholas Kajok",
+			"role": "Staff Engineer, Coolfire Solutions",
+			"social": "https://www.linkedin.com/in/nkajok/"
+		},
+		{
+			"content": "Brendan brought strong design skills to our projects together while at Asynchrony. He was able to manage the client relationship and user feedback to build a complete application. Brendan was also quick to jump into technical discussions and gain knowledge and understanding of every aspect of the user experience.",
+			"author": "Calvin Cox",
+			"role": "Developer, Asynchrony Labs",
+			"social": "https://www.linkedin.com/in/calvinkcox/"
+		},
+		{
+			"content": "Brendan is a talented, thoughtful UX and interaction designer. I am convinced he can learn and master any skill or practice to make himself a UX thought and practice lead.",
+			"author": "Kate Chadha",
+			"role": "Research Practice Lead, Asynchrony Labs",
+			"social": "https://www.linkedin.com/in/katechadha/"
+		},
+		{
+			"content": "His designs clearly articulate the value a user will get out of each interaction with the page. Working with Brendan was a treat. In three days of pairing, we were able to redesign the entire application and put forward a working prototype.",
+			"author": "Johnny Steenbergen",
+			"role": "Developer, Asynchrony Labs",
+			"social": "https://www.linkedin.com/in/jwsteenbergen/"
+		}
+	]
 }

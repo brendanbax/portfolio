@@ -1,0 +1,39 @@
+---
+const { text, class: classNames } = Astro.props
+---
+
+<svg class={`${classNames} will-animate text-line block h-12 w-full`} stroke-width="1">
+	<text class="text-3xl font-black sm:text-5xl" x="50%" dominant-baseline="middle" text-anchor="middle" y="50%">{text.toUpperCase()}</text>
+</svg>
+
+<style>
+	.animate-text-line {
+		stroke-dasharray: 800;
+		stroke-dashoffset: 1000;
+		animation:
+			dash 5s linear forwards,
+			filling 3s linear forwards;
+	}
+
+	.text-line text {
+		font-family: var(--font-sans);
+		font-style: normal;
+		fill: inherit;
+	}
+
+	@keyframes dash {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	@keyframes filling {
+		0%,
+		90% {
+			fill-opacity: 0;
+		}
+		100% {
+			fill-opacity: 1;
+		}
+	}
+</style>

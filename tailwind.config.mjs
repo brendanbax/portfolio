@@ -14,8 +14,7 @@ export default {
 				accent: 'var(--accent-default)'
 			},
 			fontFamily: {
-				sans: 'Lexend Variable',
-				serif: 'Lexend Variable'
+				sans: 'Quicksand Variable'
 			},
 			screens: {
 				xs: '480px'
