@@ -26,7 +26,7 @@ html.dark {
 }
 
 *::selection {
-	@apply bg-accent-muted text-fg dark:text-fill;
+	@apply bg-lime-200 text-neutral-900;
 }
 
 @layer base {
@@ -51,6 +51,15 @@ html.dark {
 	}
 }
 @layer utilities {
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.no-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
 }
 @layer components {
 	.button {

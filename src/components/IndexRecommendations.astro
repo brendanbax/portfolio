@@ -3,22 +3,54 @@ import data from '../assets/data.json'
 const { recommendations } = data
 ---
 
-<section class="bg-fg text-fill">
-	<div class="mx-auto max-w-6xl">
-		<!-- Intro text -->
+<section class="relative bg-fg text-fill">
+	<div class="mx-auto max-w-6xl px-6 md:px-0">
 		<!-- TODO: not loving the outlines... maybe do a stripe or strike-through that animates on scroll -->
 		<h2 class="text-outline mb-4 text-center text-5xl font-black invert">Recommendations</h2>
-		<p class="mx-auto max-w-prose text-center">Something about who I work with, why teams matter, and how I try to serve those around me...</p>
-		<!-- Trendy grid of cards with frosty effect and profile images (if avialable) or generic avatar (initials) -->
-		<ul class="grid grid-cols-4">
-			{
-				recommendations.map((r) => (
-					<li>
-						<p>{r.content}</p>
-						<p>{r.author}</p>
-					</li>
-				))
-			}
-		</ul>
+		<p class="mx-auto max-w-prose text-center">
+			I thrive in collaborative environments where people can learn from and serve each other. Below are some words of praise from my past colleagues.
+		</p>
 	</div>
+	<ul class="scroll-p-1/2 no-scrollbar relative z-10 my-6 flex snap-x snap-mandatory gap-x-6 overflow-x-scroll px-6 pb-2">
+		{
+			recommendations.map((r) => (
+				<li
+					data-recommendation
+					class="h-fit max-w-md flex-shrink-0 snap-center rounded-xl border border-fg-muted bg-neutral-900 bg-opacity-80 p-6 shadow-none backdrop-blur-md dark:border-none dark:bg-neutral-50 dark:bg-opacity-80 dark:shadow-2xl"
+				>
+					<div class="mb-2 flex items-center gap-x-2">
+						<div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-accent text-neutral-900">
+							<span class="font-extrabold">{r.author.substring(0, 1)}</span>
+						</div>
+						<div>
+							{r.social ? (
+								<a class="mb-0 flex max-w-fit items-center gap-x-1 font-semibold transition-colors hover:text-accent-muted" href={r.social} target="_blank">
+									<span>{r.author}</span>
+								</a>
+							) : (
+								<p class="mb-0 font-semibold">{r.author}</p>
+							)}
+							<p class="-mt-1 text-sm">{r.role}</p>
+						</div>
+					</div>
+					<p>"{r.content}"</p>
+				</li>
+			))
+		}
+	</ul>
+	<div id="slash"></div>
 </section>
+
+<style>
+	#slash {
+		--height: 12rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 0;
+		border-bottom: var(--height) solid var(--fill-default);
+		border-left: 100vw solid transparent;
+		z-index: 0;
+	}
+</style>
