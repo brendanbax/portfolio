@@ -169,5 +169,15 @@ changelog: [
 			'Fix grid layout for mobile',
 		]
 	},
+	{
+		date: '2025/01/25',
+		title: 'Added About Page',
+		description: 'To help tell my story I am including a new about page. This content covers my professional resume with some flavor about my career and journey in tech.',
+		changes: [
+			'Add about page and corresponding link',
+			'Fix fade issue for index hero',
+			'Fix fade issue for index summary',
+		]
+	},
 ]
 ---
