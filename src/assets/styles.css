@@ -80,6 +80,9 @@ html.dark {
 		@apply bg-fill-muted;
 		box-shadow: 0 0 1rem theme(colors.neutral.300);
 	}
+	.link-text {
+		@apply font-medium text-accent underline underline-offset-2 transition-colors hover:text-accent-muted dark:font-normal;
+	}
 }
 
 /* Animations */
