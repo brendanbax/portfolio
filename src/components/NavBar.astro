@@ -13,21 +13,45 @@ When adding the blog update the nav to be a 3 column grid
 Will need a mobile menu as well
 -->
 <nav class="sticky top-0 z-50 flex items-center justify-between bg-neutral-50 bg-opacity-80 p-6 backdrop-blur-md dark:bg-neutral-800 dark:bg-opacity-80">
-	<a href="/" class="flex items-center">
+	<a href="/" class="drop-in flex items-center opacity-0">
 		<Logo class="text-slate h-6 w-6" />
 		<h2 class="text-slate ml-2 mt-0.5 text-xl font-semibold leading-none">Brendan Bax</h2>
 	</a>
 	<div class="flex items-center gap-x-6">
-		<a href="/" class="navigation-link">Home</a>
-		<!-- <a href="/about" class="navigation-link">About</a> -->
-		<!-- <a href="/#contact" class="navigation-link">Contact</a> -->
-		<ThemeButton class="mr-6 h-4 w-4" />
+		<a href="/" class="navigation-link drop-in">Home</a>
+		<!-- <a href="/about" class="navigation-link drop-in">About</a> -->
+		<!-- <a href="/#contact" class="navigation-link drop-in">Contact</a> -->
+		<div class="drop-in relative opacity-0">
+			<ThemeButton class="h-4 w-4" />
+		</div>
 	</div>
 	<span class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-fg-muted to-transparent opacity-20"></span>
 </nav>
 
 <style>
 	.navigation-link {
-		@apply border-b-2 border-transparent transition-colors hover:border-accent;
+		@apply relative border-b-2 border-transparent opacity-0 transition-colors hover:border-accent;
+	}
+	.drop-in:nth-child(1) {
+		animation: drop-in 380ms 50ms forwards;
+	}
+	.drop-in:nth-child(2) {
+		animation: drop-in 380ms 150ms forwards;
+	}
+	.drop-in:nth-child(3) {
+		animation: drop-in 380ms 300ms forwards;
+	}
+	.drop-in:nth-child(4) {
+		animation: drop-in 380ms 450ms forwards;
+	}
+	@keyframes drop-in {
+		from {
+			transform: translateY(-0.5rem);
+			opacity: 0;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
 	}
 </style>
