@@ -158,5 +158,16 @@ changelog: [
 			'Updated design and animations',
 		]
 	},
+	{
+		date: '2025/01/24',
+		title: 'Subtle Animations',
+		description: 'Added some additional animations to the navigation, hero, and section content. Also updated responsive styling for phones.',
+		changes: [
+			'Add animations to nav links',
+			'Add animations to section elements',
+			'Fix padding issue for references on mobile',
+			'Fix grid layout for mobile',
+		]
+	},
 ]
 ---
