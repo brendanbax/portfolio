@@ -43,7 +43,7 @@ const engineeringSummary = {
 <section id="skills" class="relative bg-gradient-to-br from-fill-muted to-fill">
 	<div class="dot-grid absolute bottom-3/4 left-0 top-0 z-0 w-1/4 opacity-50 dark:opacity-30"></div>
 	<!-- Intro text -->
-	<div class="mx-auto max-w-6xl px-6 md:px-0">
+	<div class="will-animate fade-in mx-auto max-w-6xl px-6 md:px-0">
 		<AnimatedText text="Skills" class="mx-auto mb-4 fill-fg-muted stroke-fg-muted" />
 		<p class="mx-auto max-w-prose text-center">
 			My wide-ranging skills include research, design, planning, and engineering. I am hyper organized and a proven leader for both projects and people.
@@ -83,7 +83,7 @@ const engineeringSummary = {
 				<h5 class="text-sm font-bold uppercase text-accent dark:text-accent-muted xs:text-base">{engineeringSummary.overline}</h5>
 				<h4 class="mb-4 font-sans text-2xl font-semibold xs:text-3xl">{engineeringSummary.title}</h4>
 				<p class="mb-12 text-fill-muted">{engineeringSummary.description}</p>
-				<div class="grid grid-cols-2 gap-6 xs:grid-cols-3 sm:grid-cols-4 sm:gap-12">
+				<div class="grid grid-cols-3 gap-6 xs:grid-cols-4 sm:gap-12 md:grid-cols-6">
 					{
 						engineeringSummary.tech.map((t) => (
 							<div>
