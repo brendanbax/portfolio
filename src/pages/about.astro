@@ -1,70 +1,156 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import data from '../assets/data.json'
+import AnimatedText from '../components/AnimatedText.astro'
 const { resume, certifications } = data
 ---
 
 <Layout title="About">
-	<main class="mx-auto my-6 w-full max-w-prose">
-		<section>
-			<h1>About Me</h1>
-			<p>
-				Hello, my name is Brendan and I'm an application designer and developer in Wentzville, Missouri. My love for art and technology led me to pursue a
-				Bachelor of Science degree in Game Art from Full Sail University. Despite graduating Valedictorian in 2010, I was unable to find paying work in the
-				industry due to the economy.
-			</p>
-			<p>
-				To make ends meet I worked a variety of jobs including line cook, retail manager, B2B salesman, janitor, hand-dyed-yarn colorist, becoming a licensed
-				Realtor, teaching at a technical college, and starting my own business. Ultimately I decided to learn to code with <a href="" target="_blank"
-					>Free Code Camp</a
-				>, start building web apps, and I haven't looked back.
-			</p>
-			<p>
-				I'm a charismatic leader and love teaching, having given career talks about design and user experience to local high school students. Outside of work I
-				lead small groups with my church and volunteer in the kids ministry on Sundays.
-			</p>
+	<main class="relative px-4 py-12 md:px-0">
+		<div class="dot-grid fixed right-0 top-0 h-dvh w-1/3 opacity-50 dark:opacity-30"></div>
+		<section
+			class="will-animate fade-in relative z-10 mx-auto max-w-3xl rounded-3xl bg-neutral-50 bg-opacity-50 p-6 opacity-0 shadow-2xl backdrop-blur-md dark:border dark:border-neutral-700 dark:bg-neutral-900 dark:bg-opacity-50 dark:shadow-none"
+		>
+			<h1 class="sr-only">About Me</h1>
+			<AnimatedText text="About Me" class="mb-4 fill-fg stroke-fg" />
+			<div class="flex flex-col gap-y-6">
+				<p>
+					Hello, my name is Brendan and I design and build applications in Wentzville, Missouri. My love for art and technology led me to pursue a Bachelor of
+					Science degree in Game Art from Full Sail University. Despite graduating Valedictorian in 2010, I was unable to find paying work in the industry due
+					to the economy.
+				</p>
+				<p>
+					To make ends meet I worked a variety of jobs including restaurants, retail, B2B sales, janitor, hand-dyed-yarn colorist, becoming a licensed Realtor,
+					teaching at a technical college, and starting my own business. Ultimately I decided to learn to code with <a
+						href="https://www.freecodecamp.org/brendanbax"
+						target="_blank"
+						class="link-text">Free Code Camp</a
+					>, start building web apps, and I haven't looked back.
+				</p>
+				<p>
+					I'm a charismatic leader and love teaching, having given career talks about design and user experience to local high school students. Outside of work
+					I lead small groups with my church and volunteer in the kids ministry on Sundays.
+				</p>
+			</div>
 		</section>
-		<scection>
-			<h2>Resume</h2>
-			<ul>
+		<section class="bg-gradient-to-t from-transparent via-transparent to-transparent to-90% py-12 dark:via-neutral-900">
+			<div class="will-animate fade-in mx-auto my-6 flex w-full max-w-prose flex-col gap-y-6 opacity-0">
+				<h2 class="sr-only">Resume</h2>
+				<AnimatedText text="Resume" class="mb-4 fill-fg stroke-fg" />
+			</div>
+			<ul class="mx-auto flex max-w-prose flex-col">
 				{
-					resume.map((r) => (
-						<li>
-							<p>
-								{r.duration} • {r.title}
-							</p>
-							<p>{r.business}</p>
-							<p>{r.description}</p>
+					resume.map((r, i) => (
+						<li class="resume-item flex gap-x-2 opacity-0">
+							<div class="flex flex-col items-center justify-start">
+								{/* For first element (current) indicate a larger circle that's hollow */}
+								{i === 0 ? (
+									<svg class="h-6 w-6 flex-shrink-0 flex-grow-0 text-accent" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" />
+										<circle cx="12" cy="12" r="2" fill="currentColor" />
+									</svg>
+								) : (
+									<svg class="h-6 w-6 flex-shrink-0 flex-grow-0" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="12" cy="12" r="4" />
+									</svg>
+								)}
+								{i !== resume.length - 1 && <span class="resume-connector h-full w-px bg-fg-muted opacity-0" />}
+							</div>
+							<div class="pb-4">
+								<p class="mb-1 text-sm font-semibold text-accent">{r.duration}</p>
+								<h3 class="mb-2 text-xl font-bold">{r.title}</h3>
+								<p class="mb-2 text-sm font-semibold text-fg-muted">{r.business}</p>
+								<p>{r.description}</p>
+							</div>
 						</li>
 					))
 				}
 			</ul>
-		</scection>
-		<scection>
-			<h2>Education</h2>
-			<h3>University</h3>
-			<p>Full Sail Stuff</p>
-			<h3>Free Code Camp Certifications</h3>
-			<ul>
-				{
-					certifications.map((c) => (
-						<li>
-							<a href={c.slug} target="_blank">
-								{c.title}
-							</a>
-						</li>
-					))
-				}
-			</ul>
-		</scection>
-		<scection>
-			<h2>Personal Projects</h2>
+		</section>
+		<section
+			class="will-animate fade-in relative z-10 mx-auto max-w-3xl rounded-3xl bg-neutral-50 bg-opacity-50 p-6 opacity-0 shadow-2xl backdrop-blur-md dark:border dark:border-neutral-700 dark:bg-neutral-900 dark:bg-opacity-50 dark:shadow-none"
+		>
+			<h2 class="sr-only">Education</h2>
+			<AnimatedText text="Education" class="mb-4 fill-fg stroke-fg" />
+			<div class="mb-6">
+				<h3 class="mb-2 text-xl font-bold">Full Sail University, 2010</h3>
+				<p class="font-semibold text-fg-muted">Bachelor of Science in Game Art</p>
+				<p>Valedictorian. Recognized for perfect attendance and recipient of multiple course directors awards for academic excellence.</p>
+			</div>
+			<div>
+				<h3 class="mb-2 text-xl font-bold">Free Code Camp Certifications</h3>
+				<ul class="list-disc pl-6">
+					{
+						certifications.map((c) => (
+							<li>
+								<a href={c.slug} target="_blank" class="link-text">
+									{c.title}
+								</a>
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</section>
+		<!-- Can reuse that carousel css I wrote for home screen recommendations... -->
+		<!-- <section class="will-animate fade-in mx-auto my-6 flex w-full max-w-prose flex-col gap-y-6 py-12 opacity-0">
+			<h2 class="sr-only">Personal Projects</h2>
+			<AnimatedText text="Personal Projects" class="mb-4 fill-fg stroke-fg" />
 			<ul>
 				<li>Nichijugo book</li>
 				<li>Shirts - why not, probably won't update them ever</li>
 				<li>Website for my parents using Nuxt + photography</li>
 				<li>Bible study app using Vue</li>
 			</ul>
-		</scection>
+		</section> -->
 	</main>
 </Layout>
+
+<style>
+	.animate-resume-item .resume-connector {
+		overflow: hidden;
+		animation: draw-line 2s forwards;
+	}
+	@keyframes draw-line {
+		0% {
+			max-height: 0;
+			opacity: 0;
+		}
+		25% {
+			max-height: 0;
+			opacity: 1;
+		}
+		100% {
+			max-height: 500px;
+			opacity: 1;
+		}
+	}
+</style>
+
+<script>
+	const resumeItems = document.querySelectorAll('.resume-item')
+
+	if (resumeItems) {
+		resumeItems.forEach((e, i) => {
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry && entry.isIntersecting) {
+						e.classList.remove('opacity-0')
+
+						const previousEntry = resumeItems[i - 1]
+
+						if (previousEntry) {
+							previousEntry.classList.remove('opacity-0')
+							previousEntry.classList.add('animate-resume-item')
+						}
+
+						if (e.classList.contains('resume-item')) {
+							e.classList.add('animate-fade-in')
+						}
+					}
+				})
+			})
+			observer.observe(e)
+		})
+	}
+</script>
