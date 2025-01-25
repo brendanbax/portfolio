@@ -12,12 +12,12 @@ const { recommendations } = data
 			colleagues.
 		</p>
 	</div>
-	<ul class="scroll-p-1/2 no-scrollbar relative z-10 my-6 flex snap-x snap-mandatory gap-x-6 overflow-x-scroll px-6 pb-2">
+	<ul class="no-scrollbar relative z-10 my-6 flex snap-x snap-mandatory gap-x-6 overflow-x-scroll px-6 pb-2">
 		{
 			recommendations.map((r) => (
 				<li
 					data-recommendation
-					class="will-animate fade-in h-fit max-w-md flex-shrink-0 snap-center rounded-xl border border-fg-muted bg-neutral-900 bg-opacity-80 p-6 opacity-0 shadow-none backdrop-blur-md dark:border-none dark:bg-neutral-50 dark:bg-opacity-80 dark:shadow-2xl"
+					class="will-animate fade-in h-fit max-w-xs flex-shrink-0 snap-center rounded-xl border border-fg-muted bg-neutral-900 bg-opacity-80 p-6 opacity-0 shadow-none backdrop-blur-md dark:border-none dark:bg-neutral-50 dark:bg-opacity-80 dark:shadow-2xl sm:max-w-sm"
 				>
 					<div class="mb-2 flex items-center gap-x-2">
 						<div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-accent text-neutral-900">
@@ -39,6 +39,7 @@ const { recommendations } = data
 			))
 		}
 	</ul>
+	<!-- TODO: Add a mouse-friendly (desktop) control here to navigate the above content -->
 	<div id="slash"></div>
 </section>
 
