@@ -1,6 +1,7 @@
 ---
 import Icon from 'heroicons-astro/Heroicon.astro'
 const { class: classNames } = Astro.props
+// TODO: Delete me if I don't need this in production...
 // if (Astro.request.method === 'POST') {
 // 	try {
 // 		const data = await Astro.request.formData()
@@ -21,7 +22,7 @@ const { class: classNames } = Astro.props
 <form class={`${classNames} flex max-w-prose flex-col gap-y-6 p-6`} name="contact" method="POST" id="bax-contact-form" data-netlify="true">
 	<input type="hidden" name="form-name" value="contact" />
 	<div class="form-block">
-		<label for="name" class="form-label">Name</label>
+		<label for="name" class="form-label">First Name</label>
 		<input id="name" class="form-input" type="text" name="name" required />
 	</div>
 	<div class="form-block">
@@ -49,11 +50,11 @@ const { class: classNames } = Astro.props
 	</div>
 </form>
 
-<div id="success" class="hidden px-4 py-24 md:px-0">
+<div id="success" class="will-animate fade-in hidden px-4 py-24 opacity-0 md:px-0">
 	<p id="success-message" class="text-center text-xl"></p>
 </div>
 
-<div id="error" class="hidden px-4 py-24 md:px-0">
+<div id="error" class="will-animate fade-in hidden px-4 py-24 opacity-0 md:px-0">
 	<p id="error-message" class="text-center text-xl">Sorry, something went wrong sending your message.</p>
 </div>
 
