@@ -1,4 +1,6 @@
 ---
+import AnimatedText from '../components/AnimatedText.astro'
+import ContactForm from '../components/ContactForm.astro'
 import IndexHero from '../components/IndexHero.astro'
 import IndexRecommendations from '../components/IndexRecommendations.astro'
 import IndexSummary from '../components/IndexSummary.astro'
@@ -9,7 +11,13 @@ import Layout from '../layouts/Layout.astro'
 	<IndexHero />
 	<IndexSummary />
 	<IndexRecommendations />
-	<!-- <section id="contact" class="relative z-10 bg-fill" style="min-height: 480px;">Contact</section> -->
+	<section id="contact" class="relative z-10 bg-fill py-12">
+		<div class="will-animate fade-in opacity-0">
+			<h2 class="sr-only">Contact</h2>
+			<AnimatedText text="Contact" class="mx-auto mb-4 fill-fg-muted stroke-fg-muted" />
+			<ContactForm class="md-px-4 mx-auto" />
+		</div>
+	</section>
 </Layout>
 
 <script>

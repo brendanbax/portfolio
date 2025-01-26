@@ -1,0 +1,129 @@
+---
+import Icon from 'heroicons-astro/Heroicon.astro'
+const { class: classNames } = Astro.props
+// if (Astro.request.method === 'POST') {
+// 	try {
+// 		const data = await Astro.request.formData()
+// 		const name = data.get('name')
+// 		const email = data.get('email')
+// 		const message = data.get('message')
+
+// 		// Do something with the data
+// 		console.log('New message from: ', { name, email, message })
+// 	} catch (error) {
+// 		if (error instanceof Error) {
+// 			console.error(error.message)
+// 		}
+// 	}
+// }
+---
+
+<form class={`${classNames} flex max-w-prose flex-col gap-y-6 p-6`} name="contact" method="POST" id="bax-contact-form" data-netlify="true">
+	<input type="hidden" name="form-name" value="contact" />
+	<div class="form-block">
+		<label for="name" class="form-label">Name</label>
+		<input id="name" class="form-input" type="text" name="name" required />
+	</div>
+	<div class="form-block">
+		<label for="email" class="form-label">Email</label>
+		<input id="email" class="form-input" type="email" name="email" required />
+	</div>
+	<div class="form-block">
+		<label for="type" class="form-label">Inquiry Type</label>
+		<div class="relative">
+			<select id="type" class="form-input relative z-10" name="type" required>
+				<option>Part-time opportunity</option>
+				<option>Full-time opportunity</option>
+				<option>Speaking engagement</option>
+				<option>General feedback</option>
+			</select>
+			<Icon iconCode="chevron-down" iconStyle="solid" customClasses="w-4 h-4 absolute z-0 right-4 top-1/2 transform -translate-y-1/2" />
+		</div>
+	</div>
+	<div class="form-block">
+		<label for="message" class="form-label">Message:</label>
+		<textarea id="message" class="form-input" name="message" required minlength="6" maxlength="340"></textarea>
+	</div>
+	<div class="form-block">
+		<button class="button button-primary">Submit</button>
+	</div>
+</form>
+
+<div id="success" class="hidden px-4 py-24 md:px-0">
+	<p id="success-message" class="text-center text-xl"></p>
+</div>
+
+<div id="error" class="hidden px-4 py-24 md:px-0">
+	<p id="error-message" class="text-center text-xl">Sorry, something went wrong sending your message.</p>
+</div>
+
+<style>
+	.form-label {
+		@apply mb-2 block font-medium capitalize;
+	}
+	.form-input {
+		@apply max-h-60 w-full rounded-lg border border-fg-muted bg-inherit px-4 py-2 text-base font-normal outline-none focus:outline focus:outline-accent focus:ring-accent focus-visible:ring-accent md:max-h-32;
+	}
+	textarea.form-input {
+		@apply min-h-12;
+	}
+	select.form-input {
+		-webkit-appearance: none;
+	}
+	.form-block {
+		@apply w-full;
+	}
+</style>
+
+<script is:inline>
+	const form = document.getElementById('bax-contact-form')
+
+	const showSuccessMessage = (messageText) => {
+		const successNode = document.getElementById('success')
+		const successMessageNode = document.getElementById('success-message')
+
+		if (successNode && successMessageNode && form) {
+			successMessageNode.innerHTML = messageText
+
+			form.classList.add('hidden')
+			successNode.classList.remove('hidden')
+		}
+	}
+
+	const showErrorMessage = () => {
+		const errorNode = document.getElementById('error')
+
+		if (errorNode && form) {
+			form.classList.add('hidden')
+			errorNode.classList.remove('hidden')
+		}
+	}
+
+	if (form) {
+		const formSubmitEventListener = async (e) => {
+			e.preventDefault()
+			const formData = new FormData(form)
+
+			await fetch('/', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: new URLSearchParams(formData).toString()
+			})
+				.then((response) => {
+					if (response.ok) {
+						const firstName = formData.get('name').split(' ')[0]
+						const formattedFirstName = firstName.charAt(0).toUpperCase() + firstName.slice(1)
+						showSuccessMessage(`Hey ${formattedFirstName}, thanks for connecting. I'll be in touch soon!`)
+					} else {
+						console.error('Form submission failed')
+						showErrorMessage()
+					}
+				})
+				.catch((error) => {
+					console.error('Error submitting form:', error)
+					showErrorMessage()
+				})
+		}
+		form.addEventListener('submit', formSubmitEventListener)
+	}
+</script>
