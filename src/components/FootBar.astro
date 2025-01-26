@@ -4,7 +4,8 @@ import IconDribbble from './IconDribbble.astro'
 import IconLinkedIn from './IconLinkedIn.astro'
 ---
 
-<footer class="relative z-10 bg-fill px-6 py-4 text-xs dark:bg-fill-muted md:hidden">
+<!-- Mobile footer -->
+<footer class="relative z-10 bg-fill px-6 py-4 text-sm dark:bg-fill-muted lg:hidden">
 	<div class="mx-auto mb-2 grid grid-cols-3 gap-2 md:hidden">
 		<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link mx-auto">
 			<IconDribbble class="w-4" />
@@ -30,8 +31,8 @@ import IconLinkedIn from './IconLinkedIn.astro'
 		</div>
 	</div>
 </footer>
-
-<footer class="relative z-10 hidden grid-cols-2 items-center bg-fill px-6 py-4 text-xs dark:bg-fill-muted md:grid md:grid-cols-3">
+<!-- Desktop footer -->
+<footer class="relative z-10 hidden grid-cols-2 items-center bg-fill px-6 py-4 text-sm dark:bg-fill-muted lg:grid lg:grid-cols-3">
 	<span>&copy;<span id="computed-date"></span> Brendan Bax. Made in the USA.</span>
 	<div class="mx-auto hidden items-center gap-2 md:flex">
 		<a href="https://dribbble.com/brendanbax" target="_blank" class="home-link">
@@ -58,7 +59,7 @@ import IconLinkedIn from './IconLinkedIn.astro'
 		@apply border-b-2 border-transparent transition-colors hover:border-accent;
 	}
 	.home-link {
-		@apply flex gap-x-2 rounded-lg text-xs text-accent transition-all md:gap-x-4 md:p-3;
+		@apply flex gap-x-2 rounded-lg text-sm text-accent transition-all md:gap-x-4 md:p-3;
 	}
 </style>
 

@@ -9,8 +9,8 @@
 	--text-default: theme(colors.neutral.900);
 	--fill-muted: theme(colors.neutral.200);
 	--fill-default: theme(colors.neutral.50);
-	--accent-muted: theme(colors.lime.600);
-	--accent-default: theme(colors.lime.500);
+	--accent-muted: theme(colors.lime.700);
+	--accent-default: theme(colors.lime.600);
 }
 html {
 	@apply scroll-smooth bg-fill-muted text-fg;
