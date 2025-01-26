@@ -179,5 +179,15 @@ changelog: [
 			'Fix fade issue for index summary',
 		]
 	},
+	{
+		date: '2025/01/25',
+		title: 'Added Contact Section',
+		description: 'Added a contact form to the site which will probably get tons of spam (hooray bots!). If you read this, send me a message so I know it works!',
+		changes: [
+			'Add contact form',
+			'Update nav styling',
+			'Fix minor style bugs throughout',
+		]
+	},
 ]
 ---
