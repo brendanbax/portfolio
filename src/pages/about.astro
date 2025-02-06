@@ -59,10 +59,35 @@ const { resume, certifications } = data
 								{i !== resume.length - 1 && <span class="resume-connector h-full w-px bg-fg-muted opacity-0" />}
 							</div>
 							<div class="pb-4">
-								<p class="mb-1 text-sm font-semibold text-accent">{r.duration}</p>
+								<div class="mb-2 flex items-baseline gap-x-2 text-sm font-semibold">
+									<p class="text-accent">{r.duration}</p>
+									<p class="text-fg-muted">&#64;</p>
+									<p class="text-fg-muted">{r.business}</p>
+								</div>
 								<h3 class="mb-2 text-xl font-bold">{r.title}</h3>
-								<p class="mb-2 text-sm font-semibold text-fg-muted">{r.business}</p>
-								<p>{r.description}</p>
+								<p>{r.summary}</p>
+								{r.projects && r.projects.length > 0 && (
+									<details>
+										<summary class="mt-4 cursor-pointer text-sm font-semibold" />
+										<ul class="mt-4 rounded-lg bg-neutral-50 bg-opacity-50 p-4 shadow-lg backdrop-blur-md dark:border dark:border-neutral-700 dark:bg-neutral-900 dark:bg-opacity-50 dark:shadow-none">
+											{r.projects.map((p) => (
+												<li class="mb-4">
+													<p class="mb-2 text-sm font-semibold leading-6">{p.outcomes}</p>
+													<ul class="mb-2 flex flex-col gap-y-4">
+														{p.methods.map((m) => (
+															<li class="ml-4 list-disc text-sm">{m}</li>
+														))}
+													</ul>
+													{p.link && (
+														<a href={p.link} target="_blank" class="link-text text-sm">
+															See on Dribbble
+														</a>
+													)}
+												</li>
+											))}
+										</ul>
+									</details>
+								)}
 							</div>
 						</li>
 					))
@@ -125,9 +150,19 @@ const { resume, certifications } = data
 			opacity: 1;
 		}
 		100% {
-			max-height: 500px;
+			max-height: 5000px;
 			opacity: 1;
 		}
+	}
+
+	/* Style the indicator */
+	details:first-of-type summary::marker,
+	:is(::-webkit-details-marker) {
+		content: '+ Show Details';
+	}
+
+	details:open summary::marker {
+		content: '- Hide Details';
 	}
 </style>
 
