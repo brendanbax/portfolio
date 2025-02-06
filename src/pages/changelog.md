@@ -189,5 +189,15 @@ changelog: [
 			'Fix minor style bugs throughout',
 		]
 	},
+	{
+		date: '2025/02/06',
+		title: 'Expanded resume content',
+		description: 'Expanded the resume content to include an optional section of content where my experience is described in greater detail.',
+		changes: [
+			'Update resume data to include new content',
+			'Add links to Dribbble, where available',
+			'Add expandable section for resume details',
+		]
+	},
 ]
 ---
