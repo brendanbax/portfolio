@@ -4,77 +4,285 @@
 			"title": "Applications Team Lead",
 			"business": "Freight Science",
 			"duration": "2025 to Present",
-			"description": "In addition to design and engineering duties, responsible for working with business partners to gather requirements for projects, establish sensible production timelines, and coordinate team members around initiatives. Manage multiple projects while conducting agile ceremonies such as planning, backlog refinement, daily stand-ups, and retrospectives. Primary point of contact for web-related issues and feature requests."
+			"summary": "In addition to design and engineering duties, responsible for working with business partners to gather requirements for projects, establish sensible production timelines, and coordinate team members around initiatives. Manage multiple projects while conducting agile ceremonies such as planning, backlog refinement, daily stand-ups, and retrospectives. Primary point of contact for web-related issues and feature requests.",
+			"projects": []
 		},
 		{
 			"title": "Sr. UX Designer",
 			"business": "Freight Science",
 			"duration": "2022 to 2025",
-			"description": "Product design, front end development, and project management for a growing start-up. Brought several features to market through rapid prototypes using Figma and agile development with React, TypeScript, and Tailwind CSS. Established a new design system and component library with Storybook. Provided additional marketing and sales support, as needed."
+			"summary": "Product design, front end development, and project management for a growing start-up. Brought several features to market through rapid prototypes using Figma and agile development with React, TypeScript, and Tailwind CSS. Established a new design system and component library with Storybook. Provided additional marketing and sales support, as needed.",
+			"projects": [
+				{
+					"outcomes": "Design lead for multiple greenfield software products including AI-powered planning optimization, AI-powered data entry tools, and various driver and fleet operations workflows for trucking companies.",
+					"methods": [
+						"Clarified ambiguous requirements by leading discovery, user research, and data analysis efforts with the goal of seeking to understand the root problem in order to build the best solution.",
+						"Overcame objections by validating designs with data-driven feedback models, applying subjective and objective metrics to substantiate and improve designed workflows.",
+						"Established a project framework that advocates for design process and illustrates the value of user research and the ROI of using design thinking to mitigate risk.",
+						"Increased speed to market of new ideas by curating a dedicated component library as a separate NPM package using React, TypeScript, Tailwind, and Storybook."
+					]
+				},
+				{
+					"outcomes": "Expanded Freight Science product portfolio by leading design effort for Planning, a model-driven solution to asset assignments at scale.",
+					"methods": [
+						"Worked closely with data scientists to understand and humanize the output of complex data models, framing data in a user-centered way.",
+						"Partnered with various user groups to document existing tools and workflows using journey maps and contextual inquiries.",
+						"Facilitated workshops to review high-level wireframes, mock-ups, and functional prototypes with stakeholders and users throughout the design process.",
+						"Brought multiple capabilities to production as both a designer and front-end engineer using React, TypeScript, and Tailwind.",
+						"Improved usability by implementing responsive page layouts and components leveraging CSS container queries."
+					]
+				},
+				{
+					"outcomes": "Increased time on site and product engagement by redesigning and building a new product dashboard, seen by all users who open the app, with an emphasis on visualizing network health and actionable intelligence for account manager personas",
+					"methods": [
+						"Partnered with product stakeholders to track KPIs around engagement, driving conversions to new products.",
+						"Performed user research to understand data priorities and information actionability.",
+						"Built personas to better understand the needs of various user types who see the dashboard.",
+						"Created interactive charts with dynamic axis and toggling datasets using Airbnb Visx charting library.",
+						"Implemented react-query using custom hooks to streamline API interface and cache management, as well as reusable components to reduce duplicate code and align product with design system.",
+						"Modernized underlying technology by converting Bootstrap components to React, TypeScript, and Tailwind."
+					]
+				},
+				{
+					"outcomes": "Improved product engagement and data quality by redesigning customer scorecards, a unique capability that offers data-driven insights into carrier-customer relationships.",
+					"methods": [
+						"Performed heuristic evaluation on existing work to identify product gaps and usability improvements.",
+						"Built context around the data by shadowing users and conducting multiple interviews to align content with actions",
+						"Prototyped various data visualization components and executive summaries, soliciting feedback from users to validate early and often.",
+						"Partnered with engineering to clarify interactions and details around the user experience"
+					]
+				}
+			]
 		},
 		{
 			"title": "UX Architect",
 			"business": "Intrusion, Inc.",
 			"duration": "2021 to 2022",
-			"description": "Designer and Vue.js developer for a cyber security firm. Spearheaded migration from Vue 2 to Vue 3, implemented a broad test suite with Cypress and Jest, and built new web-based SaaS products to support broader network security projects."
+			"summary": "Designer and Vue.js developer for a cyber security firm. Spearheaded migration from Vue 2 to Vue 3, implemented a broad test suite with Cypress and Jest, and built new web-based SaaS products to support broader network security projects.",
+			"projects": [
+				{
+					"outcomes": "Bolstered product adoption by designing a brand new product dashboard which highlighted malicious network devices and connections.",
+					"methods": [
+						"Partnered with platform engineers to understand underlying data and build contextual awareness of content",
+						"Collaborated with sales leaders, as a proxy for customers, to document specific pain points in network monitoring",
+						"Solicited feedback from business stakeholders and executive staff during weekly demos to iterate and improve the product experience.",
+						"Developed modular widgets with encapsulated data and state for portability across codebase.",
+						"Built custom reporting tools to generate multi-page PDF snapshots of dashboard data."
+					]
+				},
+				{
+					"outcomes": "Broadened user base for on-premise network monitoring platform by adding authentication and role-based permissions across the product.",
+					"methods": [
+						"Added route guards and security across Vue application, including auto-logout for expired sessions and log-in with redirects.",
+						"Created user personas for various user types to better design the related product experiences, drawing distinctions between the needs of threat hunters and system admins."
+					]
+				},
+				{
+					"outcomes": "Championed the night by implementing dark mode, the most user-requested feature for the product.",
+					"methods": [
+						"Conducted user research to better understand the context in which customers used the product.",
+						"Performed competitive analysis and research of design system to better understand implications of a dark mode.",
+						"Designed and tested multiple theme variations using Figma to evaluate the most effective color combinations.",
+						"Implemented dark mode using Tailwind CSS across product and established design patterns to guide visual treatment of future work."
+					]
+				},
+				{
+					"outcomes": "Increased code resiliency and product trust by implementing a complete test suite using Cypress and Vitest, a testing library for Vue.js.",
+					"methods": [
+						"Created a testing strategy that prioritized unit testing business logic and maintaining non-breaking user experiences.",
+						"Implemented Cypress tests that proxied users of all classifications to ensure unique roles and permissions behaved as expected.",
+						"Connected test suite to git workflows in CI/CD pipeline, ensuring pull requests pass test runners before release."
+					]
+				}
+			]
 		},
 		{
 			"title": "UX Architect",
 			"business": "Bayer (Crop Sciences)",
 			"duration": "2021 (Contract)",
-			"description": "Partnered with agile software teams to humanize data visualization apps used by various user groups. Was a contributor to Bayer global design system standards and documentation, improving design consistency and culture."
+			"summary": "Partnered with agile software teams to humanize data visualization apps used by various user groups. Was a contributor to Bayer global design system standards and documentation, improving design consistency and culture.",
+			"projects": []
 		},
 		{
 			"title": "Full Stack Developer",
 			"business": "World Wide Technology",
 			"duration": "2020 to 2021",
-			"description": "Built user interfaces and back-end services for the WWT corporate website which has over 30,000 monthly visitors. Reduced time on task and improved edit accuracy by building a POC for editing content live from the website instead of using the legacy proprietary CDN."
+			"summary": "Built user interfaces and back-end services for the WWT corporate website which has over 30,000 monthly visitors. Reduced time on task and improved edit accuracy by building a POC for editing content live from the website instead of using the legacy proprietary CDN.",
+			"projects": []
 		},
 		{
 			"title": "Sr. Software Design Engineer",
 			"business": "Mercy",
 			"duration": "2019 to 2020",
-			"description": "Improved virtual visits during COVID-19 by building a React-bassed point-to-point video chat app, supporting 2k-3k video visits per day. Reduced pediatric ER visits and improved patient quality of life by creating a patient portal using React Native that connects sick kids and their caregivers to medical staff for 24/7 support.",
-			"links": ["foo", "bar", "baz"]
+			"summary": "Improved virtual visits during COVID-19 by building a React-based point-to-point video chat app, supporting 2k-3k video visits per day. Reduced pediatric ER visits and improved patient quality of life by creating a patient portal using React Native that connects sick kids and their caregivers to medical staff for 24/7 support.",
+			"projects": [
+				{
+					"outcomes": "Design and engineering for a React Native mobile app intended to improve the quality of care for sick kids.",
+					"methods": [
+						"Shadowed care teams on-site to better understand the patient, families, and caregivers who would use the product.",
+						"Worked closely with product owners to understand feature requirements in context and negotiated to a realistic MVP.",
+						"Facilitated journey mapping and collaborative brainstorming sessions during discovery phase to generate a surplus of ideas.",
+						"Rapidly prototyped solutions and sought feedback to refine ideas into a cohesive product vision.",
+						"Supported engineering efforts as a JavaScript developer, building various custom components in React Native.",
+						"Established app identity and partnered with corporate marketing department to align with global standards."
+					],
+					"link": "https://dribbble.com/shots/18006341-Mercy-Continuum"
+				},
+				{
+					"outcomes": "Developed a video chat app that reduced costs for virtual visits by removing external dependencies, while simultaneously increasing user satisfaction with virtual care.",
+					"methods": [
+						"After partnering with the development team to rapidly prototype a POC solution, worked to polish the visual design of UI components.",
+						"Worked with product management to align designs with product roadmap, designed additional experiences for group calls and call management.",
+						"Converted POC code to React with additional unit tests."
+					],
+					"link": "https://dribbble.com/shots/18006333-Mercy-AtHome-Lite"
+				},
+				{
+					"outcomes": "Increased delight and engagement with Mercy MyHealth iOS application.",
+					"methods": [
+						"Developed baseline personas for target users to frame the app in context of daily life.",
+						"Partnered with business stakeholders to outline requirements and timelines.",
+						"Performed a usability review of the existing product and submitted a report outlining critical usability concerns and proposed resolutions.",
+						"Drafted high-fidelity mockups for proposed design updates including responsive designs for iPhone and iPad, dynamic themes, and custom illustrations."
+					],
+					"link": "https://dribbble.com/shots/17997449-Mercy-MyHealth"
+				}
+			]
 		},
 		{
 			"title": "Sr. UX Designer",
 			"business": "Coolfire",
 			"duration": "2018 to 2019",
-			"description": "Led design for multiple client projects including a roadside call center app that reduced call times and costs, a private security app that simplified Person of Interest management, and a real-time logistics tracking and ordering platform that enabled drop shipments to resupply partners. Operated as practice lead for a growing design team and handled identity design for new SaaS products.",
-			"links": ["foo", "bar", "baz"]
+			"summary": "Led design for multiple client projects including a roadside call center app that reduced call times and costs, a private security app that simplified Person of Interest management, and a real-time logistics tracking and ordering platform that enabled drop shipments to resupply partners. Operated as practice lead for a growing design team and handled identity design for new SaaS products.",
+			"projects": [
+				{
+					"outcomes": "Improve responsiveness to threats by designing actionable interfaces for web and mobile, streamlining situational awareness for high security engagements.",
+					"methods": [
+						"Facilitated human-centered design initiatives including product discovery and domain understanding, persona building, and journey maps for jobs to be done.",
+						"Established branding and visual identity for the product and customer, including mobile and web app components and illustrations."
+					],
+					"link": "https://dribbble.com/shots/18006292-Redlyst-Product"
+				},
+				{
+					"outcomes": "Established the visual identity for Coolfire's back-end-as-a-service product, Ronin, and provided art direction for the new public-facing product site.",
+					"methods": [
+						"Collaborated with Coolfire marketing to establish harmonious colors and type that accentuated the existing parent company.",
+						"Conducted user research to identify types of personas who would use this new website to understand, purchase, and utilize the product.",
+						"Produced high-fidelity mockups and user flows for various web experiences including product overview, billing, FAQ, and account management.",
+						"Created custom illustrations in-line with brand direction which made some super slick stickers for the office."
+					],
+					"link": "https://dribbble.com/shots/18006326-Ronin-Product"
+				},
+				{
+					"outcomes": "Partnered with engineering to design and build a sample chat application that demonstrated all the best components of the Coolfire Ronin platform.",
+					"methods": [
+						"Given ambiguous goals, worked with stakeholders and engineering to define desired capabilities.",
+						"Developed a sample narrative to frame app usage in context of various personas needing to communicate.",
+						"Rapidly prototyped a series of user flows using Sketch and InVision, paying special attention to navigation and in-app notifications.",
+						"Experimented with InVision Studio animation tools to create an interactive login and chat experience."
+					],
+					"link": "https://dribbble.com/shots/18006295-Ronin-Chat"
+				},
+				{
+					"outcomes": "Reduced costs while improving user and customer satisfaction with a new roadside assistance tool.",
+					"methods": [
+						"Performed on-site user research at an existing call center to establish a journey map of roadside calls and build relevant user personas.",
+						"Collaborated with customer stakeholders to align business goals, technology constraints, and user pains into a cohesive product strategy.",
+						"Leveraged low-fidelity wireframes to model out the application flow and get stakeholder buy-in.",
+						"Crafted pixel-perfect, high-fidelity mockups and clickable prototypes to facilitate user testing and validation.",
+						"Managed feedback to iterate on designs, growing the product into an intelligent and scalable tool."
+					]
+				}
+			]
 		},
 		{
 			"title": "Product Designer",
 			"business": "Monsanto",
 			"duration": "2018 (Contract)",
-			"description": "Drove vision behind software solutions related to plant breeding and geospatial data collection. Supported agile development teams by working as an embedded designer and facilitating user testing sessions.",
-			"links": ["foo", "bar", "baz"]
+			"summary": "Drove vision behind software solutions related to plant breeding and geospatial data collection. Supported agile development teams by working as an embedded designer and facilitating user testing sessions.",
+			"projects": []
 		},
 		{
 			"title": "UX Designer",
 			"business": "WWT Asynchrony Labs",
 			"duration": "2017 to 2018",
-			"description": "UX Designer and Front End Developer for various client-service projects. Transformed the online mortgage application for a major bank using conversational UI, massively growing online form submissions. Reduced product loss for WWT logistics by improving the UI for a damage control application.",
-			"links": ["foo", "bar", "baz"]
+			"summary": "UX Designer and Front End Developer for various client-service projects. Transformed the online mortgage application for a major bank using conversational UI, massively growing online form submissions. Reduced product loss for WWT logistics by improving the UI for a damage control application.",
+			"projects": [
+				{
+					"outcomes": "Grew online mortgage application rates for a national bank by designing a conversational loan app process.",
+					"methods": [
+						"Constructed personas to embody a broad spectrum of user types with an emphasis on comfort with digital tools and technology. Created journey maps of the home-buying process and loan application flow.",
+						"Conducted additional research into other lenders, complimentary data-centric workflows, and available design systems that could power a potential solution.",
+						"Built a prototype conversational UI to demonstrate the simplicity of focused questions with branching logic, presented to stakeholders.",
+						"Upon approval of POC, drafted large-scale logic maps based on supplied documentation of required fields and forms for mortgage applications. Translated the logic diagrams to a functional Sketch prototype.",
+						"Established a style guide and reusable component library to accelerate development.",
+						"Supported development work by writing Angular 4 components, styling with CSS, and testing user flows with Cypress."
+					],
+					"link": "https://dribbble.com/shots/17997375-Mortgage-Applications"
+				},
+				{
+					"outcomes": "Improved usability and product satisfaction for a loss prevention mobile app",
+					"methods": [
+						"Traveled on-site to observe users, conduct interviews, and understand the problem context.",
+						"Created journey maps outlining the process of unloading trucks and verifying inventory condition.",
+						"Surveyed users to achieve a baseline understanding of product satisfaction with an emphasis on ease of use and utility.",
+						"Based on feedback, redesigned the interface to leverage responsive best-practices and utility-first aesthetics.",
+						"Partnered with engineering to build a POC of the new user interface in a few days, with the goal of getting hands-on validation from users.",
+						"Conducted usability labs to validate redesign and garner feedback for continued iterations."
+					],
+					"link": "https://dribbble.com/shots/17997295-D-A-R-T-S-Logistics-Tracker"
+				}
+			]
 		},
 		{
 			"title": "Owner / Chief Designer",
 			"business": "Bax Art & Design Co. LLC",
 			"duration": "2015 to Present",
-			"description": "Chief designer, accountant, HR, customer service, and head of sales and marketing. Made people happy by pushing pixels as a graphic designer, web designer, and 3D artist."
+			"summary": "Chief designer, accountant, HR, customer service, and head of sales and marketing. Made people happy by pushing pixels as a graphic designer, web designer, and 3D artist.",
+			"projects": []
 		},
 		{
 			"title": "Senior Designer",
 			"business": "Controller Chaos",
 			"duration": "2013 to 2015",
-			"description": "Led design for a new online product builder that increased sales and profit margins. Reduced costs by digitizing new product pipelines, reducing time to site by 75%. Maintained revenue through dry seasons by developing an auxiliary brand and managing operations of that business. Trained up the next generation of designers by providing thought leadership and mentorship."
+			"summary": "Led design for a new online product builder that increased sales and profit margins. Reduced costs by digitizing new product pipelines, reducing time to site by 75%. Maintained revenue through dry seasons by developing an auxiliary brand and managing operations of that business. Trained up the next generation of designers by providing thought leadership and mentorship.",
+			"projects": [
+				{
+					"outcomes": "Revolutionized product design pipeline by replacing traditional product photography with 3D renders and computer animation. ",
+					"methods": [
+						"Overcame objections by building a proof of concept that proved 3D renders could pass as physical objects when correct materials and lighting is applied.",
+						"Created master model files for all products and accessories with a standardized light and studio simulation environment using 3D Studio Max.",
+						"Created master texture files and UV maps using Adobe Photoshop.",
+						"Proposed a strategy to phase in 3D rendered content to live e-commerce site, reducing site disruptions while maintaining continuity of the shopping experience.",
+						"Documented all parts of pipeline to reduce dependencies and monitoring time, enabling non-technical teammates to generate new products with little training."
+					]
+				},
+				{
+					"outcomes": "Increased key performance metrics for e-commerce site by redesigning the product customization interface, boosting engagement, time on site, and sales.",
+					"methods": [
+						"Partnered with stakeholders to gather current and future requirements for product builder experience.",
+						"Performed user research and competitive analysis to understand user expectations and motivations around the product buying experience.",
+						"Created low-fidelity wireframes to communicate layout and workflows with special emphasis on upgrade paths to premium features within the builder.",
+						"Created high-fidelity mockups and style guides, partnered with engineering to implement new builder, supported customer success during rollout and iterated on the experience as needed based on feedback."
+					]
+				},
+				{
+					"outcomes": "Reduced support requests related to product operation by designing attractive instructions that doubled as posters.",
+					"methods": [
+						"Performed analysis and research to establish baseline support metrics related to product operation requests.",
+						"Applied design thinking methodologies to generate ideas addressing this problem and validating ideas against constraints for budget and complexity.",
+						"Designed a series of unique double-sided posters featuring original brand-inspired artwork on one side and anime-style graphic instructions on the other.",
+						"Oversaw printing and packaging of new instructions and measured the impact to support tickets and phone calls."
+					]
+				}
+			]
 		},
 		{
 			"title": "Adjunct Instructor",
 			"business": "ITT Technical Institute",
 			"duration": "2011 to 2013",
-			"description": "Warped the minds and inspired the futures of eager students in the field of graphic design, 3D modeling, and computer animation. Gave lectures, provided life skills, and occasionally took attendance."
+			"summary": "Warped the minds and inspired the futures of eager students in the field of graphic design, 3D modeling, and computer animation. Gave lectures, provided life skills, and occasionally took attendance.",
+			"projects": []
 		}
 	],
 	"certifications": [
