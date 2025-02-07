@@ -1,47 +1,17 @@
-# Astro Starter Kit: Minimal
+# Brendan Bax Dot Com
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Welcome to the source code for [brendanbax.com](https://www.brendanbax.com). This static site is written using Astro.js, Tailwind CSS, and TypeScript, and is deployed to Netlify.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## Why Astro
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+In the past I've built my site with plain HTML, Jekyll, Gatsby, and Nuxt. I recently settled on a rewrite using Astro.js because it's framework agnostic, taking an islands architecture approach that enables flexible development technology. I like that I can include React or Vue in various parts of my site depending on my mood, and Astro doesn't work to hard to make it's own flavor of popular libraries. I also like the native markdown support and local data querying to build page content with data.
 
-## 🚀 Project Structure
+## Why Tailwind
 
-Inside of your Astro project, you'll see the following folders and files:
+I fell in love with the web because of CSS. Personally, it's the workhorse of modern software and the most underrated language. My passion for CSS has even spawned a series of [graphic tees](bureau.com/people/brendan-bax) celebrating the various flavors and tools over the years. So when I first used Tailwind CSS I hated it.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Originally I saw Tailwind as a needless abstraction from common CSS. For every attribute you had to relearn the Tailwind equivalent. Class lists in markup tend to be long and bloated, and most of the semantic meaning of styles is lost in the sea of utilities. That said, Tailwind really shines when you're doing anything dynamic. It makes media and container queries a breeze. It makes dark mode and state-based style changes effortless. The needless abstraction is actually a welcome interface that simplifies complex or clunky CSS logic into snappy one-liner modifications. It's really grown on me and I use it for almost everything now.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Why TypeScript
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Swift. I started building iOS apps for fun a while ago, learning Swift along the way, and realized how awesome "grown up" programming languages are. While TypeScript isn't officially typed and compiled like Swift, I warmed up to the principles fairly quick. I like TS because it helps me document my code as I go and think about the data as much as the design.
