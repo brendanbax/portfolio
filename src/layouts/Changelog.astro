@@ -1,4 +1,5 @@
 ---
+import AnimatedText from '../components/AnimatedText.astro'
 import Layout from './Layout.astro'
 
 export type Changelog = {
@@ -17,25 +18,32 @@ const sortedChanges = frontmatter.changelog.sort((a: Changelog, b: Changelog) =>
 ---
 
 <Layout title="Changelog">
-	<div class="mx-auto max-w-prose p-6">
-		<h1 class="mb-6 text-3xl font-bold">Changelog</h1>
-		<div class="flex flex-col gap-y-6">
-			{
-				sortedChanges.map((c: Changelog) => {
-					return (
-						<div class="rounded-xl bg-fill p-6 shadow-lg">
-							<p class="text-sm font-semibold uppercase text-accent">{c.date}</p>
-							<h2 class="mb-2 text-xl font-bold text-fg-muted">{c.title}</h2>
-							<p class="mb-2 text-base font-light leading-8">{c.description}</p>
-							<ul class="list-disc pl-6 text-sm text-fg-muted opacity-75">
-								{c.changes.map((cc: string) => (
-									<li class="mb-2 last:mb-0">{cc}</li>
-								))}
-							</ul>
-						</div>
-					)
-				})
-			}
+	<div class="bg-fill-muted py-12">
+		<div class="mx-auto max-w-prose px-6 md:px-0">
+			<h1 class="sr-only">Change Log</h1>
+			<AnimatedText text="Change Log" class="mb-12 fill-fg stroke-fg" />
+			<p class="mb-12 text-center">
+				Because software is ethereal by nature, I decided to document the changes to my site over time and build "in the open". I hope this provides some
+				insights to my process, or at the least insights to my free time.
+			</p>
+			<div class="flex flex-col gap-y-12">
+				{
+					sortedChanges.map((c: Changelog) => {
+						return (
+							<div class="will-animate fade-in rounded-xl bg-fill p-6 opacity-0 shadow-lg">
+								<p class="text-sm font-semibold uppercase text-accent">{c.date}</p>
+								<h2 class="mb-2 text-xl font-bold">{c.title}</h2>
+								<p class="mb-2">{c.description}</p>
+								<ul class="list-disc pl-6 marker:text-accent">
+									{c.changes.map((cc: string) => (
+										<li class="mb-2 text-sm font-medium last:mb-0">{cc}</li>
+									))}
+								</ul>
+							</div>
+						)
+					})
+				}
+			</div>
 		</div>
 	</div>
 </Layout>

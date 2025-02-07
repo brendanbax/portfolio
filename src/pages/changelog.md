@@ -199,5 +199,16 @@ changelog: [
 			'Add expandable section for resume details',
 		]
 	},
+	{
+		date: '2025/02/07',
+		title: 'Style updates',
+		description: 'Swapped some theme colors for light mode and improved overall styles across about page and change log.',
+		changes: [
+			'Update resume styles for Dribbble links and content readability',
+			'Update light theme to use a not-green accent color (trying indigo)',
+			'Styled the change log and added a little bit of context as to why',
+			'Second-guessed change log being one word, regrets?',
+		]
+	},
 ]
 ---
