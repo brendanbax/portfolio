@@ -1,0 +1,107 @@
+---
+import AnimatedText from './AnimatedText.astro'
+import Icon from 'heroicons-astro/Heroicon.astro'
+
+interface ProjectListItem {
+	name: string
+	description: string
+	link: string
+	icon: string
+}
+
+const projectList: ProjectListItem[] = [
+	{
+		name: 'Nichijougo',
+		description: 'Designed the cover art and branding for a book to learn Japanese.',
+		link: 'https://nichijougo.com',
+		icon: 'chat-alt-2'
+	},
+	{
+		name: 'CSS Shirts',
+		description: 'Published a series of graphic tees celebrating the many flavors of CSS.',
+		link: 'https://cottonbureau.com/people/brendan-bax',
+		icon: 'code'
+	},
+	{
+		name: '2:7 Study',
+		description: 'Built a study tool to help memorize parts of the Bible.',
+		link: 'https://brendanbax.github.io/27_study/#/',
+		icon: 'book-open'
+	}
+]
+---
+
+<section class="relative z-10 bg-fill-muted py-12">
+	<div class="will-animate fade-in relative mx-auto mb-8 max-w-prose px-4 text-center opacity-0 md:px-0">
+		<h2 class="sr-only">Personal Projects</h2>
+		<AnimatedText text="Personal Projects" class="mb-4 fill-fg stroke-fg" />
+		<p>In my free time I like to work on small, creative projects like graphics and apps.</p>
+	</div>
+	<div class="mx-auto grid max-w-6xl gap-6 px-6 md:grid-cols-3">
+		{
+			projectList.map((p) => (
+				<a
+					href={p.link}
+					target="_blank"
+					class="interval-fade-in group relative flex flex-col overflow-hidden rounded-2xl shadow-md transition-shadow hover:shadow-lg dark:shadow-none"
+				>
+					<div class="relative overflow-hidden bg-gradient-to-b from-accent to-accent-muted px-4 pb-4 pt-24 text-fill-muted transition-opacity group-hover:opacity-90">
+						<Icon iconCode={p.icon} customClasses="w-32 h-32 absolute top-0 right-0 stroke-fill opacity-10" />
+						<h3 class="text-3xl font-extrabold uppercase">{p.name}</h3>
+					</div>
+					<div class="flex flex-grow flex-col bg-fill p-4">
+						<p class="mb-4 flex-grow">{p.description}</p>
+						<div class="flex items-center gap-x-2 transition-colors group-hover:text-accent">
+							<Icon iconCode="arrow-right" customClasses="w-0 group-hover:w-4 overflow-hidden transition-all h-4" />
+							<p class="font-semibold">Check it out</p>
+						</div>
+					</div>
+				</a>
+			))
+		}
+	</div>
+</section>
+
+<style>
+	.animate-interval-fade-in {
+		opacity: 0;
+	}
+	.animate-interval-fade-in:nth-child(1) {
+		animation: interval-fade-in 380ms 500ms forwards;
+	}
+	.animate-interval-fade-in:nth-child(2) {
+		animation: interval-fade-in 380ms 750ms forwards;
+	}
+	.animate-interval-fade-in:nth-child(3) {
+		animation: interval-fade-in 380ms 1000ms forwards;
+	}
+	@keyframes interval-fade-in {
+		from {
+			transform: translateY(2rem);
+			opacity: 0;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+</style>
+
+<script>
+	const animatedElements = document.querySelectorAll('.interval-fade-in')
+
+	if (animatedElements) {
+		animatedElements.forEach((e) => {
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry && entry.isIntersecting) {
+						if (e.classList.contains('interval-fade-in')) {
+							e.classList.add('animate-interval-fade-in')
+						}
+					}
+				})
+			})
+			observer.observe(e)
+		})
+	}
+</script>

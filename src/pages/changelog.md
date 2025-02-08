@@ -210,5 +210,13 @@ changelog: [
 			'Second-guessed change log being one word, regrets?',
 		]
 	},
+	{
+		date: '2025/02/08',
+		title: 'Add personal projects',
+		description: 'Adds a block of personal projects to the about page',
+		changes: [
+			'Adds personal projects for books, shirts, and apps',
+		]
+	},
 ]
 ---
