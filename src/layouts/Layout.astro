@@ -1,8 +1,8 @@
 ---
 import '@fontsource-variable/quicksand'
-
 import '../assets/styles.css'
-const { frontmatter, title, description = '' } = Astro.props // Use the frontmatter of an MD file or the title passed via prop
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+const { frontmatter, title, description = SITE_DESCRIPTION } = Astro.props
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
@@ -28,9 +28,9 @@ import FootBar from '../components/FootBar.astro'
 		<link rel="canonical" href={canonicalURL} />
 
 		<!-- Primary Meta Tags -->
-		<title>{frontmatter ? frontmatter.title : title}</title>
+		<title>{SITE_TITLE} | {frontmatter ? frontmatter.title : title}</title>
 		<meta name="title" content={title} />
-		<meta name="description" content={description} />
+		<meta name="description" content={frontmatter ? frontmatter.description : description} />
 	</head>
 	<body class="flex min-h-dvh flex-col bg-fill antialiased">
 		<NavBar />
