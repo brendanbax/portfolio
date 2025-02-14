@@ -2,28 +2,35 @@
 import { getCollection } from 'astro:content'
 import FormattedDate from '../../components/FormattedDate.astro'
 import Layout from '../../layouts/Layout.astro'
+import AnimatedText from '../../components/AnimatedText.astro'
 
 const posts = (await getCollection('blog')).sort((a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 ---
 
 <Layout title="Blog">
-	<!-- TODO: add a page title here like "BLOG" and maybe some content about what to expect? -->
-	<!-- What do I write about and why, and what do I hope readers walk away with? -->
-	<!-- Call to action to contact me with questions or feedback -->
-	<ul class="mx-auto max-w-prose py-12">
-		{
-			posts.map((post: any) => (
-				// TODO: Style these in a sensible way
-				<li>
-					<a href={`/blog/${post.id}/`}>
-						<img width={720} height={360} src={post.data.heroImage} alt="" />
-						<h4 class="title">{post.data.title}</h4>
-						<p class="date">
-							<FormattedDate date={post.data.pubDate} />
-						</p>
-					</a>
-				</li>
-			))
-		}
-	</ul>
+	<div class="mx-auto max-w-prose py-12">
+		<h1 class="sr-only">Blog</h1>
+		<AnimatedText text="Blog" class="mb-4 fill-fg stroke-fg" />
+		<p class="text-center">
+			Welcome to my blog where I write about design and code. I document personal projects and career findings so I can share my experience with other aspiring
+			creatives.
+		</p>
+		<!-- What do I write about and why, and what do I hope readers walk away with? -->
+		<!-- Call to action to contact me with questions or feedback -->
+		<ul>
+			{
+				posts.map((post: any) => (
+					// TODO: Style these in a sensible way
+					<li>
+						<a href={`/blog/${post.id}/`}>
+							<h4 class="title">{post.data.title}</h4>
+							<p class="date">
+								<FormattedDate date={post.data.pubDate} />
+							</p>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
 </Layout>
