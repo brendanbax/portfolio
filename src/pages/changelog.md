@@ -218,5 +218,13 @@ changelog: [
 			'Adds personal projects for books, shirts, and apps',
 		]
 	},
+	{
+		date: '2025/02/19',
+		title: 'Add blog',
+		description: 'Adds a blog! Nothing to read yet so it does not show up, but the infrastructure is all there waiting for content.',
+		changes: [
+			'Adds blog route with conditional logic',
+		]
+	},
 ]
 ---
