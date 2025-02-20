@@ -3,30 +3,44 @@ import { getCollection } from 'astro:content'
 import FormattedDate from '../../components/FormattedDate.astro'
 import Layout from '../../layouts/Layout.astro'
 import AnimatedText from '../../components/AnimatedText.astro'
+import Icon from 'heroicons-astro/Heroicon.astro'
 
-const posts = (await getCollection('blog')).sort((a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 ---
 
 <Layout title="Blog">
 	<div class="mx-auto max-w-prose py-12">
 		<h1 class="sr-only">Blog</h1>
 		<AnimatedText text="Blog" class="mb-4 fill-fg stroke-fg" />
-		<p class="text-center">
-			Welcome to my blog where I write about design and code. I document personal projects and career findings so I can share my experience with other aspiring
-			creatives.
-		</p>
-		<!-- What do I write about and why, and what do I hope readers walk away with? -->
-		<!-- Call to action to contact me with questions or feedback -->
-		<ul>
+		<p class="text-center">Welcome to my blog where I write about design and code.</p>
+		<ul class="my-12 flex flex-col gap-y-6">
 			{
-				posts.map((post: any) => (
-					// TODO: Style these in a sensible way
+				posts.map((post, index) => (
 					<li>
-						<a href={`/blog/${post.id}/`}>
-							<h4 class="title">{post.data.title}</h4>
-							<p class="date">
-								<FormattedDate date={post.data.pubDate} />
-							</p>
+						<a
+							href={`/blog/${post.id}/`}
+							class="fade-in will-animate group relative flex overflow-hidden rounded-2xl p-4 opacity-0 shadow-md transition-shadow hover:shadow-lg dark:shadow-none"
+						>
+							<div class="w-full">
+								<div class="flex items-center justify-between">
+									<div class="flex items-center justify-between gap-x-2">
+										<div class="relative flex h-8 w-8 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-b from-accent to-accent-muted p-0.5 transition-opacity group-hover:opacity-90">
+											<div class="flex h-full w-full items-center justify-center rounded-[10px] bg-fill">
+												<span class="text-xl font-bold text-accent">{index + 1}</span>
+											</div>
+										</div>
+										<h4 class="text-xl font-extrabold uppercase">{post.data.title}</h4>
+									</div>
+									<p class="text-fg-muted">
+										<FormattedDate date={post.data.pubDate} />
+									</p>
+								</div>
+								<p class="fg-muted">{post.data.description}</p>
+								<div class="flex items-center gap-x-2 transition-colors group-hover:text-accent">
+									<Icon iconCode="arrow-right" customClasses="w-0 group-hover:w-4 overflow-hidden transition-all h-4" />
+									<p class="font-semibold">Check it out</p>
+								</div>
+							</div>
 						</a>
 					</li>
 				))
