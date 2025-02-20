@@ -80,7 +80,7 @@ html.dark {
 	}
 	.dark .button-primary:hover,
 	.dark .button-primary:focus {
-		box-shadow: 0 0 1rem theme(colors.lime.400);
+		box-shadow: 0 0 1rem var(--accent-default);
 	}
 	.button-secondary {
 		@apply border border-fg-muted bg-fill text-fg;
@@ -88,7 +88,7 @@ html.dark {
 	.button-secondary:hover,
 	.button-secondary:focus {
 		@apply bg-fill-muted;
-		box-shadow: 0 0 1rem theme(colors.neutral.300);
+		box-shadow: 0 0 1rem var(--fill-muted);
 	}
 	.link-text {
 		@apply font-medium text-accent underline underline-offset-2 transition-colors hover:text-accent-muted dark:font-normal;
