@@ -4,7 +4,7 @@ import ThemeButton from '../components/ThemeButton.astro'
 import Logo from './Logo.astro'
 
 const pathname = Astro.url.pathname
-const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+const posts = (await getCollection('blog')).filter((post) => !post.data.draft)
 
 const showBlog = posts && posts.length > 0
 ---
