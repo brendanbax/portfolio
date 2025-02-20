@@ -12,7 +12,7 @@ const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueO
 	<div class="mx-auto max-w-prose py-12">
 		<h1 class="sr-only">Blog</h1>
 		<AnimatedText text="Blog" class="mb-4 fill-fg stroke-fg" />
-		<p class="text-center">Welcome to my blog where I write about design and code.</p>
+		<p class="will-animate fade-in text-center">Welcome to my blog where I write about design and code.</p>
 		<ul class="my-12 flex flex-col gap-y-6">
 			{
 				posts.map((post, index) => (
