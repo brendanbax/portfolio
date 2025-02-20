@@ -7,6 +7,8 @@ const pathname = Astro.url.pathname
 const posts = (await getCollection('blog')).filter((post) => !post.data.draft)
 
 const showBlog = posts && posts.length > 0
+// TODO: store # of posts in localStorage
+// TODO: check localStorage for posts, if value is different, show a "new" badge on blog tab
 ---
 
 <nav

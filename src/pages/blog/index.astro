@@ -6,6 +6,7 @@ import AnimatedText from '../../components/AnimatedText.astro'
 import Icon from 'heroicons-astro/Heroicon.astro'
 
 const posts = (await getCollection('blog')).filter((post) => !post.data.draft).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+// TODO: update localStorage number when page loads so navbar doesn't show new badge
 ---
 
 <Layout title="Blog">
