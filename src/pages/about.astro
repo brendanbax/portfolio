@@ -2,8 +2,6 @@
 import Layout from '../layouts/Layout.astro'
 import data from '../assets/data.json'
 import AnimatedText from '../components/AnimatedText.astro'
-import IconDribbble from '../components/IconDribbble.astro'
-import AboutProjects from '../components/AboutProjects.astro'
 const { resume, certifications } = data
 ---
 
@@ -70,28 +68,13 @@ const { resume, certifications } = data
 									</div>
 									<h3 class="mb-2 text-xl font-bold">{r.title}</h3>
 									<p>{r.summary}</p>
-									{r.projects && r.projects.length > 0 && (
+									{r.outcomes && r.outcomes.length > 0 && (
 										<details>
 											<summary class="mt-4 cursor-pointer text-sm font-bold">Show details</summary>
 											<ul class="mt-4 rounded-lg border border-neutral-200 bg-neutral-50 bg-opacity-50 p-6 backdrop-blur-md dark:border-neutral-700 dark:bg-neutral-900 dark:bg-opacity-50 dark:shadow-none">
-												{r.projects.map((p) => (
-													<li class="mb-6">
-														<p class="mb-4 font-semibold">{p.outcomes}</p>
-														<ul class="flex flex-col gap-y-6">
-															{p.methods.map((m) => (
-																<li class="ml-6 list-disc marker:text-accent">{m}</li>
-															))}
-														</ul>
-														{p.link && (
-															<a
-																href={p.link}
-																target="_blank"
-																class="mx-auto mt-6 flex max-w-fit items-center gap-x-2 rounded-lg border border-accent px-2 py-1 text-sm font-semibold text-accent transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-700"
-															>
-																<IconDribbble class="w-4" />
-																<span class="text-sm">View on Dribbble</span>
-															</a>
-														)}
+												{r.outcomes.map((p) => (
+													<li class="mb-6 ml-6 list-disc marker:text-accent">
+														{p}
 													</li>
 												))}
 											</ul>
@@ -104,7 +87,6 @@ const { resume, certifications } = data
 				</ul>
 			</section>
 		</section>
-		<AboutProjects />
 		<section class="px-4 py-12 md:px-0">
 			<div
 				class="will-animate fade-in relative z-10 mx-auto max-w-3xl rounded-3xl bg-neutral-50 bg-opacity-50 p-6 opacity-0 shadow-2xl backdrop-blur-md dark:border dark:border-neutral-700 dark:bg-neutral-900 dark:bg-opacity-50 dark:shadow-none"
