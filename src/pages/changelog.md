@@ -226,5 +226,14 @@ changelog: [
 			'Adds blog route with conditional logic',
 		]
 	},
+	{
+		date: '2025/02/25',
+		title: 'Update resume content',
+		description: 'Streamlines my resume content to highlight and focus on specific engineering skills.',
+		changes: [
+			'Update resume data and structure to be simpler and more focused',
+			'Fix bug with nav bar in which about page failed to highlight with trailing slash',
+		]
+	},
 ]
 ---

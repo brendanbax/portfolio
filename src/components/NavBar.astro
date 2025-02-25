@@ -20,7 +20,7 @@ const showBlog = posts && posts.length > 0
 	</a>
 	<div class="mx-auto flex items-center justify-center gap-x-6">
 		<a href="/" class={`${pathname === '/' ? 'active-link' : ''} navigation-link drop-in`}>Home</a>
-		<a href="/about" class={`${pathname === '/about' ? 'active-link' : ''} navigation-link drop-in`}>About</a>
+		<a href="/about" class={`${pathname.includes('about') ? 'active-link' : ''} navigation-link drop-in`}>About</a>
 		{
 			showBlog && (
 				<a href="/blog" class={`${pathname.includes('blog') ? 'active-link' : ''} navigation-link drop-in`}>
