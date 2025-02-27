@@ -235,5 +235,14 @@ changelog: [
 			'Fix bug with nav bar in which about page failed to highlight with trailing slash',
 		]
 	},
+	{
+		date: '2025/02/25',
+		title: 'Add resume icons',
+		description: 'Added a list of tech for each resume item and a sweet icon',
+		changes: [
+			'Add relevant tech for each job on resume',
+			'Add a snazzy icon for each tech item',
+		]
+	},
 ]
 ---
