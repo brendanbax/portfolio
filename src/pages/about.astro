@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import data from '../assets/data.json'
 import AnimatedText from '../components/AnimatedText.astro'
+import TechIcon from '../components/TechIcon.astro'
 const { resume, certifications } = data
 ---
 
@@ -31,7 +32,7 @@ const { resume, certifications } = data
 						</p>
 						<p>
 							I'm a charismatic leader and love teaching, having given career talks about design and user experience to local high school students. Outside of
-							work I lead small groups with my church and volunteer in the kids ministry on Sundays.
+							work I lead small groups with my church and volunteer in kids ministry.
 						</p>
 					</div>
 				</div>
@@ -68,14 +69,21 @@ const { resume, certifications } = data
 									</div>
 									<h3 class="mb-2 text-xl font-bold">{r.title}</h3>
 									<p>{r.summary}</p>
+									<ul class="mt-4 flex flex-wrap gap-4">
+										{r.tech &&
+											r.tech.map((t) => (
+												<li class="flex max-w-fit items-center gap-x-2 rounded-lg bg-fill-muted p-2">
+													<TechIcon class="h-4 w-4" technology={t.icon} />
+													<span class="text-xs">{t.label}</span>
+												</li>
+											))}
+									</ul>
 									{r.outcomes && r.outcomes.length > 0 && (
 										<details>
 											<summary class="mt-4 cursor-pointer text-sm font-bold">Show details</summary>
 											<ul class="mt-4 rounded-lg border border-neutral-200 bg-neutral-50 bg-opacity-50 p-6 backdrop-blur-md dark:border-neutral-700 dark:bg-neutral-900 dark:bg-opacity-50 dark:shadow-none">
 												{r.outcomes.map((p) => (
-													<li class="mb-6 ml-6 list-disc marker:text-accent">
-														{p}
-													</li>
+													<li class="mb-6 ml-6 list-disc marker:text-accent">{p}</li>
 												))}
 											</ul>
 										</details>

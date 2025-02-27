@@ -11,6 +11,18 @@
 				"Implementing analytics via Heap API, data management with React Query via REST API integrations.",
 				"Designed and developed a universal view management system that enables users to create preset filters for various datasets. The filter system is portable across the entire app and supports any data type, able to be applied wherever said data types are used. This reduced time on task and increased app usability by removing duplicate work re-applying filters to various screens.",
 				"Design and development of multiple UI components deployed via NPM package and documented using Storybook as part of global component library."
+			],
+			"tech": [
+				{ "label": "React", "icon": "react" },
+				{ "label": "TypeScript", "icon": "typescript" },
+				{ "label": "Tailwind", "icon": "tailwind" },
+				{ "label": "HTML", "icon": "html" },
+				{ "label": "CSS", "icon": "css" },
+				{ "label": "JavaScript", "icon": "javascript" },
+				{ "label": "Node", "icon": "node" },
+				{ "label": "Express", "icon": "express" },
+				{ "label": "Postgres", "icon": "postgres" },
+				{ "label": "Figma", "icon": "figma" }
 			]
 		},
 		{
@@ -23,18 +35,38 @@
 				"Broadened user base for on-premise network monitoring platform by adding authentication and role-based permissions with route guards.",
 				"Improved code support by spearheaded migration of app code from Vue 2 to Vue 3.",
 				"Increased code resiliency and product trust by implementing a complete test suite using Cypress and Vitest, integrating into CI/CD pipeline on GitLab."
+			],
+			"tech": [
+				{ "label": "Vue", "icon": "vue" },
+				{ "label": "Tailwind", "icon": "tailwind" },
+				{ "label": "HTML", "icon": "html" },
+				{ "label": "CSS", "icon": "css" },
+				{ "label": "JavaScript", "icon": "javascript" },
+				{ "label": "Python", "icon": "python" },
+				{ "label": "Figma", "icon": "figma" }
 			]
 		},
 		{
 			"title": "Full Stack Developer",
 			"business": "World Wide Technology",
 			"duration": "2020 to 2021",
-			"summary": "Full stack developer working on WWT corporate website with x visitors per day. Delivered customer facing features using Vue and Tailwind. Implemented microservices using Nodejs and MongoDB.",
+			"summary": "Full stack developer working on WWT corporate website. Delivered customer facing features using Vue and Tailwind. Implemented microservices using Nodejs and MongoDB.",
 			"outcomes": [
 				"Built user interfaces and back-end services for the WWT corporate website which has over 30,000 monthly visitors.",
 				"Full stack development for new WWT Communities feature, building UI components with Nuxt.js and micro-services with Express.js.",
 				"Reduced time on task and improved edit accuracy with design and development of new live edit feature.",
 				"Contributed to WWT Vue.js component library"
+			],
+			"tech": [
+				{ "label": "Vue", "icon": "vue" },
+				{ "label": "Tailwind", "icon": "tailwind" },
+				{ "label": "HTML", "icon": "html" },
+				{ "label": "CSS", "icon": "css" },
+				{ "label": "JavaScript", "icon": "javascript" },
+				{ "label": "Node", "icon": "node" },
+				{ "label": "Express", "icon": "express" },
+				{ "label": "MongoDB", "icon": "mongodb" },
+				{ "label": "Figma", "icon": "figma" }
 			]
 		},
 		{
@@ -47,6 +79,18 @@
 				"Reduced pediatric ER visits and improved patient quality of life by creating a patient portal using React Native that connects sick kids and their caregivers to medical staff for 24/7 support.",
 				"Design and developed key features for Mercy Continuum health monitoring platform using Vue, Postgres, and Node.",
 				"Moderated usability and user acceptance testing sessions to ensure product alignment with customers and stakeholders."
+			],
+			"tech": [
+				{ "label": "React", "icon": "react" },
+				{ "label": "React Native", "icon": "react" },
+				{ "label": "Vue", "icon": "vue" },
+				{ "label": "HTML", "icon": "html" },
+				{ "label": "CSS", "icon": "css" },
+				{ "label": "JavaScript", "icon": "javascript" },
+				{ "label": "Node", "icon": "node" },
+				{ "label": "Express", "icon": "express" },
+				{ "label": "Postgres", "icon": "postgres" },
+				{ "label": "Sketch", "icon": "sketch" }
 			]
 		},
 		{
@@ -61,6 +105,11 @@
 				"Operated as practice lead for a growing design team and handled identity design for new SaaS products.",
 				"Established the visual identity for Coolfire's back-end-as-a-service product, Ronin, and provided art direction for the new public-facing product site.",
 				"Partnered with engineering to design and build a sample chat application that demonstrated all the best components of the Coolfire Ronin platform."
+			],
+			"tech": [
+				{ "label": "Sketch", "icon": "sketch" },
+				{ "label": "PhotoShop", "icon": "photoshop" },
+				{ "label": "Illustrator", "icon": "illustrator" }
 			]
 		},
 		{
@@ -72,13 +121,27 @@
 				"Grew online mortgage application rates for a national bank by designing a conversational loan app process built with Angular 4.",
 				"Improved code quality of Angular 4 application by implementing Cypress tests to validate branching mortgage logic.",
 				"Rapidly prototyped multiple client projects using Sketch, HTML, and CSS."
+			],
+			"tech": [
+				{ "label": "Angular", "icon": "angular" },
+				{ "label": "HTML", "icon": "html" },
+				{ "label": "CSS", "icon": "css" },
+				{ "label": "JavaScript", "icon": "javascript" },
+				{ "label": "Sketch", "icon": "sketch" }
 			]
 		},
 		{
 			"title": "Owner / Chief Designer",
 			"business": "Bax Art & Design Co. LLC",
 			"duration": "2015 to 2017",
-			"summary": "Chief designer, accountant, HR, customer service, and head of sales and marketing. Made people happy by pushing pixels as a graphic designer, web designer, and 3D artist."
+			"summary": "Chief designer, accountant, HR, customer service, and head of sales and marketing. Made people happy by pushing pixels as a graphic designer, web designer, and 3D artist.",
+			"tech": [
+				{ "label": "HTML", "icon": "html" },
+				{ "label": "CSS", "icon": "css" },
+				{ "label": "JavaScript", "icon": "javascript" },
+				{ "label": "PhotoShop", "icon": "photoshop" },
+				{ "label": "Illustrator", "icon": "illustrator" }
+			]
 		},
 		{
 			"title": "Senior Designer",
@@ -92,6 +155,13 @@
 				"Reduced support requests related to product operation by designing attractive instructions that doubled as posters.",
 				"Maintained revenue through dry seasons by developing an auxiliary brand and managing operations of that business.",
 				"Trained up the next generation of designers by providing thought leadership and mentorship."
+			],
+			"tech": [
+				{ "label": "HTML", "icon": "html" },
+				{ "label": "CSS", "icon": "css" },
+				{ "label": "JavaScript", "icon": "javascript" },
+				{ "label": "PhotoShop", "icon": "photoshop" },
+				{ "label": "Illustrator", "icon": "illustrator" }
 			]
 		},
 		{
