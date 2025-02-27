@@ -4,7 +4,7 @@ Welcome to the source code for [brendanbax.com](https://www.brendanbax.com). Thi
 
 ## Why Astro
 
-In the past I've built my site with plain HTML, Jekyll, Gatsby, and Nuxt. I recently settled on a rewrite using Astro.js because it's framework agnostic, taking an islands architecture approach that enables flexible development technology. I like that I can include React or Vue in various parts of my site depending on my mood, and Astro doesn't work to hard to make it's own flavor of popular libraries. I also like the native markdown support and local data querying to build page content with data.
+In the past I've built my site with plain HTML, Jekyll, Gatsby, and Nuxt. I recently settled on a rewrite using Astro.js because it's framework agnostic, taking an islands architecture approach that enables flexible development technology. I like that I can include React or Vue in various parts of my site depending on my mood, and Astro doesn't work too hard to make it's own flavor of popular libraries. I also like the native markdown support and local data querying to build page content with data.
 
 ## Why Tailwind
 
