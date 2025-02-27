@@ -8,7 +8,7 @@
 			"outcomes": [
 				"Built multiple product views including dashboards, multi-state forms, data visualizations, grids and tables using React, Tailwind, Visx, Chart.js, and CSS Grid.",
 				"Responsible for UI design, usability testing, front end development with React and Typescript, back end development with Node and Postgres.",
-				"Implementing analytics via Heap API, data management with React Query via REST API integrations.",
+				"Implemented analytics via Heap API, data management with React Query via REST API integrations.",
 				"Designed and developed a universal view management system that enables users to create preset filters for various datasets. The filter system is portable across the entire app and supports any data type, able to be applied wherever said data types are used. This reduced time on task and increased app usability by removing duplicate work re-applying filters to various screens.",
 				"Design and development of multiple UI components deployed via NPM package and documented using Storybook as part of global component library."
 			],
@@ -33,8 +33,8 @@
 			"outcomes": [
 				"Bolstered product adoption by building a new product dashboard which highlighted malicious network devices and connections using Vue, Chart.js, and amCharts.",
 				"Broadened user base for on-premise network monitoring platform by adding authentication and role-based permissions with route guards.",
-				"Improved code support by spearheaded migration of app code from Vue 2 to Vue 3.",
-				"Increased code resiliency and product trust by implementing a complete test suite using Cypress and Vitest, integrating into CI/CD pipeline on GitLab."
+				"Improved code support by spearheading migration of app code from Vue 2 to Vue 3.",
+				"Increased code resiliency and product trust by implementing a complete test suite using Cypress and Vitest, integrated into CI/CD pipeline on GitLab."
 			],
 			"tech": [
 				{ "label": "Vue", "icon": "vue" },
@@ -54,7 +54,7 @@
 			"outcomes": [
 				"Built user interfaces and back-end services for the WWT corporate website which has over 30,000 monthly visitors.",
 				"Full stack development for new WWT Communities feature, building UI components with Nuxt.js and micro-services with Express.js.",
-				"Reduced time on task and improved edit accuracy with design and development of new live edit feature.",
+				"Reduced time on task and improved edit accuracy with design and development of new live content editing feature.",
 				"Contributed to WWT Vue.js component library"
 			],
 			"tech": [
@@ -100,7 +100,7 @@
 			"summary": "Design and Practice lead for client-service software agency. Brought multiple customer and internal projects to life through lean user research and rapid prototyping.",
 			"outcomes": [
 				"Reduced costs while improving user and customer satisfaction with a new roadside assistance tool for Enterprise (the rental car folks).",
-				"Improve responsiveness to threats for a private security group by designing actionable interfaces for web and mobile, streamlining situational awareness for high profile engagements.",
+				"Improved responsiveness to threats for a private security group by designing actionable interfaces for web and mobile, streamlining situational awareness for high profile engagements.",
 				"Rapidly prototyped a real-time logistics tracking and ordering platform that enabled drop shipments to resupply partners.",
 				"Operated as practice lead for a growing design team and handled identity design for new SaaS products.",
 				"Established the visual identity for Coolfire's back-end-as-a-service product, Ronin, and provided art direction for the new public-facing product site.",
