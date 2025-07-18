@@ -1,9 +1,33 @@
 {
 	"resume": [
 		{
-			"title": "Sr. UX Designer",
+			"title": "Sr. UX Engineer",
 			"business": "Freight Science",
 			"duration": "2022 to Present",
+			"summary": "Full stack web developer designing and building scalable and reliable applications with the latest web technology.",
+			"outcomes": [
+				"Responsible for application architecture including component strategy, abstractions, routing, service design, and model integrations.",
+				"TDD advocate, implementing testing frameworks to improve code quality and reduce errors.",
+				"Author of RFCs, technical documentation, and PR templates to align engineering stakeholders around cohesive tech strategies.",
+				"User Centered Design advocate during agile ceremonies like backlog refinement and sprint planning, always pushing for user-mindedness in engineering.",
+				"Team mentor for web design and development best practices, working to build a culture of learning and growth."
+			],
+			"tech": [
+				{ "label": "Vue", "icon": "vue" },
+				{ "label": "Nuxt", "icon": "nuxt" },
+				{ "label": "TypeScript", "icon": "typescript" },
+				{ "label": "Tailwind", "icon": "tailwind" },
+				{ "label": "HTML", "icon": "html" },
+				{ "label": "CSS", "icon": "css" },
+				{ "label": "JavaScript", "icon": "javascript" },
+				{ "label": "GraphQL", "icon": "graphql" },
+				{ "label": "Figma", "icon": "figma" }
+			]
+		},
+		{
+			"title": "Sr. UX Designer",
+			"business": "Freight Science",
+			"duration": "2022 to 2025",
 			"summary": "Full spectrum designer and engineer for the Freight Science web platform, bringing multiple capabilities from idea to production with design thinking and agile development.",
 			"outcomes": [
 				"Built multiple product views including dashboards, multi-state forms, data visualizations, grids and tables using React, Tailwind, Visx, Chart.js, and CSS Grid.",
