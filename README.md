@@ -8,7 +8,7 @@ In the past I've built my site with plain HTML, Jekyll, Gatsby, and Nuxt. I rece
 
 ## Why Tailwind
 
-I fell in love with the web because of CSS. Personally, it's the workhorse of modern software and the most underrated language. My passion for CSS has even spawned a series of [graphic tees](https://www.cottonbureau.com/people/brendan-bax) celebrating the various flavors and tools over the years. So when I first used Tailwind CSS I hated it.
+I fell in love with the web because of CSS. Personally, it's the workhorse of modern software and the most underrated language. My passion for CSS has even spawned a series of graphic tees celebrating the various flavors and tools over the years. So when I first used Tailwind CSS I hated it.
 
 Originally I saw Tailwind as a needless abstraction from common CSS. For every attribute you had to relearn the Tailwind equivalent. Class lists in markup tend to be long and bloated, and most of the semantic meaning of styles is lost in the sea of utilities. That said, Tailwind really shines when you're doing anything dynamic. It makes media and container queries a breeze. It makes dark mode and state-based style changes effortless. The needless abstraction is actually a welcome interface that simplifies complex or clunky CSS logic into snappy one-liner modifications. It's really grown on me and I use it for almost everything now.
 
