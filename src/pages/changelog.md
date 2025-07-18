@@ -244,5 +244,14 @@ changelog: [
 			'Add a snazzy icon for each tech item',
 		]
 	},
+	{
+		date: '2025/07/17',
+		title: 'Update resume content',
+		description: 'Updated resume content with new company and role',
+		changes: [
+			'Added new role as a Sr. UX Engineer to resume, along with what I have done for the last 3 months',
+			'Fixed a horizontal scroll bug on hero with the slashy section dividers',
+		]
+	},
 ]
 ---
